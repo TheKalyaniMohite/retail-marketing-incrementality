@@ -3,6 +3,8 @@
 # Note: 
 This project uses a High-Fidelity Synthetic Dataset modeled after real US retail trends. This approach allowed for a "Ground Truth" validation of the Causal Inference model, simulating a real-world $100k campaign across 10 major US markets.
 
+> 🔗 **[Live Dashboard](https://thekalyanimohite.github.io/retail-marketing-incrementality/)**
+
 > **Goal:** Measure the **Incremental Lift** of a \$100k digital ad campaign using a twin-city quasi-experiment and causal inference.
 
 ---
