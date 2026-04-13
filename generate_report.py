@@ -6,7 +6,7 @@ Retail Marketing Incrementality Project.
 
 Outputs:
   - output/executive_summary.md   (GitHub-viewable markdown)
-  - output/executive_report.html  (Standalone printable HTML report)
+  - output/index.html  (Standalone printable HTML report)
 
 This is the final deliverable — written for a CMO audience,
 not a technical one.
@@ -227,7 +227,7 @@ This study measured a single pulse campaign. Continuous measurement would enable
 | `causalimpact_*.png` | Per-city 3-panel CausalImpact plots |
 | `roi_summary.png` | ROI waterfall chart |
 | `executive_summary.md` | This document |
-| `executive_report.html` | Printable HTML version |
+| `index.html` | Printable HTML version |
 
 ---
 

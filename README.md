@@ -98,7 +98,7 @@ python generate_report.py
 
 # Then open these in your browser:
 #   output/dashboard.html          (interactive dashboard)
-#   output/executive_report.html   (printable executive summary)
+#   output/index.html   (printable executive summary)
 ```
 
 All charts and results are saved to the `output/` folder.
@@ -119,7 +119,7 @@ Retail Marketing Incrementality Project/
 ├── Interview_Prep.txt         # Interview Q&A cheat-sheet
 └── output/
     ├── dashboard.html             # Interactive dark-mode dashboard
-    ├── executive_report.html      # Printable executive summary
+    ├── index.html      # Printable executive summary
     ├── executive_summary.md       # GitHub-viewable summary
     ├── incremental_lift_summary.csv
     ├── did_regression_summary.txt
