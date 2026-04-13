@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Summary - Retail Marketing Incrementality</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: #1e293b;
+            line-height: 1.7;
+            background: #ffffff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #334155;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p { margin-bottom: 1rem; color: #475569; }
+
+        strong { color: #0f172a; }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #22c55e;
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p {
+            color: #166534;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        .highlight-box strong {
+            color: #14532d;
+        }
+
+        .question-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #3b82f6;
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #334155;
+        }
+
+        /* KPI Grid */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .kpi {
+            text-align: center;
+            padding: 1.2rem 0.5rem;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .kpi:nth-child(1) { background: #f0fdf4; border-color: #bbf7d0; }
+        .kpi:nth-child(2) { background: #eff6ff; border-color: #bfdbfe; }
+        .kpi:nth-child(3) { background: #fefce8; border-color: #fde68a; }
+        .kpi:nth-child(4) { background: #fdf2f8; border-color: #fbcfe8; }
+
+        .kpi .label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #64748b;
+            margin-bottom: 0.3rem;
+        }
+
+        .kpi .value {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .kpi:nth-child(1) .value { color: #16a34a; }
+        .kpi:nth-child(2) .value { color: #2563eb; }
+        .kpi:nth-child(3) .value { color: #d97706; }
+        .kpi:nth-child(4) .value { color: #db2777; }
+
+        .kpi .detail {
+            font-size: 0.7rem;
+            color: #94a3b8;
+            margin-top: 0.2rem;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.85rem;
+        }
+
+        th {
+            text-align: left;
+            padding: 0.8rem 1rem;
+            background: #f8fafc;
+            color: #475569;
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        td {
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid #f1f5f9;
+            color: #475569;
+        }
+
+        tr:hover td { background: #f8fafc; }
+
+        .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+        .positive { color: #16a34a; }
+        .total-row { font-weight: 700; background: #f0fdf4 !important; }
+        .total-row td { color: #166534; border-top: 2px solid #bbf7d0; }
+
+        /* Recommendations */
+        .rec {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 1.2rem 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .rec h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.4rem;
+        }
+
+        .rec p {
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .rec-tag {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 50px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .rec-tag.high { background: #dcfce7; color: #166534; }
+        .rec-tag.medium { background: #fef3c7; color: #92400e; }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 2rem 0;
+        }
+
+        .footer {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.75rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media print {
+            body { padding: 1rem; font-size: 0.8rem; }
+            .kpi-grid { grid-template-columns: repeat(4, 1fr); }
+            h2 { page-break-before: auto; }
+        }
+
+        @media (max-width: 700px) {
+            .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Retail Marketing Incrementality</h1>
+<div class="subtitle">
+    Executive Summary &bull; December 2025 Campaign Analysis &bull; Portfolio Demonstration
+</div>
+
+<div class="question-box">
+    Did our $100,000 December advertising campaign actually drive incremental sales,
+    or would sales have increased anyway due to holiday seasonality?
+</div>
+
+<div class="highlight-box">
+    <p><strong>Yes.</strong> The campaign generated <strong>$259,324</strong> in
+    incremental revenue &mdash; a <strong>159% ROI</strong> &mdash; and the effect is
+    statistically significant (p &lt; 0.001). Every dollar invested returned
+    <strong>$2.59</strong> in revenue.</p>
+</div>
+
+<div class="kpi-grid">
+    <div class="kpi">
+        <div class="label">ROI</div>
+        <div class="value">159%</div>
+        <div class="detail">CI: [149% &ndash; 170%]</div>
+    </div>
+    <div class="kpi">
+        <div class="label">Incremental Revenue</div>
+        <div class="value">$259k</div>
+        <div class="detail">Net profit: $159,324</div>
+    </div>
+    <div class="kpi">
+        <div class="label">ROAS</div>
+        <div class="value">2.59x</div>
+        <div class="detail">Industry avg: 2-4x</div>
+    </div>
+    <div class="kpi">
+        <div class="label">Avg Lift</div>
+        <div class="value">+14.6%</div>
+        <div class="detail">Across 5 markets</div>
+    </div>
+</div>
+
+<h2>Market-Level Performance</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Market</th>
+            <th style="text-align:right">Inc. Revenue</th>
+            <th style="text-align:right">Lift %</th>
+            <th style="text-align:right">Daily Lift</th>
+            <th>95% CI</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>San Francisco</strong></td>
+            <td class="num positive" style="text-align:right">$60,333</td>
+            <td class="num positive" style="text-align:right">+15.1%</td>
+            <td class="num" style="text-align:right">$1,946/day</td>
+            <td style="font-size:0.75rem; color:#94a3b8">[$58,027 &ndash; $62,591]</td>
+        </tr>
+        <tr>
+            <td><strong>Austin</strong></td>
+            <td class="num positive" style="text-align:right">$53,423</td>
+            <td class="num positive" style="text-align:right">+16.5%</td>
+            <td class="num" style="text-align:right">$1,723/day</td>
+            <td style="font-size:0.75rem; color:#94a3b8">[$51,472 &ndash; $55,490]</td>
+        </tr>
+        <tr>
+            <td><strong>Miami</strong></td>
+            <td class="num positive" style="text-align:right">$38,875</td>
+            <td class="num positive" style="text-align:right">+11.0%</td>
+            <td class="num" style="text-align:right">$1,254/day</td>
+            <td style="font-size:0.75rem; color:#94a3b8">[$36,940 &ndash; $40,821]</td>
+        </tr>
+        <tr>
+            <td><strong>Chicago</strong></td>
+            <td class="num positive" style="text-align:right">$58,044</td>
+            <td class="num positive" style="text-align:right">+15.7%</td>
+            <td class="num" style="text-align:right">$1,872/day</td>
+            <td style="font-size:0.75rem; color:#94a3b8">[$55,780 &ndash; $60,364]</td>
+        </tr>
+        <tr>
+            <td><strong>Dallas</strong></td>
+            <td class="num positive" style="text-align:right">$48,649</td>
+            <td class="num positive" style="text-align:right">+14.8%</td>
+            <td class="num" style="text-align:right">$1,569/day</td>
+            <td style="font-size:0.75rem; color:#94a3b8">[$46,772 &ndash; $50,615]</td>
+        </tr>
+        <tr class="total-row">
+            <td>Total</td>
+            <td class="num" style="text-align:right">$259,324</td>
+            <td class="num" style="text-align:right">+14.6%</td>
+            <td class="num" style="text-align:right">$1,673/day</td>
+            <td style="font-size:0.75rem">[$248,992 &ndash; $269,880]</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Methodology</h2>
+
+<h3>Twin-City Quasi-Experiment</h3>
+<p>We matched 5 test cities (which received the campaign) with 5 structurally similar
+control cities (no campaign). The control cities serve as the <strong>counterfactual</strong>
+&mdash; what would have happened without the ad.</p>
+
+<table>
+    <thead><tr><th>Test City</th><th>Control Twin</th><th>Pre-Period Correlation</th></tr></thead>
+    <tbody>
+        <tr><td>San Francisco</td><td>Seattle</td><td class="num">r = 0.994</td></tr>
+        <tr><td>Austin</td><td>Denver</td><td class="num">r = 0.992</td></tr>
+        <tr><td>Miami</td><td>Phoenix</td><td class="num">r = 0.993</td></tr>
+        <tr><td>Chicago</td><td>Boston</td><td class="num">r = 0.991</td></tr>
+        <tr><td>Dallas</td><td>Atlanta</td><td class="num">r = 0.992</td></tr>
+    </tbody>
+</table>
+
+<h3>Dual Analytical Methods</h3>
+<p>Two independent causal inference methods were deployed as a robustness check:</p>
+<table>
+    <thead><tr><th>Method</th><th>Approach</th><th>Result</th></tr></thead>
+    <tbody>
+        <tr>
+            <td><strong>Diff-in-Diff</strong></td>
+            <td>OLS regression with HC1 robust SEs</td>
+            <td class="num">$1,713/day (p = 1.95 &times; 10<sup>-23</sup>)</td>
+        </tr>
+        <tr>
+            <td><strong>CausalImpact</strong></td>
+            <td>Bayesian counterfactual + bootstrap CIs</td>
+            <td class="num">$259,324 cumulative</td>
+        </tr>
+    </tbody>
+</table>
+<p>Both methods converge, strengthening confidence in the result.</p>
+
+<h2>Recommendations</h2>
+
+<div class="rec">
+    <h4>1. Scale the Campaign <span class="rec-tag high">High Confidence</span></h4>
+    <p>With 159% ROI and 2.59x ROAS (well above industry average of 2-4x),
+    increase budget for the next seasonal push, particularly in San Francisco and Chicago.</p>
+</div>
+
+<div class="rec">
+    <h4>2. Optimize Miami <span class="rec-tag medium">Medium Priority</span></h4>
+    <p>Miami showed the lowest relative lift (+11.0%) but still generated
+    $38,875. Test alternative creatives or channels before the next cycle.</p>
+</div>
+
+<div class="rec">
+    <h4>3. Extend the Measurement Framework <span class="rec-tag high">High Confidence</span></h4>
+    <p>Apply the twin-city methodology to other campaigns (email, social, CTV) to build a
+    comprehensive incrementality measurement program across all channels.</p>
+</div>
+
+<div class="rec">
+    <h4>4. Invest in Always-On Measurement <span class="rec-tag medium">Medium Priority</span></h4>
+    <p>Move from periodic studies to continuous measurement, enabling real-time budget
+    reallocation and diminishing-returns analysis.</p>
+</div>
+
+<h2>Limitations</h2>
+<table>
+    <tbody>
+        <tr><td style="width:30%"><strong>Synthetic Data</strong></td><td>Portfolio demonstration using simulated data. Real-world analysis requires actual POS/transaction data.</td></tr>
+        <tr><td><strong>Single Period</strong></td><td>31-day measurement window. Long-term effects (brand lift, CLV) not captured.</td></tr>
+        <tr><td><strong>Confounders</strong></td><td>Unobserved local factors (competitor activity, weather) could influence results.</td></tr>
+        <tr><td><strong>No Channel Split</strong></td><td>Total campaign effect measured; individual channel contributions unknown.</td></tr>
+    </tbody>
+</table>
+
+<div class="footer">
+    Retail Marketing Incrementality Project &bull; Portfolio Demonstration &bull;
+    Python &bull; Causal Inference &bull; Chart.js
+</div>
+
+</body>
+</html>

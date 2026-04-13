@@ -1,0 +1,3651 @@
+date,city,group,twin_pair,daily_sales
+2025-01-01,San Francisco,Test,San Francisco / Seattle,10354.06
+2025-01-02,San Francisco,Test,San Francisco / Seattle,9517.44
+2025-01-03,San Francisco,Test,San Francisco / Seattle,9849.92
+2025-01-04,San Francisco,Test,San Francisco / Seattle,11778.86
+2025-01-05,San Francisco,Test,San Francisco / Seattle,11095.51
+2025-01-06,San Francisco,Test,San Francisco / Seattle,9555.76
+2025-01-07,San Francisco,Test,San Francisco / Seattle,10302.04
+2025-01-08,San Francisco,Test,San Francisco / Seattle,9998.98
+2025-01-09,San Francisco,Test,San Francisco / Seattle,9526.57
+2025-01-10,San Francisco,Test,San Francisco / Seattle,9954.43
+2025-01-11,San Francisco,Test,San Francisco / Seattle,11135.78
+2025-01-12,San Francisco,Test,San Francisco / Seattle,11159.28
+2025-01-13,San Francisco,Test,San Francisco / Seattle,9907.46
+2025-01-14,San Francisco,Test,San Francisco / Seattle,9071.15
+2025-01-15,San Francisco,Test,San Francisco / Seattle,9172.96
+2025-01-16,San Francisco,Test,San Francisco / Seattle,9665.13
+2025-01-17,San Francisco,Test,San Francisco / Seattle,9512.7
+2025-01-18,San Francisco,Test,San Francisco / Seattle,11631.97
+2025-01-19,San Francisco,Test,San Francisco / Seattle,11172.15
+2025-01-20,San Francisco,Test,San Francisco / Seattle,9440.17
+2025-01-21,San Francisco,Test,San Francisco / Seattle,10621.72
+2025-01-22,San Francisco,Test,San Francisco / Seattle,9976.14
+2025-01-23,San Francisco,Test,San Francisco / Seattle,10125.08
+2025-01-24,San Francisco,Test,San Francisco / Seattle,9560.41
+2025-01-25,San Francisco,Test,San Francisco / Seattle,11505.4
+2025-01-26,San Francisco,Test,San Francisco / Seattle,11800.97
+2025-01-27,San Francisco,Test,San Francisco / Seattle,9770.24
+2025-01-28,San Francisco,Test,San Francisco / Seattle,10415.54
+2025-01-29,San Francisco,Test,San Francisco / Seattle,10060.21
+2025-01-30,San Francisco,Test,San Francisco / Seattle,10219.56
+2025-01-31,San Francisco,Test,San Francisco / Seattle,10131.89
+2025-02-01,San Francisco,Test,San Francisco / Seattle,12710.37
+2025-02-02,San Francisco,Test,San Francisco / Seattle,12001.49
+2025-02-03,San Francisco,Test,San Francisco / Seattle,10061.77
+2025-02-04,San Francisco,Test,San Francisco / Seattle,10852.37
+2025-02-05,San Francisco,Test,San Francisco / Seattle,10074.03
+2025-02-06,San Francisco,Test,San Francisco / Seattle,10685.44
+2025-02-07,San Francisco,Test,San Francisco / Seattle,9858.05
+2025-02-08,San Francisco,Test,San Francisco / Seattle,11711.15
+2025-02-09,San Francisco,Test,San Francisco / Seattle,12362.16
+2025-02-10,San Francisco,Test,San Francisco / Seattle,11060.27
+2025-02-11,San Francisco,Test,San Francisco / Seattle,10875.36
+2025-02-12,San Francisco,Test,San Francisco / Seattle,10802.92
+2025-02-13,San Francisco,Test,San Francisco / Seattle,10771.56
+2025-02-14,San Francisco,Test,San Francisco / Seattle,11303.84
+2025-02-15,San Francisco,Test,San Francisco / Seattle,12250.97
+2025-02-16,San Francisco,Test,San Francisco / Seattle,12398.73
+2025-02-17,San Francisco,Test,San Francisco / Seattle,11490.31
+2025-02-18,San Francisco,Test,San Francisco / Seattle,11249.77
+2025-02-19,San Francisco,Test,San Francisco / Seattle,10452.35
+2025-02-20,San Francisco,Test,San Francisco / Seattle,11332.8
+2025-02-21,San Francisco,Test,San Francisco / Seattle,11095.09
+2025-02-22,San Francisco,Test,San Francisco / Seattle,12584.66
+2025-02-23,San Francisco,Test,San Francisco / Seattle,13146.73
+2025-02-24,San Francisco,Test,San Francisco / Seattle,11801.42
+2025-02-25,San Francisco,Test,San Francisco / Seattle,11808.79
+2025-02-26,San Francisco,Test,San Francisco / Seattle,11148.15
+2025-02-27,San Francisco,Test,San Francisco / Seattle,11408.0
+2025-02-28,San Francisco,Test,San Francisco / Seattle,11712.32
+2025-03-01,San Francisco,Test,San Francisco / Seattle,13578.41
+2025-03-02,San Francisco,Test,San Francisco / Seattle,13045.16
+2025-03-03,San Francisco,Test,San Francisco / Seattle,11651.43
+2025-03-04,San Francisco,Test,San Francisco / Seattle,11332.26
+2025-03-05,San Francisco,Test,San Francisco / Seattle,11345.62
+2025-03-06,San Francisco,Test,San Francisco / Seattle,12198.63
+2025-03-07,San Francisco,Test,San Francisco / Seattle,12465.81
+2025-03-08,San Francisco,Test,San Francisco / Seattle,13504.39
+2025-03-09,San Francisco,Test,San Francisco / Seattle,13984.65
+2025-03-10,San Francisco,Test,San Francisco / Seattle,12218.09
+2025-03-11,San Francisco,Test,San Francisco / Seattle,11865.72
+2025-03-12,San Francisco,Test,San Francisco / Seattle,12318.79
+2025-03-13,San Francisco,Test,San Francisco / Seattle,12840.02
+2025-03-14,San Francisco,Test,San Francisco / Seattle,12261.15
+2025-03-15,San Francisco,Test,San Francisco / Seattle,14512.1
+2025-03-16,San Francisco,Test,San Francisco / Seattle,12889.19
+2025-03-17,San Francisco,Test,San Francisco / Seattle,12756.75
+2025-03-18,San Francisco,Test,San Francisco / Seattle,12513.77
+2025-03-19,San Francisco,Test,San Francisco / Seattle,12410.34
+2025-03-20,San Francisco,Test,San Francisco / Seattle,12617.67
+2025-03-21,San Francisco,Test,San Francisco / Seattle,11836.97
+2025-03-22,San Francisco,Test,San Francisco / Seattle,14155.16
+2025-03-23,San Francisco,Test,San Francisco / Seattle,14436.9
+2025-03-24,San Francisco,Test,San Francisco / Seattle,13376.21
+2025-03-25,San Francisco,Test,San Francisco / Seattle,12628.7
+2025-03-26,San Francisco,Test,San Francisco / Seattle,12563.51
+2025-03-27,San Francisco,Test,San Francisco / Seattle,12737.05
+2025-03-28,San Francisco,Test,San Francisco / Seattle,13354.68
+2025-03-29,San Francisco,Test,San Francisco / Seattle,14730.7
+2025-03-30,San Francisco,Test,San Francisco / Seattle,14437.87
+2025-03-31,San Francisco,Test,San Francisco / Seattle,13345.54
+2025-04-01,San Francisco,Test,San Francisco / Seattle,13229.4
+2025-04-02,San Francisco,Test,San Francisco / Seattle,13628.22
+2025-04-03,San Francisco,Test,San Francisco / Seattle,13009.98
+2025-04-04,San Francisco,Test,San Francisco / Seattle,13209.62
+2025-04-05,San Francisco,Test,San Francisco / Seattle,14793.54
+2025-04-06,San Francisco,Test,San Francisco / Seattle,14414.49
+2025-04-07,San Francisco,Test,San Francisco / Seattle,13607.65
+2025-04-08,San Francisco,Test,San Francisco / Seattle,13642.73
+2025-04-09,San Francisco,Test,San Francisco / Seattle,13589.22
+2025-04-10,San Francisco,Test,San Francisco / Seattle,13541.97
+2025-04-11,San Francisco,Test,San Francisco / Seattle,13118.04
+2025-04-12,San Francisco,Test,San Francisco / Seattle,15124.05
+2025-04-13,San Francisco,Test,San Francisco / Seattle,15203.07
+2025-04-14,San Francisco,Test,San Francisco / Seattle,13506.81
+2025-04-15,San Francisco,Test,San Francisco / Seattle,13810.47
+2025-04-16,San Francisco,Test,San Francisco / Seattle,14083.56
+2025-04-17,San Francisco,Test,San Francisco / Seattle,14723.05
+2025-04-18,San Francisco,Test,San Francisco / Seattle,14084.71
+2025-04-19,San Francisco,Test,San Francisco / Seattle,15723.85
+2025-04-20,San Francisco,Test,San Francisco / Seattle,15636.66
+2025-04-21,San Francisco,Test,San Francisco / Seattle,13384.17
+2025-04-22,San Francisco,Test,San Francisco / Seattle,14185.93
+2025-04-23,San Francisco,Test,San Francisco / Seattle,14265.11
+2025-04-24,San Francisco,Test,San Francisco / Seattle,15270.39
+2025-04-25,San Francisco,Test,San Francisco / Seattle,14251.81
+2025-04-26,San Francisco,Test,San Francisco / Seattle,16052.62
+2025-04-27,San Francisco,Test,San Francisco / Seattle,15960.93
+2025-04-28,San Francisco,Test,San Francisco / Seattle,13989.72
+2025-04-29,San Francisco,Test,San Francisco / Seattle,14956.25
+2025-04-30,San Francisco,Test,San Francisco / Seattle,14841.35
+2025-05-01,San Francisco,Test,San Francisco / Seattle,14897.99
+2025-05-02,San Francisco,Test,San Francisco / Seattle,14258.33
+2025-05-03,San Francisco,Test,San Francisco / Seattle,16783.23
+2025-05-04,San Francisco,Test,San Francisco / Seattle,15700.89
+2025-05-05,San Francisco,Test,San Francisco / Seattle,14975.39
+2025-05-06,San Francisco,Test,San Francisco / Seattle,15655.32
+2025-05-07,San Francisco,Test,San Francisco / Seattle,14420.9
+2025-05-08,San Francisco,Test,San Francisco / Seattle,14628.02
+2025-05-09,San Francisco,Test,San Francisco / Seattle,14931.29
+2025-05-10,San Francisco,Test,San Francisco / Seattle,16286.37
+2025-05-11,San Francisco,Test,San Francisco / Seattle,15903.27
+2025-05-12,San Francisco,Test,San Francisco / Seattle,15026.16
+2025-05-13,San Francisco,Test,San Francisco / Seattle,14608.44
+2025-05-14,San Francisco,Test,San Francisco / Seattle,15256.84
+2025-05-15,San Francisco,Test,San Francisco / Seattle,14733.08
+2025-05-16,San Francisco,Test,San Francisco / Seattle,15753.67
+2025-05-17,San Francisco,Test,San Francisco / Seattle,16412.63
+2025-05-18,San Francisco,Test,San Francisco / Seattle,16628.72
+2025-05-19,San Francisco,Test,San Francisco / Seattle,15553.95
+2025-05-20,San Francisco,Test,San Francisco / Seattle,14766.56
+2025-05-21,San Francisco,Test,San Francisco / Seattle,15379.62
+2025-05-22,San Francisco,Test,San Francisco / Seattle,15840.59
+2025-05-23,San Francisco,Test,San Francisco / Seattle,14703.18
+2025-05-24,San Francisco,Test,San Francisco / Seattle,17007.81
+2025-05-25,San Francisco,Test,San Francisco / Seattle,17065.03
+2025-05-26,San Francisco,Test,San Francisco / Seattle,16940.26
+2025-05-27,San Francisco,Test,San Francisco / Seattle,14958.54
+2025-05-28,San Francisco,Test,San Francisco / Seattle,14950.25
+2025-05-29,San Francisco,Test,San Francisco / Seattle,15711.63
+2025-05-30,San Francisco,Test,San Francisco / Seattle,15645.39
+2025-05-31,San Francisco,Test,San Francisco / Seattle,17209.84
+2025-06-01,San Francisco,Test,San Francisco / Seattle,17270.57
+2025-06-02,San Francisco,Test,San Francisco / Seattle,15321.63
+2025-06-03,San Francisco,Test,San Francisco / Seattle,15707.49
+2025-06-04,San Francisco,Test,San Francisco / Seattle,15752.05
+2025-06-05,San Francisco,Test,San Francisco / Seattle,15368.61
+2025-06-06,San Francisco,Test,San Francisco / Seattle,16419.47
+2025-06-07,San Francisco,Test,San Francisco / Seattle,17440.78
+2025-06-08,San Francisco,Test,San Francisco / Seattle,16792.1
+2025-06-09,San Francisco,Test,San Francisco / Seattle,15987.89
+2025-06-10,San Francisco,Test,San Francisco / Seattle,15351.31
+2025-06-11,San Francisco,Test,San Francisco / Seattle,16071.21
+2025-06-12,San Francisco,Test,San Francisco / Seattle,16234.27
+2025-06-13,San Francisco,Test,San Francisco / Seattle,15456.28
+2025-06-14,San Francisco,Test,San Francisco / Seattle,17742.9
+2025-06-15,San Francisco,Test,San Francisco / Seattle,17534.91
+2025-06-16,San Francisco,Test,San Francisco / Seattle,16150.14
+2025-06-17,San Francisco,Test,San Francisco / Seattle,16590.81
+2025-06-18,San Francisco,Test,San Francisco / Seattle,15743.97
+2025-06-19,San Francisco,Test,San Francisco / Seattle,15549.93
+2025-06-20,San Francisco,Test,San Francisco / Seattle,15504.17
+2025-06-21,San Francisco,Test,San Francisco / Seattle,17101.47
+2025-06-22,San Francisco,Test,San Francisco / Seattle,17404.03
+2025-06-23,San Francisco,Test,San Francisco / Seattle,16017.66
+2025-06-24,San Francisco,Test,San Francisco / Seattle,15997.47
+2025-06-25,San Francisco,Test,San Francisco / Seattle,16222.52
+2025-06-26,San Francisco,Test,San Francisco / Seattle,15900.96
+2025-06-27,San Francisco,Test,San Francisco / Seattle,16480.56
+2025-06-28,San Francisco,Test,San Francisco / Seattle,17355.92
+2025-06-29,San Francisco,Test,San Francisco / Seattle,18551.76
+2025-06-30,San Francisco,Test,San Francisco / Seattle,16155.14
+2025-07-01,San Francisco,Test,San Francisco / Seattle,15562.45
+2025-07-02,San Francisco,Test,San Francisco / Seattle,15476.68
+2025-07-03,San Francisco,Test,San Francisco / Seattle,16097.02
+2025-07-04,San Francisco,Test,San Francisco / Seattle,17252.91
+2025-07-05,San Francisco,Test,San Francisco / Seattle,17745.44
+2025-07-06,San Francisco,Test,San Francisco / Seattle,17645.97
+2025-07-07,San Francisco,Test,San Francisco / Seattle,15863.66
+2025-07-08,San Francisco,Test,San Francisco / Seattle,15549.49
+2025-07-09,San Francisco,Test,San Francisco / Seattle,15276.97
+2025-07-10,San Francisco,Test,San Francisco / Seattle,15698.3
+2025-07-11,San Francisco,Test,San Francisco / Seattle,16212.76
+2025-07-12,San Francisco,Test,San Francisco / Seattle,17508.45
+2025-07-13,San Francisco,Test,San Francisco / Seattle,16916.43
+2025-07-14,San Francisco,Test,San Francisco / Seattle,15915.23
+2025-07-15,San Francisco,Test,San Francisco / Seattle,15990.64
+2025-07-16,San Francisco,Test,San Francisco / Seattle,15472.85
+2025-07-17,San Francisco,Test,San Francisco / Seattle,15877.09
+2025-07-18,San Francisco,Test,San Francisco / Seattle,15827.43
+2025-07-19,San Francisco,Test,San Francisco / Seattle,16894.84
+2025-07-20,San Francisco,Test,San Francisco / Seattle,17482.38
+2025-07-21,San Francisco,Test,San Francisco / Seattle,15990.17
+2025-07-22,San Francisco,Test,San Francisco / Seattle,16185.03
+2025-07-23,San Francisco,Test,San Francisco / Seattle,16158.64
+2025-07-24,San Francisco,Test,San Francisco / Seattle,15170.75
+2025-07-25,San Francisco,Test,San Francisco / Seattle,15330.76
+2025-07-26,San Francisco,Test,San Francisco / Seattle,17455.36
+2025-07-27,San Francisco,Test,San Francisco / Seattle,17437.71
+2025-07-28,San Francisco,Test,San Francisco / Seattle,15860.48
+2025-07-29,San Francisco,Test,San Francisco / Seattle,17177.22
+2025-07-30,San Francisco,Test,San Francisco / Seattle,15845.57
+2025-07-31,San Francisco,Test,San Francisco / Seattle,16051.95
+2025-08-01,San Francisco,Test,San Francisco / Seattle,15959.27
+2025-08-02,San Francisco,Test,San Francisco / Seattle,17377.61
+2025-08-03,San Francisco,Test,San Francisco / Seattle,16969.79
+2025-08-04,San Francisco,Test,San Francisco / Seattle,15817.78
+2025-08-05,San Francisco,Test,San Francisco / Seattle,15182.83
+2025-08-06,San Francisco,Test,San Francisco / Seattle,15374.48
+2025-08-07,San Francisco,Test,San Francisco / Seattle,15251.79
+2025-08-08,San Francisco,Test,San Francisco / Seattle,15454.91
+2025-08-09,San Francisco,Test,San Francisco / Seattle,17883.75
+2025-08-10,San Francisco,Test,San Francisco / Seattle,16186.23
+2025-08-11,San Francisco,Test,San Francisco / Seattle,15622.41
+2025-08-12,San Francisco,Test,San Francisco / Seattle,14677.13
+2025-08-13,San Francisco,Test,San Francisco / Seattle,15107.29
+2025-08-14,San Francisco,Test,San Francisco / Seattle,15705.04
+2025-08-15,San Francisco,Test,San Francisco / Seattle,15268.14
+2025-08-16,San Francisco,Test,San Francisco / Seattle,16343.88
+2025-08-17,San Francisco,Test,San Francisco / Seattle,16460.98
+2025-08-18,San Francisco,Test,San Francisco / Seattle,15430.66
+2025-08-19,San Francisco,Test,San Francisco / Seattle,14838.01
+2025-08-20,San Francisco,Test,San Francisco / Seattle,15187.69
+2025-08-21,San Francisco,Test,San Francisco / Seattle,15089.91
+2025-08-22,San Francisco,Test,San Francisco / Seattle,14781.26
+2025-08-23,San Francisco,Test,San Francisco / Seattle,17429.34
+2025-08-24,San Francisco,Test,San Francisco / Seattle,16794.86
+2025-08-25,San Francisco,Test,San Francisco / Seattle,14140.44
+2025-08-26,San Francisco,Test,San Francisco / Seattle,14993.97
+2025-08-27,San Francisco,Test,San Francisco / Seattle,14623.26
+2025-08-28,San Francisco,Test,San Francisco / Seattle,15197.24
+2025-08-29,San Francisco,Test,San Francisco / Seattle,14507.28
+2025-08-30,San Francisco,Test,San Francisco / Seattle,16306.14
+2025-08-31,San Francisco,Test,San Francisco / Seattle,16521.52
+2025-09-01,San Francisco,Test,San Francisco / Seattle,16273.07
+2025-09-02,San Francisco,Test,San Francisco / Seattle,14213.66
+2025-09-03,San Francisco,Test,San Francisco / Seattle,14526.78
+2025-09-04,San Francisco,Test,San Francisco / Seattle,14437.19
+2025-09-05,San Francisco,Test,San Francisco / Seattle,14332.22
+2025-09-06,San Francisco,Test,San Francisco / Seattle,16825.95
+2025-09-07,San Francisco,Test,San Francisco / Seattle,16247.79
+2025-09-08,San Francisco,Test,San Francisco / Seattle,13987.33
+2025-09-09,San Francisco,Test,San Francisco / Seattle,14824.56
+2025-09-10,San Francisco,Test,San Francisco / Seattle,15271.88
+2025-09-11,San Francisco,Test,San Francisco / Seattle,14801.48
+2025-09-12,San Francisco,Test,San Francisco / Seattle,13746.12
+2025-09-13,San Francisco,Test,San Francisco / Seattle,15685.45
+2025-09-14,San Francisco,Test,San Francisco / Seattle,16351.11
+2025-09-15,San Francisco,Test,San Francisco / Seattle,13966.4
+2025-09-16,San Francisco,Test,San Francisco / Seattle,14392.06
+2025-09-17,San Francisco,Test,San Francisco / Seattle,14489.41
+2025-09-18,San Francisco,Test,San Francisco / Seattle,13773.77
+2025-09-19,San Francisco,Test,San Francisco / Seattle,14085.71
+2025-09-20,San Francisco,Test,San Francisco / Seattle,14337.98
+2025-09-21,San Francisco,Test,San Francisco / Seattle,15189.7
+2025-09-22,San Francisco,Test,San Francisco / Seattle,13903.42
+2025-09-23,San Francisco,Test,San Francisco / Seattle,13470.35
+2025-09-24,San Francisco,Test,San Francisco / Seattle,14587.5
+2025-09-25,San Francisco,Test,San Francisco / Seattle,13327.6
+2025-09-26,San Francisco,Test,San Francisco / Seattle,13688.83
+2025-09-27,San Francisco,Test,San Francisco / Seattle,15442.43
+2025-09-28,San Francisco,Test,San Francisco / Seattle,15932.01
+2025-09-29,San Francisco,Test,San Francisco / Seattle,13186.64
+2025-09-30,San Francisco,Test,San Francisco / Seattle,14191.85
+2025-10-01,San Francisco,Test,San Francisco / Seattle,13696.41
+2025-10-02,San Francisco,Test,San Francisco / Seattle,13265.59
+2025-10-03,San Francisco,Test,San Francisco / Seattle,13809.08
+2025-10-04,San Francisco,Test,San Francisco / Seattle,15230.07
+2025-10-05,San Francisco,Test,San Francisco / Seattle,14876.75
+2025-10-06,San Francisco,Test,San Francisco / Seattle,13551.34
+2025-10-07,San Francisco,Test,San Francisco / Seattle,13336.09
+2025-10-08,San Francisco,Test,San Francisco / Seattle,13502.64
+2025-10-09,San Francisco,Test,San Francisco / Seattle,13689.33
+2025-10-10,San Francisco,Test,San Francisco / Seattle,14026.38
+2025-10-11,San Francisco,Test,San Francisco / Seattle,14424.59
+2025-10-12,San Francisco,Test,San Francisco / Seattle,15740.94
+2025-10-13,San Francisco,Test,San Francisco / Seattle,12515.19
+2025-10-14,San Francisco,Test,San Francisco / Seattle,13203.9
+2025-10-15,San Francisco,Test,San Francisco / Seattle,13468.83
+2025-10-16,San Francisco,Test,San Francisco / Seattle,13315.1
+2025-10-17,San Francisco,Test,San Francisco / Seattle,12923.15
+2025-10-18,San Francisco,Test,San Francisco / Seattle,14618.85
+2025-10-19,San Francisco,Test,San Francisco / Seattle,14475.12
+2025-10-20,San Francisco,Test,San Francisco / Seattle,12847.15
+2025-10-21,San Francisco,Test,San Francisco / Seattle,13393.68
+2025-10-22,San Francisco,Test,San Francisco / Seattle,13167.98
+2025-10-23,San Francisco,Test,San Francisco / Seattle,12719.74
+2025-10-24,San Francisco,Test,San Francisco / Seattle,13328.87
+2025-10-25,San Francisco,Test,San Francisco / Seattle,14624.49
+2025-10-26,San Francisco,Test,San Francisco / Seattle,14799.68
+2025-10-27,San Francisco,Test,San Francisco / Seattle,13139.79
+2025-10-28,San Francisco,Test,San Francisco / Seattle,12530.19
+2025-10-29,San Francisco,Test,San Francisco / Seattle,12612.02
+2025-10-30,San Francisco,Test,San Francisco / Seattle,13109.78
+2025-10-31,San Francisco,Test,San Francisco / Seattle,13030.26
+2025-11-01,San Francisco,Test,San Francisco / Seattle,14313.48
+2025-11-02,San Francisco,Test,San Francisco / Seattle,14345.0
+2025-11-03,San Francisco,Test,San Francisco / Seattle,13225.86
+2025-11-04,San Francisco,Test,San Francisco / Seattle,12455.41
+2025-11-05,San Francisco,Test,San Francisco / Seattle,12888.65
+2025-11-06,San Francisco,Test,San Francisco / Seattle,12567.23
+2025-11-07,San Francisco,Test,San Francisco / Seattle,12539.87
+2025-11-08,San Francisco,Test,San Francisco / Seattle,14605.84
+2025-11-09,San Francisco,Test,San Francisco / Seattle,14476.45
+2025-11-10,San Francisco,Test,San Francisco / Seattle,12892.19
+2025-11-11,San Francisco,Test,San Francisco / Seattle,13070.07
+2025-11-12,San Francisco,Test,San Francisco / Seattle,12537.94
+2025-11-13,San Francisco,Test,San Francisco / Seattle,12784.58
+2025-11-14,San Francisco,Test,San Francisco / Seattle,12370.55
+2025-11-15,San Francisco,Test,San Francisco / Seattle,14167.78
+2025-11-16,San Francisco,Test,San Francisco / Seattle,13970.13
+2025-11-17,San Francisco,Test,San Francisco / Seattle,12485.68
+2025-11-18,San Francisco,Test,San Francisco / Seattle,12670.26
+2025-11-19,San Francisco,Test,San Francisco / Seattle,12090.86
+2025-11-20,San Francisco,Test,San Francisco / Seattle,13241.69
+2025-11-21,San Francisco,Test,San Francisco / Seattle,11989.56
+2025-11-22,San Francisco,Test,San Francisco / Seattle,13454.18
+2025-11-23,San Francisco,Test,San Francisco / Seattle,14391.65
+2025-11-24,San Francisco,Test,San Francisco / Seattle,12674.28
+2025-11-25,San Francisco,Test,San Francisco / Seattle,12597.14
+2025-11-26,San Francisco,Test,San Francisco / Seattle,12589.38
+2025-11-27,San Francisco,Test,San Francisco / Seattle,15924.37
+2025-11-28,San Francisco,Test,San Francisco / Seattle,17362.29
+2025-11-29,San Francisco,Test,San Francisco / Seattle,13904.12
+2025-11-30,San Francisco,Test,San Francisco / Seattle,13596.23
+2025-12-01,San Francisco,Test,San Francisco / Seattle,12999.72
+2025-12-02,San Francisco,Test,San Francisco / Seattle,12854.12
+2025-12-03,San Francisco,Test,San Francisco / Seattle,12886.72
+2025-12-04,San Francisco,Test,San Francisco / Seattle,13393.06
+2025-12-05,San Francisco,Test,San Francisco / Seattle,13992.19
+2025-12-06,San Francisco,Test,San Francisco / Seattle,15467.64
+2025-12-07,San Francisco,Test,San Francisco / Seattle,15671.09
+2025-12-08,San Francisco,Test,San Francisco / Seattle,14536.44
+2025-12-09,San Francisco,Test,San Francisco / Seattle,14536.67
+2025-12-10,San Francisco,Test,San Francisco / Seattle,14236.35
+2025-12-11,San Francisco,Test,San Francisco / Seattle,14251.89
+2025-12-12,San Francisco,Test,San Francisco / Seattle,14535.03
+2025-12-13,San Francisco,Test,San Francisco / Seattle,15425.62
+2025-12-14,San Francisco,Test,San Francisco / Seattle,15445.25
+2025-12-15,San Francisco,Test,San Francisco / Seattle,14164.98
+2025-12-16,San Francisco,Test,San Francisco / Seattle,14371.83
+2025-12-17,San Francisco,Test,San Francisco / Seattle,14587.16
+2025-12-18,San Francisco,Test,San Francisco / Seattle,15059.28
+2025-12-19,San Francisco,Test,San Francisco / Seattle,14819.27
+2025-12-20,San Francisco,Test,San Francisco / Seattle,15980.05
+2025-12-21,San Francisco,Test,San Francisco / Seattle,16044.97
+2025-12-22,San Francisco,Test,San Francisco / Seattle,14100.86
+2025-12-23,San Francisco,Test,San Francisco / Seattle,14504.51
+2025-12-24,San Francisco,Test,San Francisco / Seattle,17407.22
+2025-12-25,San Francisco,Test,San Francisco / Seattle,16463.29
+2025-12-26,San Francisco,Test,San Francisco / Seattle,14215.56
+2025-12-27,San Francisco,Test,San Francisco / Seattle,16327.18
+2025-12-28,San Francisco,Test,San Francisco / Seattle,16746.26
+2025-12-29,San Francisco,Test,San Francisco / Seattle,14544.12
+2025-12-30,San Francisco,Test,San Francisco / Seattle,14763.5
+2025-12-31,San Francisco,Test,San Francisco / Seattle,16094.79
+2025-01-01,Seattle,Control,San Francisco / Seattle,9994.89
+2025-01-02,Seattle,Control,San Francisco / Seattle,9662.39
+2025-01-03,Seattle,Control,San Francisco / Seattle,9595.88
+2025-01-04,Seattle,Control,San Francisco / Seattle,11208.72
+2025-01-05,Seattle,Control,San Francisco / Seattle,10879.97
+2025-01-06,Seattle,Control,San Francisco / Seattle,9659.22
+2025-01-07,Seattle,Control,San Francisco / Seattle,9869.56
+2025-01-08,Seattle,Control,San Francisco / Seattle,10272.47
+2025-01-09,Seattle,Control,San Francisco / Seattle,10098.07
+2025-01-10,Seattle,Control,San Francisco / Seattle,10598.68
+2025-01-11,Seattle,Control,San Francisco / Seattle,11014.21
+2025-01-12,Seattle,Control,San Francisco / Seattle,11694.5
+2025-01-13,Seattle,Control,San Francisco / Seattle,9884.02
+2025-01-14,Seattle,Control,San Francisco / Seattle,10712.39
+2025-01-15,Seattle,Control,San Francisco / Seattle,9539.6
+2025-01-16,Seattle,Control,San Francisco / Seattle,9554.16
+2025-01-17,Seattle,Control,San Francisco / Seattle,9678.07
+2025-01-18,Seattle,Control,San Francisco / Seattle,10656.71
+2025-01-19,Seattle,Control,San Francisco / Seattle,11325.06
+2025-01-20,Seattle,Control,San Francisco / Seattle,9701.44
+2025-01-21,Seattle,Control,San Francisco / Seattle,10095.61
+2025-01-22,Seattle,Control,San Francisco / Seattle,10203.16
+2025-01-23,Seattle,Control,San Francisco / Seattle,10848.54
+2025-01-24,Seattle,Control,San Francisco / Seattle,10510.48
+2025-01-25,Seattle,Control,San Francisco / Seattle,11492.39
+2025-01-26,Seattle,Control,San Francisco / Seattle,11397.23
+2025-01-27,Seattle,Control,San Francisco / Seattle,10427.4
+2025-01-28,Seattle,Control,San Francisco / Seattle,9737.17
+2025-01-29,Seattle,Control,San Francisco / Seattle,11033.05
+2025-01-30,Seattle,Control,San Francisco / Seattle,10808.01
+2025-01-31,Seattle,Control,San Francisco / Seattle,10184.9
+2025-02-01,Seattle,Control,San Francisco / Seattle,11284.2
+2025-02-02,Seattle,Control,San Francisco / Seattle,12548.44
+2025-02-03,Seattle,Control,San Francisco / Seattle,10439.04
+2025-02-04,Seattle,Control,San Francisco / Seattle,11018.48
+2025-02-05,Seattle,Control,San Francisco / Seattle,9924.6
+2025-02-06,Seattle,Control,San Francisco / Seattle,10362.14
+2025-02-07,Seattle,Control,San Francisco / Seattle,10644.01
+2025-02-08,Seattle,Control,San Francisco / Seattle,12261.22
+2025-02-09,Seattle,Control,San Francisco / Seattle,12103.39
+2025-02-10,Seattle,Control,San Francisco / Seattle,11014.02
+2025-02-11,Seattle,Control,San Francisco / Seattle,10379.76
+2025-02-12,Seattle,Control,San Francisco / Seattle,10792.23
+2025-02-13,Seattle,Control,San Francisco / Seattle,10940.12
+2025-02-14,Seattle,Control,San Francisco / Seattle,12101.02
+2025-02-15,Seattle,Control,San Francisco / Seattle,12823.56
+2025-02-16,Seattle,Control,San Francisco / Seattle,12133.13
+2025-02-17,Seattle,Control,San Francisco / Seattle,10453.82
+2025-02-18,Seattle,Control,San Francisco / Seattle,11623.39
+2025-02-19,Seattle,Control,San Francisco / Seattle,11290.49
+2025-02-20,Seattle,Control,San Francisco / Seattle,10903.77
+2025-02-21,Seattle,Control,San Francisco / Seattle,11869.59
+2025-02-22,Seattle,Control,San Francisco / Seattle,12901.7
+2025-02-23,Seattle,Control,San Francisco / Seattle,13373.78
+2025-02-24,Seattle,Control,San Francisco / Seattle,11416.02
+2025-02-25,Seattle,Control,San Francisco / Seattle,12260.58
+2025-02-26,Seattle,Control,San Francisco / Seattle,12185.98
+2025-02-27,Seattle,Control,San Francisco / Seattle,11432.1
+2025-02-28,Seattle,Control,San Francisco / Seattle,11968.44
+2025-03-01,Seattle,Control,San Francisco / Seattle,13446.34
+2025-03-02,Seattle,Control,San Francisco / Seattle,13784.28
+2025-03-03,Seattle,Control,San Francisco / Seattle,11339.73
+2025-03-04,Seattle,Control,San Francisco / Seattle,12049.21
+2025-03-05,Seattle,Control,San Francisco / Seattle,12247.47
+2025-03-06,Seattle,Control,San Francisco / Seattle,11170.12
+2025-03-07,Seattle,Control,San Francisco / Seattle,11450.01
+2025-03-08,Seattle,Control,San Francisco / Seattle,12717.5
+2025-03-09,Seattle,Control,San Francisco / Seattle,13475.48
+2025-03-10,Seattle,Control,San Francisco / Seattle,12360.45
+2025-03-11,Seattle,Control,San Francisco / Seattle,12724.71
+2025-03-12,Seattle,Control,San Francisco / Seattle,12203.87
+2025-03-13,Seattle,Control,San Francisco / Seattle,12876.25
+2025-03-14,Seattle,Control,San Francisco / Seattle,11723.44
+2025-03-15,Seattle,Control,San Francisco / Seattle,13204.89
+2025-03-16,Seattle,Control,San Francisco / Seattle,13914.87
+2025-03-17,Seattle,Control,San Francisco / Seattle,12581.62
+2025-03-18,Seattle,Control,San Francisco / Seattle,12465.87
+2025-03-19,Seattle,Control,San Francisco / Seattle,11702.97
+2025-03-20,Seattle,Control,San Francisco / Seattle,12545.32
+2025-03-21,Seattle,Control,San Francisco / Seattle,12110.21
+2025-03-22,Seattle,Control,San Francisco / Seattle,14510.9
+2025-03-23,Seattle,Control,San Francisco / Seattle,14440.69
+2025-03-24,Seattle,Control,San Francisco / Seattle,12409.1
+2025-03-25,Seattle,Control,San Francisco / Seattle,12630.46
+2025-03-26,Seattle,Control,San Francisco / Seattle,12463.23
+2025-03-27,Seattle,Control,San Francisco / Seattle,12912.68
+2025-03-28,Seattle,Control,San Francisco / Seattle,13370.58
+2025-03-29,Seattle,Control,San Francisco / Seattle,14204.91
+2025-03-30,Seattle,Control,San Francisco / Seattle,14851.39
+2025-03-31,Seattle,Control,San Francisco / Seattle,12928.13
+2025-04-01,Seattle,Control,San Francisco / Seattle,12873.42
+2025-04-02,Seattle,Control,San Francisco / Seattle,13197.95
+2025-04-03,Seattle,Control,San Francisco / Seattle,12876.71
+2025-04-04,Seattle,Control,San Francisco / Seattle,13119.22
+2025-04-05,Seattle,Control,San Francisco / Seattle,14471.23
+2025-04-06,Seattle,Control,San Francisco / Seattle,15785.79
+2025-04-07,Seattle,Control,San Francisco / Seattle,13503.31
+2025-04-08,Seattle,Control,San Francisco / Seattle,13258.41
+2025-04-09,Seattle,Control,San Francisco / Seattle,13672.77
+2025-04-10,Seattle,Control,San Francisco / Seattle,13590.88
+2025-04-11,Seattle,Control,San Francisco / Seattle,13595.8
+2025-04-12,Seattle,Control,San Francisco / Seattle,15537.98
+2025-04-13,Seattle,Control,San Francisco / Seattle,15643.16
+2025-04-14,Seattle,Control,San Francisco / Seattle,13615.52
+2025-04-15,Seattle,Control,San Francisco / Seattle,13644.66
+2025-04-16,Seattle,Control,San Francisco / Seattle,13811.92
+2025-04-17,Seattle,Control,San Francisco / Seattle,13047.8
+2025-04-18,Seattle,Control,San Francisco / Seattle,13408.8
+2025-04-19,Seattle,Control,San Francisco / Seattle,16167.58
+2025-04-20,Seattle,Control,San Francisco / Seattle,16324.43
+2025-04-21,Seattle,Control,San Francisco / Seattle,14052.06
+2025-04-22,Seattle,Control,San Francisco / Seattle,14427.16
+2025-04-23,Seattle,Control,San Francisco / Seattle,14365.51
+2025-04-24,Seattle,Control,San Francisco / Seattle,15516.64
+2025-04-25,Seattle,Control,San Francisco / Seattle,14776.58
+2025-04-26,Seattle,Control,San Francisco / Seattle,15880.83
+2025-04-27,Seattle,Control,San Francisco / Seattle,15592.6
+2025-04-28,Seattle,Control,San Francisco / Seattle,13814.61
+2025-04-29,Seattle,Control,San Francisco / Seattle,14580.5
+2025-04-30,Seattle,Control,San Francisco / Seattle,14238.04
+2025-05-01,Seattle,Control,San Francisco / Seattle,14012.67
+2025-05-02,Seattle,Control,San Francisco / Seattle,14363.46
+2025-05-03,Seattle,Control,San Francisco / Seattle,15789.49
+2025-05-04,Seattle,Control,San Francisco / Seattle,16936.49
+2025-05-05,Seattle,Control,San Francisco / Seattle,15093.3
+2025-05-06,Seattle,Control,San Francisco / Seattle,14775.95
+2025-05-07,Seattle,Control,San Francisco / Seattle,15409.09
+2025-05-08,Seattle,Control,San Francisco / Seattle,14885.49
+2025-05-09,Seattle,Control,San Francisco / Seattle,14546.92
+2025-05-10,Seattle,Control,San Francisco / Seattle,17097.01
+2025-05-11,Seattle,Control,San Francisco / Seattle,16739.1
+2025-05-12,Seattle,Control,San Francisco / Seattle,14583.84
+2025-05-13,Seattle,Control,San Francisco / Seattle,14957.23
+2025-05-14,Seattle,Control,San Francisco / Seattle,14717.16
+2025-05-15,Seattle,Control,San Francisco / Seattle,14547.73
+2025-05-16,Seattle,Control,San Francisco / Seattle,15504.16
+2025-05-17,Seattle,Control,San Francisco / Seattle,17489.69
+2025-05-18,Seattle,Control,San Francisco / Seattle,16198.12
+2025-05-19,Seattle,Control,San Francisco / Seattle,15453.73
+2025-05-20,Seattle,Control,San Francisco / Seattle,14998.65
+2025-05-21,Seattle,Control,San Francisco / Seattle,15093.79
+2025-05-22,Seattle,Control,San Francisco / Seattle,15080.77
+2025-05-23,Seattle,Control,San Francisco / Seattle,15000.57
+2025-05-24,Seattle,Control,San Francisco / Seattle,16953.36
+2025-05-25,Seattle,Control,San Francisco / Seattle,16628.7
+2025-05-26,Seattle,Control,San Francisco / Seattle,16735.72
+2025-05-27,Seattle,Control,San Francisco / Seattle,15433.22
+2025-05-28,Seattle,Control,San Francisco / Seattle,15382.85
+2025-05-29,Seattle,Control,San Francisco / Seattle,15139.83
+2025-05-30,Seattle,Control,San Francisco / Seattle,15295.88
+2025-05-31,Seattle,Control,San Francisco / Seattle,17411.8
+2025-06-01,Seattle,Control,San Francisco / Seattle,17332.36
+2025-06-02,Seattle,Control,San Francisco / Seattle,15202.62
+2025-06-03,Seattle,Control,San Francisco / Seattle,15654.32
+2025-06-04,Seattle,Control,San Francisco / Seattle,15935.38
+2025-06-05,Seattle,Control,San Francisco / Seattle,14986.59
+2025-06-06,Seattle,Control,San Francisco / Seattle,15890.5
+2025-06-07,Seattle,Control,San Francisco / Seattle,16986.2
+2025-06-08,Seattle,Control,San Francisco / Seattle,17496.86
+2025-06-09,Seattle,Control,San Francisco / Seattle,15419.96
+2025-06-10,Seattle,Control,San Francisco / Seattle,15019.23
+2025-06-11,Seattle,Control,San Francisco / Seattle,15105.36
+2025-06-12,Seattle,Control,San Francisco / Seattle,15790.07
+2025-06-13,Seattle,Control,San Francisco / Seattle,15888.44
+2025-06-14,Seattle,Control,San Francisco / Seattle,16995.82
+2025-06-15,Seattle,Control,San Francisco / Seattle,17625.23
+2025-06-16,Seattle,Control,San Francisco / Seattle,15156.7
+2025-06-17,Seattle,Control,San Francisco / Seattle,15805.66
+2025-06-18,Seattle,Control,San Francisco / Seattle,15357.72
+2025-06-19,Seattle,Control,San Francisco / Seattle,15590.69
+2025-06-20,Seattle,Control,San Francisco / Seattle,15878.94
+2025-06-21,Seattle,Control,San Francisco / Seattle,17083.63
+2025-06-22,Seattle,Control,San Francisco / Seattle,17281.04
+2025-06-23,Seattle,Control,San Francisco / Seattle,16283.72
+2025-06-24,Seattle,Control,San Francisco / Seattle,15656.04
+2025-06-25,Seattle,Control,San Francisco / Seattle,16225.92
+2025-06-26,Seattle,Control,San Francisco / Seattle,15443.88
+2025-06-27,Seattle,Control,San Francisco / Seattle,16111.06
+2025-06-28,Seattle,Control,San Francisco / Seattle,18038.41
+2025-06-29,Seattle,Control,San Francisco / Seattle,16475.04
+2025-06-30,Seattle,Control,San Francisco / Seattle,15586.11
+2025-07-01,Seattle,Control,San Francisco / Seattle,16136.15
+2025-07-02,Seattle,Control,San Francisco / Seattle,15823.82
+2025-07-03,Seattle,Control,San Francisco / Seattle,16052.48
+2025-07-04,Seattle,Control,San Francisco / Seattle,17100.7
+2025-07-05,Seattle,Control,San Francisco / Seattle,17494.48
+2025-07-06,Seattle,Control,San Francisco / Seattle,17394.41
+2025-07-07,Seattle,Control,San Francisco / Seattle,16359.91
+2025-07-08,Seattle,Control,San Francisco / Seattle,15989.97
+2025-07-09,Seattle,Control,San Francisco / Seattle,16017.95
+2025-07-10,Seattle,Control,San Francisco / Seattle,15712.15
+2025-07-11,Seattle,Control,San Francisco / Seattle,15675.16
+2025-07-12,Seattle,Control,San Francisco / Seattle,17249.79
+2025-07-13,Seattle,Control,San Francisco / Seattle,17572.51
+2025-07-14,Seattle,Control,San Francisco / Seattle,15677.57
+2025-07-15,Seattle,Control,San Francisco / Seattle,15952.42
+2025-07-16,Seattle,Control,San Francisco / Seattle,16656.55
+2025-07-17,Seattle,Control,San Francisco / Seattle,16164.05
+2025-07-18,Seattle,Control,San Francisco / Seattle,15673.73
+2025-07-19,Seattle,Control,San Francisco / Seattle,17832.52
+2025-07-20,Seattle,Control,San Francisco / Seattle,17176.04
+2025-07-21,Seattle,Control,San Francisco / Seattle,14950.61
+2025-07-22,Seattle,Control,San Francisco / Seattle,15348.57
+2025-07-23,Seattle,Control,San Francisco / Seattle,14988.81
+2025-07-24,Seattle,Control,San Francisco / Seattle,15581.21
+2025-07-25,Seattle,Control,San Francisco / Seattle,15713.25
+2025-07-26,Seattle,Control,San Francisco / Seattle,17919.92
+2025-07-27,Seattle,Control,San Francisco / Seattle,17362.97
+2025-07-28,Seattle,Control,San Francisco / Seattle,15566.82
+2025-07-29,Seattle,Control,San Francisco / Seattle,15967.89
+2025-07-30,Seattle,Control,San Francisco / Seattle,14732.76
+2025-07-31,Seattle,Control,San Francisco / Seattle,15691.97
+2025-08-01,Seattle,Control,San Francisco / Seattle,15886.01
+2025-08-02,Seattle,Control,San Francisco / Seattle,16525.62
+2025-08-03,Seattle,Control,San Francisco / Seattle,17553.4
+2025-08-04,Seattle,Control,San Francisco / Seattle,15649.59
+2025-08-05,Seattle,Control,San Francisco / Seattle,15325.84
+2025-08-06,Seattle,Control,San Francisco / Seattle,15722.32
+2025-08-07,Seattle,Control,San Francisco / Seattle,16354.21
+2025-08-08,Seattle,Control,San Francisco / Seattle,15494.91
+2025-08-09,Seattle,Control,San Francisco / Seattle,17057.18
+2025-08-10,Seattle,Control,San Francisco / Seattle,16749.39
+2025-08-11,Seattle,Control,San Francisco / Seattle,15007.97
+2025-08-12,Seattle,Control,San Francisco / Seattle,15654.35
+2025-08-13,Seattle,Control,San Francisco / Seattle,14953.63
+2025-08-14,Seattle,Control,San Francisco / Seattle,15298.09
+2025-08-15,Seattle,Control,San Francisco / Seattle,15051.37
+2025-08-16,Seattle,Control,San Francisco / Seattle,16966.57
+2025-08-17,Seattle,Control,San Francisco / Seattle,16880.57
+2025-08-18,Seattle,Control,San Francisco / Seattle,15573.84
+2025-08-19,Seattle,Control,San Francisco / Seattle,14926.15
+2025-08-20,Seattle,Control,San Francisco / Seattle,14993.15
+2025-08-21,Seattle,Control,San Francisco / Seattle,14680.18
+2025-08-22,Seattle,Control,San Francisco / Seattle,14864.18
+2025-08-23,Seattle,Control,San Francisco / Seattle,16722.69
+2025-08-24,Seattle,Control,San Francisco / Seattle,16844.09
+2025-08-25,Seattle,Control,San Francisco / Seattle,14581.63
+2025-08-26,Seattle,Control,San Francisco / Seattle,15267.23
+2025-08-27,Seattle,Control,San Francisco / Seattle,15430.23
+2025-08-28,Seattle,Control,San Francisco / Seattle,15021.64
+2025-08-29,Seattle,Control,San Francisco / Seattle,15575.0
+2025-08-30,Seattle,Control,San Francisco / Seattle,16042.52
+2025-08-31,Seattle,Control,San Francisco / Seattle,15821.66
+2025-09-01,Seattle,Control,San Francisco / Seattle,15215.28
+2025-09-02,Seattle,Control,San Francisco / Seattle,15292.2
+2025-09-03,Seattle,Control,San Francisco / Seattle,14922.32
+2025-09-04,Seattle,Control,San Francisco / Seattle,14604.93
+2025-09-05,Seattle,Control,San Francisco / Seattle,14705.54
+2025-09-06,Seattle,Control,San Francisco / Seattle,15669.57
+2025-09-07,Seattle,Control,San Francisco / Seattle,17064.1
+2025-09-08,Seattle,Control,San Francisco / Seattle,14543.37
+2025-09-09,Seattle,Control,San Francisco / Seattle,14501.17
+2025-09-10,Seattle,Control,San Francisco / Seattle,14713.32
+2025-09-11,Seattle,Control,San Francisco / Seattle,14580.9
+2025-09-12,Seattle,Control,San Francisco / Seattle,14443.42
+2025-09-13,Seattle,Control,San Francisco / Seattle,15562.96
+2025-09-14,Seattle,Control,San Francisco / Seattle,16032.93
+2025-09-15,Seattle,Control,San Francisco / Seattle,15002.28
+2025-09-16,Seattle,Control,San Francisco / Seattle,14752.7
+2025-09-17,Seattle,Control,San Francisco / Seattle,14816.83
+2025-09-18,Seattle,Control,San Francisco / Seattle,13940.06
+2025-09-19,Seattle,Control,San Francisco / Seattle,13713.68
+2025-09-20,Seattle,Control,San Francisco / Seattle,15584.17
+2025-09-21,Seattle,Control,San Francisco / Seattle,15621.74
+2025-09-22,Seattle,Control,San Francisco / Seattle,14442.12
+2025-09-23,Seattle,Control,San Francisco / Seattle,13292.48
+2025-09-24,Seattle,Control,San Francisco / Seattle,14546.35
+2025-09-25,Seattle,Control,San Francisco / Seattle,13836.45
+2025-09-26,Seattle,Control,San Francisco / Seattle,13694.1
+2025-09-27,Seattle,Control,San Francisco / Seattle,14985.29
+2025-09-28,Seattle,Control,San Francisco / Seattle,14693.56
+2025-09-29,Seattle,Control,San Francisco / Seattle,14090.25
+2025-09-30,Seattle,Control,San Francisco / Seattle,13755.91
+2025-10-01,Seattle,Control,San Francisco / Seattle,13176.33
+2025-10-02,Seattle,Control,San Francisco / Seattle,13140.17
+2025-10-03,Seattle,Control,San Francisco / Seattle,13489.92
+2025-10-04,Seattle,Control,San Francisco / Seattle,15818.05
+2025-10-05,Seattle,Control,San Francisco / Seattle,15013.0
+2025-10-06,Seattle,Control,San Francisco / Seattle,12922.17
+2025-10-07,Seattle,Control,San Francisco / Seattle,13391.92
+2025-10-08,Seattle,Control,San Francisco / Seattle,13348.14
+2025-10-09,Seattle,Control,San Francisco / Seattle,12345.72
+2025-10-10,Seattle,Control,San Francisco / Seattle,13370.25
+2025-10-11,Seattle,Control,San Francisco / Seattle,14827.34
+2025-10-12,Seattle,Control,San Francisco / Seattle,15166.21
+2025-10-13,Seattle,Control,San Francisco / Seattle,14035.61
+2025-10-14,Seattle,Control,San Francisco / Seattle,13715.24
+2025-10-15,Seattle,Control,San Francisco / Seattle,13125.94
+2025-10-16,Seattle,Control,San Francisco / Seattle,12760.09
+2025-10-17,Seattle,Control,San Francisco / Seattle,14201.58
+2025-10-18,Seattle,Control,San Francisco / Seattle,14725.79
+2025-10-19,Seattle,Control,San Francisco / Seattle,14677.89
+2025-10-20,Seattle,Control,San Francisco / Seattle,13073.25
+2025-10-21,Seattle,Control,San Francisco / Seattle,13133.08
+2025-10-22,Seattle,Control,San Francisco / Seattle,12967.43
+2025-10-23,Seattle,Control,San Francisco / Seattle,12767.43
+2025-10-24,Seattle,Control,San Francisco / Seattle,12750.28
+2025-10-25,Seattle,Control,San Francisco / Seattle,14488.47
+2025-10-26,Seattle,Control,San Francisco / Seattle,14257.17
+2025-10-27,Seattle,Control,San Francisco / Seattle,12602.8
+2025-10-28,Seattle,Control,San Francisco / Seattle,12904.36
+2025-10-29,Seattle,Control,San Francisco / Seattle,12734.1
+2025-10-30,Seattle,Control,San Francisco / Seattle,13412.46
+2025-10-31,Seattle,Control,San Francisco / Seattle,11725.72
+2025-11-01,Seattle,Control,San Francisco / Seattle,14758.44
+2025-11-02,Seattle,Control,San Francisco / Seattle,14796.5
+2025-11-03,Seattle,Control,San Francisco / Seattle,11885.44
+2025-11-04,Seattle,Control,San Francisco / Seattle,12554.97
+2025-11-05,Seattle,Control,San Francisco / Seattle,12521.23
+2025-11-06,Seattle,Control,San Francisco / Seattle,12085.1
+2025-11-07,Seattle,Control,San Francisco / Seattle,12315.82
+2025-11-08,Seattle,Control,San Francisco / Seattle,13722.1
+2025-11-09,Seattle,Control,San Francisco / Seattle,14847.19
+2025-11-10,Seattle,Control,San Francisco / Seattle,12941.06
+2025-11-11,Seattle,Control,San Francisco / Seattle,13056.5
+2025-11-12,Seattle,Control,San Francisco / Seattle,12818.21
+2025-11-13,Seattle,Control,San Francisco / Seattle,12060.18
+2025-11-14,Seattle,Control,San Francisco / Seattle,12284.85
+2025-11-15,Seattle,Control,San Francisco / Seattle,14233.86
+2025-11-16,Seattle,Control,San Francisco / Seattle,13533.34
+2025-11-17,Seattle,Control,San Francisco / Seattle,12732.08
+2025-11-18,Seattle,Control,San Francisco / Seattle,12336.06
+2025-11-19,Seattle,Control,San Francisco / Seattle,12268.22
+2025-11-20,Seattle,Control,San Francisco / Seattle,12689.12
+2025-11-21,Seattle,Control,San Francisco / Seattle,12569.67
+2025-11-22,Seattle,Control,San Francisco / Seattle,13795.47
+2025-11-23,Seattle,Control,San Francisco / Seattle,14392.13
+2025-11-24,Seattle,Control,San Francisco / Seattle,11925.19
+2025-11-25,Seattle,Control,San Francisco / Seattle,12593.86
+2025-11-26,Seattle,Control,San Francisco / Seattle,12575.28
+2025-11-27,Seattle,Control,San Francisco / Seattle,15805.45
+2025-11-28,Seattle,Control,San Francisco / Seattle,17851.64
+2025-11-29,Seattle,Control,San Francisco / Seattle,13373.35
+2025-11-30,Seattle,Control,San Francisco / Seattle,14236.71
+2025-12-01,Seattle,Control,San Francisco / Seattle,12227.14
+2025-12-02,Seattle,Control,San Francisco / Seattle,12086.71
+2025-12-03,Seattle,Control,San Francisco / Seattle,12710.81
+2025-12-04,Seattle,Control,San Francisco / Seattle,12005.59
+2025-12-05,Seattle,Control,San Francisco / Seattle,11720.77
+2025-12-06,Seattle,Control,San Francisco / Seattle,13219.05
+2025-12-07,Seattle,Control,San Francisco / Seattle,14082.38
+2025-12-08,Seattle,Control,San Francisco / Seattle,11766.79
+2025-12-09,Seattle,Control,San Francisco / Seattle,12980.6
+2025-12-10,Seattle,Control,San Francisco / Seattle,11446.36
+2025-12-11,Seattle,Control,San Francisco / Seattle,12958.89
+2025-12-12,Seattle,Control,San Francisco / Seattle,12366.62
+2025-12-13,Seattle,Control,San Francisco / Seattle,13806.17
+2025-12-14,Seattle,Control,San Francisco / Seattle,13630.27
+2025-12-15,Seattle,Control,San Francisco / Seattle,12452.01
+2025-12-16,Seattle,Control,San Francisco / Seattle,12282.15
+2025-12-17,Seattle,Control,San Francisco / Seattle,12744.12
+2025-12-18,Seattle,Control,San Francisco / Seattle,12354.83
+2025-12-19,Seattle,Control,San Francisco / Seattle,12376.33
+2025-12-20,Seattle,Control,San Francisco / Seattle,13738.58
+2025-12-21,Seattle,Control,San Francisco / Seattle,13869.8
+2025-12-22,Seattle,Control,San Francisco / Seattle,12465.0
+2025-12-23,Seattle,Control,San Francisco / Seattle,11667.84
+2025-12-24,Seattle,Control,San Francisco / Seattle,14823.41
+2025-12-25,Seattle,Control,San Francisco / Seattle,14471.51
+2025-12-26,Seattle,Control,San Francisco / Seattle,12454.8
+2025-12-27,Seattle,Control,San Francisco / Seattle,13885.85
+2025-12-28,Seattle,Control,San Francisco / Seattle,13980.54
+2025-12-29,Seattle,Control,San Francisco / Seattle,12566.66
+2025-12-30,Seattle,Control,San Francisco / Seattle,12226.91
+2025-12-31,Seattle,Control,San Francisco / Seattle,13347.41
+2025-01-01,Austin,Test,Austin / Denver,8087.85
+2025-01-02,Austin,Test,Austin / Denver,7215.87
+2025-01-03,Austin,Test,Austin / Denver,7715.76
+2025-01-04,Austin,Test,Austin / Denver,8227.12
+2025-01-05,Austin,Test,Austin / Denver,9198.94
+2025-01-06,Austin,Test,Austin / Denver,7785.44
+2025-01-07,Austin,Test,Austin / Denver,7726.5
+2025-01-08,Austin,Test,Austin / Denver,7998.25
+2025-01-09,Austin,Test,Austin / Denver,8255.2
+2025-01-10,Austin,Test,Austin / Denver,8045.86
+2025-01-11,Austin,Test,Austin / Denver,8300.61
+2025-01-12,Austin,Test,Austin / Denver,8516.71
+2025-01-13,Austin,Test,Austin / Denver,7531.06
+2025-01-14,Austin,Test,Austin / Denver,7779.6
+2025-01-15,Austin,Test,Austin / Denver,7972.92
+2025-01-16,Austin,Test,Austin / Denver,7559.53
+2025-01-17,Austin,Test,Austin / Denver,7901.23
+2025-01-18,Austin,Test,Austin / Denver,8829.33
+2025-01-19,Austin,Test,Austin / Denver,8903.06
+2025-01-20,Austin,Test,Austin / Denver,7413.64
+2025-01-21,Austin,Test,Austin / Denver,7607.23
+2025-01-22,Austin,Test,Austin / Denver,7482.17
+2025-01-23,Austin,Test,Austin / Denver,7639.1
+2025-01-24,Austin,Test,Austin / Denver,8375.32
+2025-01-25,Austin,Test,Austin / Denver,8935.63
+2025-01-26,Austin,Test,Austin / Denver,10216.11
+2025-01-27,Austin,Test,Austin / Denver,8259.77
+2025-01-28,Austin,Test,Austin / Denver,8179.6
+2025-01-29,Austin,Test,Austin / Denver,7842.75
+2025-01-30,Austin,Test,Austin / Denver,8417.0
+2025-01-31,Austin,Test,Austin / Denver,7999.58
+2025-02-01,Austin,Test,Austin / Denver,9508.37
+2025-02-02,Austin,Test,Austin / Denver,10391.74
+2025-02-03,Austin,Test,Austin / Denver,8257.57
+2025-02-04,Austin,Test,Austin / Denver,8724.33
+2025-02-05,Austin,Test,Austin / Denver,8107.28
+2025-02-06,Austin,Test,Austin / Denver,8372.87
+2025-02-07,Austin,Test,Austin / Denver,9037.01
+2025-02-08,Austin,Test,Austin / Denver,9465.3
+2025-02-09,Austin,Test,Austin / Denver,10351.99
+2025-02-10,Austin,Test,Austin / Denver,8763.62
+2025-02-11,Austin,Test,Austin / Denver,8352.68
+2025-02-12,Austin,Test,Austin / Denver,8804.89
+2025-02-13,Austin,Test,Austin / Denver,8958.29
+2025-02-14,Austin,Test,Austin / Denver,9630.23
+2025-02-15,Austin,Test,Austin / Denver,9373.05
+2025-02-16,Austin,Test,Austin / Denver,9703.49
+2025-02-17,Austin,Test,Austin / Denver,8672.04
+2025-02-18,Austin,Test,Austin / Denver,8768.61
+2025-02-19,Austin,Test,Austin / Denver,9048.18
+2025-02-20,Austin,Test,Austin / Denver,8929.73
+2025-02-21,Austin,Test,Austin / Denver,8437.03
+2025-02-22,Austin,Test,Austin / Denver,10309.61
+2025-02-23,Austin,Test,Austin / Denver,10427.65
+2025-02-24,Austin,Test,Austin / Denver,9212.54
+2025-02-25,Austin,Test,Austin / Denver,9432.8
+2025-02-26,Austin,Test,Austin / Denver,9384.55
+2025-02-27,Austin,Test,Austin / Denver,9291.76
+2025-02-28,Austin,Test,Austin / Denver,9145.09
+2025-03-01,Austin,Test,Austin / Denver,9862.12
+2025-03-02,Austin,Test,Austin / Denver,10632.83
+2025-03-03,Austin,Test,Austin / Denver,9359.35
+2025-03-04,Austin,Test,Austin / Denver,9421.09
+2025-03-05,Austin,Test,Austin / Denver,8918.72
+2025-03-06,Austin,Test,Austin / Denver,9026.92
+2025-03-07,Austin,Test,Austin / Denver,9813.76
+2025-03-08,Austin,Test,Austin / Denver,10706.31
+2025-03-09,Austin,Test,Austin / Denver,10998.82
+2025-03-10,Austin,Test,Austin / Denver,9575.46
+2025-03-11,Austin,Test,Austin / Denver,9616.33
+2025-03-12,Austin,Test,Austin / Denver,9974.78
+2025-03-13,Austin,Test,Austin / Denver,9506.33
+2025-03-14,Austin,Test,Austin / Denver,9761.23
+2025-03-15,Austin,Test,Austin / Denver,10841.5
+2025-03-16,Austin,Test,Austin / Denver,10892.0
+2025-03-17,Austin,Test,Austin / Denver,9741.68
+2025-03-18,Austin,Test,Austin / Denver,9968.51
+2025-03-19,Austin,Test,Austin / Denver,9764.09
+2025-03-20,Austin,Test,Austin / Denver,10412.09
+2025-03-21,Austin,Test,Austin / Denver,9700.39
+2025-03-22,Austin,Test,Austin / Denver,11224.02
+2025-03-23,Austin,Test,Austin / Denver,11176.44
+2025-03-24,Austin,Test,Austin / Denver,10642.68
+2025-03-25,Austin,Test,Austin / Denver,10245.9
+2025-03-26,Austin,Test,Austin / Denver,10579.08
+2025-03-27,Austin,Test,Austin / Denver,9738.76
+2025-03-28,Austin,Test,Austin / Denver,10392.88
+2025-03-29,Austin,Test,Austin / Denver,11886.43
+2025-03-30,Austin,Test,Austin / Denver,11644.42
+2025-03-31,Austin,Test,Austin / Denver,10794.0
+2025-04-01,Austin,Test,Austin / Denver,10280.4
+2025-04-02,Austin,Test,Austin / Denver,10994.98
+2025-04-03,Austin,Test,Austin / Denver,11346.46
+2025-04-04,Austin,Test,Austin / Denver,10454.85
+2025-04-05,Austin,Test,Austin / Denver,11700.78
+2025-04-06,Austin,Test,Austin / Denver,12405.1
+2025-04-07,Austin,Test,Austin / Denver,11253.82
+2025-04-08,Austin,Test,Austin / Denver,10557.34
+2025-04-09,Austin,Test,Austin / Denver,10632.47
+2025-04-10,Austin,Test,Austin / Denver,10719.92
+2025-04-11,Austin,Test,Austin / Denver,10386.79
+2025-04-12,Austin,Test,Austin / Denver,11809.42
+2025-04-13,Austin,Test,Austin / Denver,11817.88
+2025-04-14,Austin,Test,Austin / Denver,10703.75
+2025-04-15,Austin,Test,Austin / Denver,10998.25
+2025-04-16,Austin,Test,Austin / Denver,11130.03
+2025-04-17,Austin,Test,Austin / Denver,11628.13
+2025-04-18,Austin,Test,Austin / Denver,10773.18
+2025-04-19,Austin,Test,Austin / Denver,12738.98
+2025-04-20,Austin,Test,Austin / Denver,12356.16
+2025-04-21,Austin,Test,Austin / Denver,11215.03
+2025-04-22,Austin,Test,Austin / Denver,11504.52
+2025-04-23,Austin,Test,Austin / Denver,10911.06
+2025-04-24,Austin,Test,Austin / Denver,11473.21
+2025-04-25,Austin,Test,Austin / Denver,11432.66
+2025-04-26,Austin,Test,Austin / Denver,12816.46
+2025-04-27,Austin,Test,Austin / Denver,12779.66
+2025-04-28,Austin,Test,Austin / Denver,12336.81
+2025-04-29,Austin,Test,Austin / Denver,11287.88
+2025-04-30,Austin,Test,Austin / Denver,11358.52
+2025-05-01,Austin,Test,Austin / Denver,11359.16
+2025-05-02,Austin,Test,Austin / Denver,11415.35
+2025-05-03,Austin,Test,Austin / Denver,12653.8
+2025-05-04,Austin,Test,Austin / Denver,13324.76
+2025-05-05,Austin,Test,Austin / Denver,12202.09
+2025-05-06,Austin,Test,Austin / Denver,11536.05
+2025-05-07,Austin,Test,Austin / Denver,11474.96
+2025-05-08,Austin,Test,Austin / Denver,11961.33
+2025-05-09,Austin,Test,Austin / Denver,11632.67
+2025-05-10,Austin,Test,Austin / Denver,13311.64
+2025-05-11,Austin,Test,Austin / Denver,13189.85
+2025-05-12,Austin,Test,Austin / Denver,11381.58
+2025-05-13,Austin,Test,Austin / Denver,12481.52
+2025-05-14,Austin,Test,Austin / Denver,12595.78
+2025-05-15,Austin,Test,Austin / Denver,11779.6
+2025-05-16,Austin,Test,Austin / Denver,11884.76
+2025-05-17,Austin,Test,Austin / Denver,13381.39
+2025-05-18,Austin,Test,Austin / Denver,13423.8
+2025-05-19,Austin,Test,Austin / Denver,12327.12
+2025-05-20,Austin,Test,Austin / Denver,12824.6
+2025-05-21,Austin,Test,Austin / Denver,12082.98
+2025-05-22,Austin,Test,Austin / Denver,11888.88
+2025-05-23,Austin,Test,Austin / Denver,11708.37
+2025-05-24,Austin,Test,Austin / Denver,13192.64
+2025-05-25,Austin,Test,Austin / Denver,13458.67
+2025-05-26,Austin,Test,Austin / Denver,13834.62
+2025-05-27,Austin,Test,Austin / Denver,12096.09
+2025-05-28,Austin,Test,Austin / Denver,12375.77
+2025-05-29,Austin,Test,Austin / Denver,12311.34
+2025-05-30,Austin,Test,Austin / Denver,12752.11
+2025-05-31,Austin,Test,Austin / Denver,14474.14
+2025-06-01,Austin,Test,Austin / Denver,13421.89
+2025-06-02,Austin,Test,Austin / Denver,12218.81
+2025-06-03,Austin,Test,Austin / Denver,12772.43
+2025-06-04,Austin,Test,Austin / Denver,12661.92
+2025-06-05,Austin,Test,Austin / Denver,13085.33
+2025-06-06,Austin,Test,Austin / Denver,12658.5
+2025-06-07,Austin,Test,Austin / Denver,13577.95
+2025-06-08,Austin,Test,Austin / Denver,13924.43
+2025-06-09,Austin,Test,Austin / Denver,12884.16
+2025-06-10,Austin,Test,Austin / Denver,12796.12
+2025-06-11,Austin,Test,Austin / Denver,12698.74
+2025-06-12,Austin,Test,Austin / Denver,12906.2
+2025-06-13,Austin,Test,Austin / Denver,12953.2
+2025-06-14,Austin,Test,Austin / Denver,14273.19
+2025-06-15,Austin,Test,Austin / Denver,14026.39
+2025-06-16,Austin,Test,Austin / Denver,12515.16
+2025-06-17,Austin,Test,Austin / Denver,12633.72
+2025-06-18,Austin,Test,Austin / Denver,13012.78
+2025-06-19,Austin,Test,Austin / Denver,12312.11
+2025-06-20,Austin,Test,Austin / Denver,12734.02
+2025-06-21,Austin,Test,Austin / Denver,13708.66
+2025-06-22,Austin,Test,Austin / Denver,13862.15
+2025-06-23,Austin,Test,Austin / Denver,13069.72
+2025-06-24,Austin,Test,Austin / Denver,12693.72
+2025-06-25,Austin,Test,Austin / Denver,12647.07
+2025-06-26,Austin,Test,Austin / Denver,12158.26
+2025-06-27,Austin,Test,Austin / Denver,12898.2
+2025-06-28,Austin,Test,Austin / Denver,14100.15
+2025-06-29,Austin,Test,Austin / Denver,14632.99
+2025-06-30,Austin,Test,Austin / Denver,12534.17
+2025-07-01,Austin,Test,Austin / Denver,12719.06
+2025-07-02,Austin,Test,Austin / Denver,12729.51
+2025-07-03,Austin,Test,Austin / Denver,13193.63
+2025-07-04,Austin,Test,Austin / Denver,13746.88
+2025-07-05,Austin,Test,Austin / Denver,13971.03
+2025-07-06,Austin,Test,Austin / Denver,14083.7
+2025-07-07,Austin,Test,Austin / Denver,12698.25
+2025-07-08,Austin,Test,Austin / Denver,12473.11
+2025-07-09,Austin,Test,Austin / Denver,12693.15
+2025-07-10,Austin,Test,Austin / Denver,12996.29
+2025-07-11,Austin,Test,Austin / Denver,12255.98
+2025-07-12,Austin,Test,Austin / Denver,13890.99
+2025-07-13,Austin,Test,Austin / Denver,13593.04
+2025-07-14,Austin,Test,Austin / Denver,13014.43
+2025-07-15,Austin,Test,Austin / Denver,12055.59
+2025-07-16,Austin,Test,Austin / Denver,12385.09
+2025-07-17,Austin,Test,Austin / Denver,12704.2
+2025-07-18,Austin,Test,Austin / Denver,13111.05
+2025-07-19,Austin,Test,Austin / Denver,13765.51
+2025-07-20,Austin,Test,Austin / Denver,13584.09
+2025-07-21,Austin,Test,Austin / Denver,13191.19
+2025-07-22,Austin,Test,Austin / Denver,12014.84
+2025-07-23,Austin,Test,Austin / Denver,11740.42
+2025-07-24,Austin,Test,Austin / Denver,12651.86
+2025-07-25,Austin,Test,Austin / Denver,12309.49
+2025-07-26,Austin,Test,Austin / Denver,13349.64
+2025-07-27,Austin,Test,Austin / Denver,13941.38
+2025-07-28,Austin,Test,Austin / Denver,12529.7
+2025-07-29,Austin,Test,Austin / Denver,12232.37
+2025-07-30,Austin,Test,Austin / Denver,11966.66
+2025-07-31,Austin,Test,Austin / Denver,12704.64
+2025-08-01,Austin,Test,Austin / Denver,12610.9
+2025-08-02,Austin,Test,Austin / Denver,13567.23
+2025-08-03,Austin,Test,Austin / Denver,14231.44
+2025-08-04,Austin,Test,Austin / Denver,11958.32
+2025-08-05,Austin,Test,Austin / Denver,11781.23
+2025-08-06,Austin,Test,Austin / Denver,12054.89
+2025-08-07,Austin,Test,Austin / Denver,12262.59
+2025-08-08,Austin,Test,Austin / Denver,12344.8
+2025-08-09,Austin,Test,Austin / Denver,13390.88
+2025-08-10,Austin,Test,Austin / Denver,13578.83
+2025-08-11,Austin,Test,Austin / Denver,11762.49
+2025-08-12,Austin,Test,Austin / Denver,12685.39
+2025-08-13,Austin,Test,Austin / Denver,12130.5
+2025-08-14,Austin,Test,Austin / Denver,12529.12
+2025-08-15,Austin,Test,Austin / Denver,12236.5
+2025-08-16,Austin,Test,Austin / Denver,13489.54
+2025-08-17,Austin,Test,Austin / Denver,13506.9
+2025-08-18,Austin,Test,Austin / Denver,12206.66
+2025-08-19,Austin,Test,Austin / Denver,12252.08
+2025-08-20,Austin,Test,Austin / Denver,12469.19
+2025-08-21,Austin,Test,Austin / Denver,12049.33
+2025-08-22,Austin,Test,Austin / Denver,12204.97
+2025-08-23,Austin,Test,Austin / Denver,13136.41
+2025-08-24,Austin,Test,Austin / Denver,13647.58
+2025-08-25,Austin,Test,Austin / Denver,11647.26
+2025-08-26,Austin,Test,Austin / Denver,12489.54
+2025-08-27,Austin,Test,Austin / Denver,11820.13
+2025-08-28,Austin,Test,Austin / Denver,11308.14
+2025-08-29,Austin,Test,Austin / Denver,11828.26
+2025-08-30,Austin,Test,Austin / Denver,12754.36
+2025-08-31,Austin,Test,Austin / Denver,13261.04
+2025-09-01,Austin,Test,Austin / Denver,12427.3
+2025-09-02,Austin,Test,Austin / Denver,11523.26
+2025-09-03,Austin,Test,Austin / Denver,10991.62
+2025-09-04,Austin,Test,Austin / Denver,11468.02
+2025-09-05,Austin,Test,Austin / Denver,10751.19
+2025-09-06,Austin,Test,Austin / Denver,12253.25
+2025-09-07,Austin,Test,Austin / Denver,13046.69
+2025-09-08,Austin,Test,Austin / Denver,11793.38
+2025-09-09,Austin,Test,Austin / Denver,11639.94
+2025-09-10,Austin,Test,Austin / Denver,11125.17
+2025-09-11,Austin,Test,Austin / Denver,11419.4
+2025-09-12,Austin,Test,Austin / Denver,11407.24
+2025-09-13,Austin,Test,Austin / Denver,12210.39
+2025-09-14,Austin,Test,Austin / Denver,13114.26
+2025-09-15,Austin,Test,Austin / Denver,11632.35
+2025-09-16,Austin,Test,Austin / Denver,11220.09
+2025-09-17,Austin,Test,Austin / Denver,11278.95
+2025-09-18,Austin,Test,Austin / Denver,11314.57
+2025-09-19,Austin,Test,Austin / Denver,10499.11
+2025-09-20,Austin,Test,Austin / Denver,12334.27
+2025-09-21,Austin,Test,Austin / Denver,12154.17
+2025-09-22,Austin,Test,Austin / Denver,10779.39
+2025-09-23,Austin,Test,Austin / Denver,11003.69
+2025-09-24,Austin,Test,Austin / Denver,11703.42
+2025-09-25,Austin,Test,Austin / Denver,11270.72
+2025-09-26,Austin,Test,Austin / Denver,10818.77
+2025-09-27,Austin,Test,Austin / Denver,12426.41
+2025-09-28,Austin,Test,Austin / Denver,12688.18
+2025-09-29,Austin,Test,Austin / Denver,11259.51
+2025-09-30,Austin,Test,Austin / Denver,10929.34
+2025-10-01,Austin,Test,Austin / Denver,10654.73
+2025-10-02,Austin,Test,Austin / Denver,11098.34
+2025-10-03,Austin,Test,Austin / Denver,10964.61
+2025-10-04,Austin,Test,Austin / Denver,12348.27
+2025-10-05,Austin,Test,Austin / Denver,12230.48
+2025-10-06,Austin,Test,Austin / Denver,11113.88
+2025-10-07,Austin,Test,Austin / Denver,10532.74
+2025-10-08,Austin,Test,Austin / Denver,11154.87
+2025-10-09,Austin,Test,Austin / Denver,10736.84
+2025-10-10,Austin,Test,Austin / Denver,11368.12
+2025-10-11,Austin,Test,Austin / Denver,11609.86
+2025-10-12,Austin,Test,Austin / Denver,12433.17
+2025-10-13,Austin,Test,Austin / Denver,10634.59
+2025-10-14,Austin,Test,Austin / Denver,10312.29
+2025-10-15,Austin,Test,Austin / Denver,10346.14
+2025-10-16,Austin,Test,Austin / Denver,10378.84
+2025-10-17,Austin,Test,Austin / Denver,10615.14
+2025-10-18,Austin,Test,Austin / Denver,11860.67
+2025-10-19,Austin,Test,Austin / Denver,11453.16
+2025-10-20,Austin,Test,Austin / Denver,10386.99
+2025-10-21,Austin,Test,Austin / Denver,11122.17
+2025-10-22,Austin,Test,Austin / Denver,10954.18
+2025-10-23,Austin,Test,Austin / Denver,10479.73
+2025-10-24,Austin,Test,Austin / Denver,10318.12
+2025-10-25,Austin,Test,Austin / Denver,11559.97
+2025-10-26,Austin,Test,Austin / Denver,11711.16
+2025-10-27,Austin,Test,Austin / Denver,9882.27
+2025-10-28,Austin,Test,Austin / Denver,10129.35
+2025-10-29,Austin,Test,Austin / Denver,9614.97
+2025-10-30,Austin,Test,Austin / Denver,10318.62
+2025-10-31,Austin,Test,Austin / Denver,10385.71
+2025-11-01,Austin,Test,Austin / Denver,11205.76
+2025-11-02,Austin,Test,Austin / Denver,11906.85
+2025-11-03,Austin,Test,Austin / Denver,9673.42
+2025-11-04,Austin,Test,Austin / Denver,9571.8
+2025-11-05,Austin,Test,Austin / Denver,10145.2
+2025-11-06,Austin,Test,Austin / Denver,10415.87
+2025-11-07,Austin,Test,Austin / Denver,10621.93
+2025-11-08,Austin,Test,Austin / Denver,11090.56
+2025-11-09,Austin,Test,Austin / Denver,11612.76
+2025-11-10,Austin,Test,Austin / Denver,9971.25
+2025-11-11,Austin,Test,Austin / Denver,9909.28
+2025-11-12,Austin,Test,Austin / Denver,10264.42
+2025-11-13,Austin,Test,Austin / Denver,10169.35
+2025-11-14,Austin,Test,Austin / Denver,9375.69
+2025-11-15,Austin,Test,Austin / Denver,11666.08
+2025-11-16,Austin,Test,Austin / Denver,11619.68
+2025-11-17,Austin,Test,Austin / Denver,9670.55
+2025-11-18,Austin,Test,Austin / Denver,10016.39
+2025-11-19,Austin,Test,Austin / Denver,10039.63
+2025-11-20,Austin,Test,Austin / Denver,9947.32
+2025-11-21,Austin,Test,Austin / Denver,9653.37
+2025-11-22,Austin,Test,Austin / Denver,10836.32
+2025-11-23,Austin,Test,Austin / Denver,11053.38
+2025-11-24,Austin,Test,Austin / Denver,10229.24
+2025-11-25,Austin,Test,Austin / Denver,10001.05
+2025-11-26,Austin,Test,Austin / Denver,9673.62
+2025-11-27,Austin,Test,Austin / Denver,12916.51
+2025-11-28,Austin,Test,Austin / Denver,13068.06
+2025-11-29,Austin,Test,Austin / Denver,11421.31
+2025-11-30,Austin,Test,Austin / Denver,10405.08
+2025-12-01,Austin,Test,Austin / Denver,9945.99
+2025-12-02,Austin,Test,Austin / Denver,9975.4
+2025-12-03,Austin,Test,Austin / Denver,10209.14
+2025-12-04,Austin,Test,Austin / Denver,11364.13
+2025-12-05,Austin,Test,Austin / Denver,11090.29
+2025-12-06,Austin,Test,Austin / Denver,12906.97
+2025-12-07,Austin,Test,Austin / Denver,13066.56
+2025-12-08,Austin,Test,Austin / Denver,12014.24
+2025-12-09,Austin,Test,Austin / Denver,11874.03
+2025-12-10,Austin,Test,Austin / Denver,11398.56
+2025-12-11,Austin,Test,Austin / Denver,12197.34
+2025-12-12,Austin,Test,Austin / Denver,11677.46
+2025-12-13,Austin,Test,Austin / Denver,12542.68
+2025-12-14,Austin,Test,Austin / Denver,12940.45
+2025-12-15,Austin,Test,Austin / Denver,12383.95
+2025-12-16,Austin,Test,Austin / Denver,12160.24
+2025-12-17,Austin,Test,Austin / Denver,11745.21
+2025-12-18,Austin,Test,Austin / Denver,11750.17
+2025-12-19,Austin,Test,Austin / Denver,11765.59
+2025-12-20,Austin,Test,Austin / Denver,13846.38
+2025-12-21,Austin,Test,Austin / Denver,13260.14
+2025-12-22,Austin,Test,Austin / Denver,12049.51
+2025-12-23,Austin,Test,Austin / Denver,12267.73
+2025-12-24,Austin,Test,Austin / Denver,14374.43
+2025-12-25,Austin,Test,Austin / Denver,13259.5
+2025-12-26,Austin,Test,Austin / Denver,11866.34
+2025-12-27,Austin,Test,Austin / Denver,13155.5
+2025-12-28,Austin,Test,Austin / Denver,13178.61
+2025-12-29,Austin,Test,Austin / Denver,12222.97
+2025-12-30,Austin,Test,Austin / Denver,11998.73
+2025-12-31,Austin,Test,Austin / Denver,13199.81
+2025-01-01,Denver,Control,Austin / Denver,7991.05
+2025-01-02,Denver,Control,Austin / Denver,7585.82
+2025-01-03,Denver,Control,Austin / Denver,6873.5
+2025-01-04,Denver,Control,Austin / Denver,9143.73
+2025-01-05,Denver,Control,Austin / Denver,8960.01
+2025-01-06,Denver,Control,Austin / Denver,7969.33
+2025-01-07,Denver,Control,Austin / Denver,6623.2
+2025-01-08,Denver,Control,Austin / Denver,8385.24
+2025-01-09,Denver,Control,Austin / Denver,7623.43
+2025-01-10,Denver,Control,Austin / Denver,8078.69
+2025-01-11,Denver,Control,Austin / Denver,8580.95
+2025-01-12,Denver,Control,Austin / Denver,9179.03
+2025-01-13,Denver,Control,Austin / Denver,7381.05
+2025-01-14,Denver,Control,Austin / Denver,7552.15
+2025-01-15,Denver,Control,Austin / Denver,8461.65
+2025-01-16,Denver,Control,Austin / Denver,7746.8
+2025-01-17,Denver,Control,Austin / Denver,7911.97
+2025-01-18,Denver,Control,Austin / Denver,9398.24
+2025-01-19,Denver,Control,Austin / Denver,9290.58
+2025-01-20,Denver,Control,Austin / Denver,7958.62
+2025-01-21,Denver,Control,Austin / Denver,8058.1
+2025-01-22,Denver,Control,Austin / Denver,8796.46
+2025-01-23,Denver,Control,Austin / Denver,7960.49
+2025-01-24,Denver,Control,Austin / Denver,8076.93
+2025-01-25,Denver,Control,Austin / Denver,9635.65
+2025-01-26,Denver,Control,Austin / Denver,9681.71
+2025-01-27,Denver,Control,Austin / Denver,8502.57
+2025-01-28,Denver,Control,Austin / Denver,8338.46
+2025-01-29,Denver,Control,Austin / Denver,7743.12
+2025-01-30,Denver,Control,Austin / Denver,8743.59
+2025-01-31,Denver,Control,Austin / Denver,7799.83
+2025-02-01,Denver,Control,Austin / Denver,9571.59
+2025-02-02,Denver,Control,Austin / Denver,9231.72
+2025-02-03,Denver,Control,Austin / Denver,8268.74
+2025-02-04,Denver,Control,Austin / Denver,8437.15
+2025-02-05,Denver,Control,Austin / Denver,8465.87
+2025-02-06,Denver,Control,Austin / Denver,8532.79
+2025-02-07,Denver,Control,Austin / Denver,8982.03
+2025-02-08,Denver,Control,Austin / Denver,9843.48
+2025-02-09,Denver,Control,Austin / Denver,9632.18
+2025-02-10,Denver,Control,Austin / Denver,8853.34
+2025-02-11,Denver,Control,Austin / Denver,8965.86
+2025-02-12,Denver,Control,Austin / Denver,8153.88
+2025-02-13,Denver,Control,Austin / Denver,8826.99
+2025-02-14,Denver,Control,Austin / Denver,9658.01
+2025-02-15,Denver,Control,Austin / Denver,9818.48
+2025-02-16,Denver,Control,Austin / Denver,10439.49
+2025-02-17,Denver,Control,Austin / Denver,8706.15
+2025-02-18,Denver,Control,Austin / Denver,8838.61
+2025-02-19,Denver,Control,Austin / Denver,8770.37
+2025-02-20,Denver,Control,Austin / Denver,8872.98
+2025-02-21,Denver,Control,Austin / Denver,8520.7
+2025-02-22,Denver,Control,Austin / Denver,9672.52
+2025-02-23,Denver,Control,Austin / Denver,10772.03
+2025-02-24,Denver,Control,Austin / Denver,8720.18
+2025-02-25,Denver,Control,Austin / Denver,8707.54
+2025-02-26,Denver,Control,Austin / Denver,8338.99
+2025-02-27,Denver,Control,Austin / Denver,8907.41
+2025-02-28,Denver,Control,Austin / Denver,8706.57
+2025-03-01,Denver,Control,Austin / Denver,11018.16
+2025-03-02,Denver,Control,Austin / Denver,10835.9
+2025-03-03,Denver,Control,Austin / Denver,9045.8
+2025-03-04,Denver,Control,Austin / Denver,10114.39
+2025-03-05,Denver,Control,Austin / Denver,9709.2
+2025-03-06,Denver,Control,Austin / Denver,9291.6
+2025-03-07,Denver,Control,Austin / Denver,8570.36
+2025-03-08,Denver,Control,Austin / Denver,11521.99
+2025-03-09,Denver,Control,Austin / Denver,10273.94
+2025-03-10,Denver,Control,Austin / Denver,8989.66
+2025-03-11,Denver,Control,Austin / Denver,9963.81
+2025-03-12,Denver,Control,Austin / Denver,10500.3
+2025-03-13,Denver,Control,Austin / Denver,10171.44
+2025-03-14,Denver,Control,Austin / Denver,9924.95
+2025-03-15,Denver,Control,Austin / Denver,11211.46
+2025-03-16,Denver,Control,Austin / Denver,11342.77
+2025-03-17,Denver,Control,Austin / Denver,10115.52
+2025-03-18,Denver,Control,Austin / Denver,9989.18
+2025-03-19,Denver,Control,Austin / Denver,9968.13
+2025-03-20,Denver,Control,Austin / Denver,9950.67
+2025-03-21,Denver,Control,Austin / Denver,9749.61
+2025-03-22,Denver,Control,Austin / Denver,11191.19
+2025-03-23,Denver,Control,Austin / Denver,10737.81
+2025-03-24,Denver,Control,Austin / Denver,10101.82
+2025-03-25,Denver,Control,Austin / Denver,9831.1
+2025-03-26,Denver,Control,Austin / Denver,9831.67
+2025-03-27,Denver,Control,Austin / Denver,10321.67
+2025-03-28,Denver,Control,Austin / Denver,10786.62
+2025-03-29,Denver,Control,Austin / Denver,11896.47
+2025-03-30,Denver,Control,Austin / Denver,11065.94
+2025-03-31,Denver,Control,Austin / Denver,10074.72
+2025-04-01,Denver,Control,Austin / Denver,10790.72
+2025-04-02,Denver,Control,Austin / Denver,10157.84
+2025-04-03,Denver,Control,Austin / Denver,10463.22
+2025-04-04,Denver,Control,Austin / Denver,10774.36
+2025-04-05,Denver,Control,Austin / Denver,11517.79
+2025-04-06,Denver,Control,Austin / Denver,11933.3
+2025-04-07,Denver,Control,Austin / Denver,10234.06
+2025-04-08,Denver,Control,Austin / Denver,10529.86
+2025-04-09,Denver,Control,Austin / Denver,10891.46
+2025-04-10,Denver,Control,Austin / Denver,10261.0
+2025-04-11,Denver,Control,Austin / Denver,11011.52
+2025-04-12,Denver,Control,Austin / Denver,12124.08
+2025-04-13,Denver,Control,Austin / Denver,12362.7
+2025-04-14,Denver,Control,Austin / Denver,11050.85
+2025-04-15,Denver,Control,Austin / Denver,11487.84
+2025-04-16,Denver,Control,Austin / Denver,11091.88
+2025-04-17,Denver,Control,Austin / Denver,10935.17
+2025-04-18,Denver,Control,Austin / Denver,11165.4
+2025-04-19,Denver,Control,Austin / Denver,12584.62
+2025-04-20,Denver,Control,Austin / Denver,12448.15
+2025-04-21,Denver,Control,Austin / Denver,11246.55
+2025-04-22,Denver,Control,Austin / Denver,11022.63
+2025-04-23,Denver,Control,Austin / Denver,11072.0
+2025-04-24,Denver,Control,Austin / Denver,10848.46
+2025-04-25,Denver,Control,Austin / Denver,11986.76
+2025-04-26,Denver,Control,Austin / Denver,12208.75
+2025-04-27,Denver,Control,Austin / Denver,12435.94
+2025-04-28,Denver,Control,Austin / Denver,11226.01
+2025-04-29,Denver,Control,Austin / Denver,11824.32
+2025-04-30,Denver,Control,Austin / Denver,11441.13
+2025-05-01,Denver,Control,Austin / Denver,12013.97
+2025-05-02,Denver,Control,Austin / Denver,11374.05
+2025-05-03,Denver,Control,Austin / Denver,12974.54
+2025-05-04,Denver,Control,Austin / Denver,12616.23
+2025-05-05,Denver,Control,Austin / Denver,12455.72
+2025-05-06,Denver,Control,Austin / Denver,11320.15
+2025-05-07,Denver,Control,Austin / Denver,11874.73
+2025-05-08,Denver,Control,Austin / Denver,12018.16
+2025-05-09,Denver,Control,Austin / Denver,11970.77
+2025-05-10,Denver,Control,Austin / Denver,13025.26
+2025-05-11,Denver,Control,Austin / Denver,13073.39
+2025-05-12,Denver,Control,Austin / Denver,11927.43
+2025-05-13,Denver,Control,Austin / Denver,11888.44
+2025-05-14,Denver,Control,Austin / Denver,12304.58
+2025-05-15,Denver,Control,Austin / Denver,12767.76
+2025-05-16,Denver,Control,Austin / Denver,11825.33
+2025-05-17,Denver,Control,Austin / Denver,12801.91
+2025-05-18,Denver,Control,Austin / Denver,13275.84
+2025-05-19,Denver,Control,Austin / Denver,12999.53
+2025-05-20,Denver,Control,Austin / Denver,11839.74
+2025-05-21,Denver,Control,Austin / Denver,12718.6
+2025-05-22,Denver,Control,Austin / Denver,12755.48
+2025-05-23,Denver,Control,Austin / Denver,11997.38
+2025-05-24,Denver,Control,Austin / Denver,13647.61
+2025-05-25,Denver,Control,Austin / Denver,14040.2
+2025-05-26,Denver,Control,Austin / Denver,13073.83
+2025-05-27,Denver,Control,Austin / Denver,12206.0
+2025-05-28,Denver,Control,Austin / Denver,12093.85
+2025-05-29,Denver,Control,Austin / Denver,11961.92
+2025-05-30,Denver,Control,Austin / Denver,12108.93
+2025-05-31,Denver,Control,Austin / Denver,13161.33
+2025-06-01,Denver,Control,Austin / Denver,13619.62
+2025-06-02,Denver,Control,Austin / Denver,12120.62
+2025-06-03,Denver,Control,Austin / Denver,12488.79
+2025-06-04,Denver,Control,Austin / Denver,11878.7
+2025-06-05,Denver,Control,Austin / Denver,12554.79
+2025-06-06,Denver,Control,Austin / Denver,12745.86
+2025-06-07,Denver,Control,Austin / Denver,13005.89
+2025-06-08,Denver,Control,Austin / Denver,13848.62
+2025-06-09,Denver,Control,Austin / Denver,12925.8
+2025-06-10,Denver,Control,Austin / Denver,12085.57
+2025-06-11,Denver,Control,Austin / Denver,13106.6
+2025-06-12,Denver,Control,Austin / Denver,12679.52
+2025-06-13,Denver,Control,Austin / Denver,12297.19
+2025-06-14,Denver,Control,Austin / Denver,13769.92
+2025-06-15,Denver,Control,Austin / Denver,13994.75
+2025-06-16,Denver,Control,Austin / Denver,12600.25
+2025-06-17,Denver,Control,Austin / Denver,12770.94
+2025-06-18,Denver,Control,Austin / Denver,12268.26
+2025-06-19,Denver,Control,Austin / Denver,12657.31
+2025-06-20,Denver,Control,Austin / Denver,12110.18
+2025-06-21,Denver,Control,Austin / Denver,13807.4
+2025-06-22,Denver,Control,Austin / Denver,13535.72
+2025-06-23,Denver,Control,Austin / Denver,12364.82
+2025-06-24,Denver,Control,Austin / Denver,13059.47
+2025-06-25,Denver,Control,Austin / Denver,13012.78
+2025-06-26,Denver,Control,Austin / Denver,12847.41
+2025-06-27,Denver,Control,Austin / Denver,12254.7
+2025-06-28,Denver,Control,Austin / Denver,13763.49
+2025-06-29,Denver,Control,Austin / Denver,14300.44
+2025-06-30,Denver,Control,Austin / Denver,12691.5
+2025-07-01,Denver,Control,Austin / Denver,13454.12
+2025-07-02,Denver,Control,Austin / Denver,12779.89
+2025-07-03,Denver,Control,Austin / Denver,12708.74
+2025-07-04,Denver,Control,Austin / Denver,13672.05
+2025-07-05,Denver,Control,Austin / Denver,13920.11
+2025-07-06,Denver,Control,Austin / Denver,13817.58
+2025-07-07,Denver,Control,Austin / Denver,12880.77
+2025-07-08,Denver,Control,Austin / Denver,12964.21
+2025-07-09,Denver,Control,Austin / Denver,12350.13
+2025-07-10,Denver,Control,Austin / Denver,12154.59
+2025-07-11,Denver,Control,Austin / Denver,11972.59
+2025-07-12,Denver,Control,Austin / Denver,14022.24
+2025-07-13,Denver,Control,Austin / Denver,13451.9
+2025-07-14,Denver,Control,Austin / Denver,11842.66
+2025-07-15,Denver,Control,Austin / Denver,12724.71
+2025-07-16,Denver,Control,Austin / Denver,13453.26
+2025-07-17,Denver,Control,Austin / Denver,12570.05
+2025-07-18,Denver,Control,Austin / Denver,12856.59
+2025-07-19,Denver,Control,Austin / Denver,13817.16
+2025-07-20,Denver,Control,Austin / Denver,13743.8
+2025-07-21,Denver,Control,Austin / Denver,12854.46
+2025-07-22,Denver,Control,Austin / Denver,12420.05
+2025-07-23,Denver,Control,Austin / Denver,12603.59
+2025-07-24,Denver,Control,Austin / Denver,12610.45
+2025-07-25,Denver,Control,Austin / Denver,12251.38
+2025-07-26,Denver,Control,Austin / Denver,14054.29
+2025-07-27,Denver,Control,Austin / Denver,13632.22
+2025-07-28,Denver,Control,Austin / Denver,12179.85
+2025-07-29,Denver,Control,Austin / Denver,12617.58
+2025-07-30,Denver,Control,Austin / Denver,12100.3
+2025-07-31,Denver,Control,Austin / Denver,12409.14
+2025-08-01,Denver,Control,Austin / Denver,12380.14
+2025-08-02,Denver,Control,Austin / Denver,13982.01
+2025-08-03,Denver,Control,Austin / Denver,13751.26
+2025-08-04,Denver,Control,Austin / Denver,12324.09
+2025-08-05,Denver,Control,Austin / Denver,12601.39
+2025-08-06,Denver,Control,Austin / Denver,12783.64
+2025-08-07,Denver,Control,Austin / Denver,12473.78
+2025-08-08,Denver,Control,Austin / Denver,12263.25
+2025-08-09,Denver,Control,Austin / Denver,13016.17
+2025-08-10,Denver,Control,Austin / Denver,13082.82
+2025-08-11,Denver,Control,Austin / Denver,12093.7
+2025-08-12,Denver,Control,Austin / Denver,11966.74
+2025-08-13,Denver,Control,Austin / Denver,12093.81
+2025-08-14,Denver,Control,Austin / Denver,12157.9
+2025-08-15,Denver,Control,Austin / Denver,12301.94
+2025-08-16,Denver,Control,Austin / Denver,13305.0
+2025-08-17,Denver,Control,Austin / Denver,13477.76
+2025-08-18,Denver,Control,Austin / Denver,12072.53
+2025-08-19,Denver,Control,Austin / Denver,11335.71
+2025-08-20,Denver,Control,Austin / Denver,11675.22
+2025-08-21,Denver,Control,Austin / Denver,11930.11
+2025-08-22,Denver,Control,Austin / Denver,11533.43
+2025-08-23,Denver,Control,Austin / Denver,13377.79
+2025-08-24,Denver,Control,Austin / Denver,13679.3
+2025-08-25,Denver,Control,Austin / Denver,12310.57
+2025-08-26,Denver,Control,Austin / Denver,11784.51
+2025-08-27,Denver,Control,Austin / Denver,12355.93
+2025-08-28,Denver,Control,Austin / Denver,11860.95
+2025-08-29,Denver,Control,Austin / Denver,11665.45
+2025-08-30,Denver,Control,Austin / Denver,12778.03
+2025-08-31,Denver,Control,Austin / Denver,12860.95
+2025-09-01,Denver,Control,Austin / Denver,12519.85
+2025-09-02,Denver,Control,Austin / Denver,11739.07
+2025-09-03,Denver,Control,Austin / Denver,11709.16
+2025-09-04,Denver,Control,Austin / Denver,11627.4
+2025-09-05,Denver,Control,Austin / Denver,11752.47
+2025-09-06,Denver,Control,Austin / Denver,13224.34
+2025-09-07,Denver,Control,Austin / Denver,13112.89
+2025-09-08,Denver,Control,Austin / Denver,10998.63
+2025-09-09,Denver,Control,Austin / Denver,10597.16
+2025-09-10,Denver,Control,Austin / Denver,11790.63
+2025-09-11,Denver,Control,Austin / Denver,10957.69
+2025-09-12,Denver,Control,Austin / Denver,11329.83
+2025-09-13,Denver,Control,Austin / Denver,12206.28
+2025-09-14,Denver,Control,Austin / Denver,11957.38
+2025-09-15,Denver,Control,Austin / Denver,11514.78
+2025-09-16,Denver,Control,Austin / Denver,11563.13
+2025-09-17,Denver,Control,Austin / Denver,11067.77
+2025-09-18,Denver,Control,Austin / Denver,10334.77
+2025-09-19,Denver,Control,Austin / Denver,11022.53
+2025-09-20,Denver,Control,Austin / Denver,12557.92
+2025-09-21,Denver,Control,Austin / Denver,11875.24
+2025-09-22,Denver,Control,Austin / Denver,11194.13
+2025-09-23,Denver,Control,Austin / Denver,11096.71
+2025-09-24,Denver,Control,Austin / Denver,11276.98
+2025-09-25,Denver,Control,Austin / Denver,11088.28
+2025-09-26,Denver,Control,Austin / Denver,10678.11
+2025-09-27,Denver,Control,Austin / Denver,12644.8
+2025-09-28,Denver,Control,Austin / Denver,12142.92
+2025-09-29,Denver,Control,Austin / Denver,10926.33
+2025-09-30,Denver,Control,Austin / Denver,10581.82
+2025-10-01,Denver,Control,Austin / Denver,10726.01
+2025-10-02,Denver,Control,Austin / Denver,10544.28
+2025-10-03,Denver,Control,Austin / Denver,10766.36
+2025-10-04,Denver,Control,Austin / Denver,12634.05
+2025-10-05,Denver,Control,Austin / Denver,11528.0
+2025-10-06,Denver,Control,Austin / Denver,10181.79
+2025-10-07,Denver,Control,Austin / Denver,11234.98
+2025-10-08,Denver,Control,Austin / Denver,10620.52
+2025-10-09,Denver,Control,Austin / Denver,10433.51
+2025-10-10,Denver,Control,Austin / Denver,11005.74
+2025-10-11,Denver,Control,Austin / Denver,11639.11
+2025-10-12,Denver,Control,Austin / Denver,12464.69
+2025-10-13,Denver,Control,Austin / Denver,10802.59
+2025-10-14,Denver,Control,Austin / Denver,10369.52
+2025-10-15,Denver,Control,Austin / Denver,11270.56
+2025-10-16,Denver,Control,Austin / Denver,10278.96
+2025-10-17,Denver,Control,Austin / Denver,10726.42
+2025-10-18,Denver,Control,Austin / Denver,11782.43
+2025-10-19,Denver,Control,Austin / Denver,12109.56
+2025-10-20,Denver,Control,Austin / Denver,10942.05
+2025-10-21,Denver,Control,Austin / Denver,10383.58
+2025-10-22,Denver,Control,Austin / Denver,10085.84
+2025-10-23,Denver,Control,Austin / Denver,10488.01
+2025-10-24,Denver,Control,Austin / Denver,10067.62
+2025-10-25,Denver,Control,Austin / Denver,12222.64
+2025-10-26,Denver,Control,Austin / Denver,11544.22
+2025-10-27,Denver,Control,Austin / Denver,10112.39
+2025-10-28,Denver,Control,Austin / Denver,10284.07
+2025-10-29,Denver,Control,Austin / Denver,9727.48
+2025-10-30,Denver,Control,Austin / Denver,9838.83
+2025-10-31,Denver,Control,Austin / Denver,10579.33
+2025-11-01,Denver,Control,Austin / Denver,11144.96
+2025-11-02,Denver,Control,Austin / Denver,10989.53
+2025-11-03,Denver,Control,Austin / Denver,10290.27
+2025-11-04,Denver,Control,Austin / Denver,10499.33
+2025-11-05,Denver,Control,Austin / Denver,10318.28
+2025-11-06,Denver,Control,Austin / Denver,10398.0
+2025-11-07,Denver,Control,Austin / Denver,9767.68
+2025-11-08,Denver,Control,Austin / Denver,10753.53
+2025-11-09,Denver,Control,Austin / Denver,11760.69
+2025-11-10,Denver,Control,Austin / Denver,9871.79
+2025-11-11,Denver,Control,Austin / Denver,9881.91
+2025-11-12,Denver,Control,Austin / Denver,10420.0
+2025-11-13,Denver,Control,Austin / Denver,10135.72
+2025-11-14,Denver,Control,Austin / Denver,10086.98
+2025-11-15,Denver,Control,Austin / Denver,11907.04
+2025-11-16,Denver,Control,Austin / Denver,10911.42
+2025-11-17,Denver,Control,Austin / Denver,10214.25
+2025-11-18,Denver,Control,Austin / Denver,9897.81
+2025-11-19,Denver,Control,Austin / Denver,9960.72
+2025-11-20,Denver,Control,Austin / Denver,10391.05
+2025-11-21,Denver,Control,Austin / Denver,10023.72
+2025-11-22,Denver,Control,Austin / Denver,11259.79
+2025-11-23,Denver,Control,Austin / Denver,11437.7
+2025-11-24,Denver,Control,Austin / Denver,9691.05
+2025-11-25,Denver,Control,Austin / Denver,9517.07
+2025-11-26,Denver,Control,Austin / Denver,9437.65
+2025-11-27,Denver,Control,Austin / Denver,11958.19
+2025-11-28,Denver,Control,Austin / Denver,14784.72
+2025-11-29,Denver,Control,Austin / Denver,10633.11
+2025-11-30,Denver,Control,Austin / Denver,10936.54
+2025-12-01,Denver,Control,Austin / Denver,9677.39
+2025-12-02,Denver,Control,Austin / Denver,9877.73
+2025-12-03,Denver,Control,Austin / Denver,10052.07
+2025-12-04,Denver,Control,Austin / Denver,10064.72
+2025-12-05,Denver,Control,Austin / Denver,9557.05
+2025-12-06,Denver,Control,Austin / Denver,10935.77
+2025-12-07,Denver,Control,Austin / Denver,11091.88
+2025-12-08,Denver,Control,Austin / Denver,9670.23
+2025-12-09,Denver,Control,Austin / Denver,10319.72
+2025-12-10,Denver,Control,Austin / Denver,9929.44
+2025-12-11,Denver,Control,Austin / Denver,10015.85
+2025-12-12,Denver,Control,Austin / Denver,9992.28
+2025-12-13,Denver,Control,Austin / Denver,11408.2
+2025-12-14,Denver,Control,Austin / Denver,11063.65
+2025-12-15,Denver,Control,Austin / Denver,9314.79
+2025-12-16,Denver,Control,Austin / Denver,9912.56
+2025-12-17,Denver,Control,Austin / Denver,9549.27
+2025-12-18,Denver,Control,Austin / Denver,9597.39
+2025-12-19,Denver,Control,Austin / Denver,9993.39
+2025-12-20,Denver,Control,Austin / Denver,11462.92
+2025-12-21,Denver,Control,Austin / Denver,11043.91
+2025-12-22,Denver,Control,Austin / Denver,9917.09
+2025-12-23,Denver,Control,Austin / Denver,10412.9
+2025-12-24,Denver,Control,Austin / Denver,12285.11
+2025-12-25,Denver,Control,Austin / Denver,12170.75
+2025-12-26,Denver,Control,Austin / Denver,10042.99
+2025-12-27,Denver,Control,Austin / Denver,10474.29
+2025-12-28,Denver,Control,Austin / Denver,11365.3
+2025-12-29,Denver,Control,Austin / Denver,10011.71
+2025-12-30,Denver,Control,Austin / Denver,10341.97
+2025-12-31,Denver,Control,Austin / Denver,11089.0
+2025-01-01,Miami,Test,Miami / Phoenix,8821.12
+2025-01-02,Miami,Test,Miami / Phoenix,7898.75
+2025-01-03,Miami,Test,Miami / Phoenix,8300.43
+2025-01-04,Miami,Test,Miami / Phoenix,9438.17
+2025-01-05,Miami,Test,Miami / Phoenix,9557.92
+2025-01-06,Miami,Test,Miami / Phoenix,8654.94
+2025-01-07,Miami,Test,Miami / Phoenix,9084.24
+2025-01-08,Miami,Test,Miami / Phoenix,8618.66
+2025-01-09,Miami,Test,Miami / Phoenix,8033.88
+2025-01-10,Miami,Test,Miami / Phoenix,8677.51
+2025-01-11,Miami,Test,Miami / Phoenix,10349.13
+2025-01-12,Miami,Test,Miami / Phoenix,9684.15
+2025-01-13,Miami,Test,Miami / Phoenix,8521.99
+2025-01-14,Miami,Test,Miami / Phoenix,8601.15
+2025-01-15,Miami,Test,Miami / Phoenix,8320.55
+2025-01-16,Miami,Test,Miami / Phoenix,8888.99
+2025-01-17,Miami,Test,Miami / Phoenix,8621.09
+2025-01-18,Miami,Test,Miami / Phoenix,10216.46
+2025-01-19,Miami,Test,Miami / Phoenix,9745.35
+2025-01-20,Miami,Test,Miami / Phoenix,8577.49
+2025-01-21,Miami,Test,Miami / Phoenix,9044.91
+2025-01-22,Miami,Test,Miami / Phoenix,8655.96
+2025-01-23,Miami,Test,Miami / Phoenix,9481.67
+2025-01-24,Miami,Test,Miami / Phoenix,8701.89
+2025-01-25,Miami,Test,Miami / Phoenix,10332.99
+2025-01-26,Miami,Test,Miami / Phoenix,10631.39
+2025-01-27,Miami,Test,Miami / Phoenix,8402.94
+2025-01-28,Miami,Test,Miami / Phoenix,8303.24
+2025-01-29,Miami,Test,Miami / Phoenix,8423.54
+2025-01-30,Miami,Test,Miami / Phoenix,9514.51
+2025-01-31,Miami,Test,Miami / Phoenix,8856.96
+2025-02-01,Miami,Test,Miami / Phoenix,11436.2
+2025-02-02,Miami,Test,Miami / Phoenix,10282.57
+2025-02-03,Miami,Test,Miami / Phoenix,9235.48
+2025-02-04,Miami,Test,Miami / Phoenix,9785.19
+2025-02-05,Miami,Test,Miami / Phoenix,9995.8
+2025-02-06,Miami,Test,Miami / Phoenix,10051.6
+2025-02-07,Miami,Test,Miami / Phoenix,9762.58
+2025-02-08,Miami,Test,Miami / Phoenix,11093.16
+2025-02-09,Miami,Test,Miami / Phoenix,10965.21
+2025-02-10,Miami,Test,Miami / Phoenix,9707.27
+2025-02-11,Miami,Test,Miami / Phoenix,9238.9
+2025-02-12,Miami,Test,Miami / Phoenix,9174.69
+2025-02-13,Miami,Test,Miami / Phoenix,9521.96
+2025-02-14,Miami,Test,Miami / Phoenix,10336.59
+2025-02-15,Miami,Test,Miami / Phoenix,10792.42
+2025-02-16,Miami,Test,Miami / Phoenix,11268.02
+2025-02-17,Miami,Test,Miami / Phoenix,10040.5
+2025-02-18,Miami,Test,Miami / Phoenix,9750.52
+2025-02-19,Miami,Test,Miami / Phoenix,10318.16
+2025-02-20,Miami,Test,Miami / Phoenix,9362.94
+2025-02-21,Miami,Test,Miami / Phoenix,9763.6
+2025-02-22,Miami,Test,Miami / Phoenix,10970.5
+2025-02-23,Miami,Test,Miami / Phoenix,10574.61
+2025-02-24,Miami,Test,Miami / Phoenix,9928.76
+2025-02-25,Miami,Test,Miami / Phoenix,9955.46
+2025-02-26,Miami,Test,Miami / Phoenix,10618.65
+2025-02-27,Miami,Test,Miami / Phoenix,10325.31
+2025-02-28,Miami,Test,Miami / Phoenix,9738.72
+2025-03-01,Miami,Test,Miami / Phoenix,12240.0
+2025-03-02,Miami,Test,Miami / Phoenix,12042.2
+2025-03-03,Miami,Test,Miami / Phoenix,10477.37
+2025-03-04,Miami,Test,Miami / Phoenix,10213.27
+2025-03-05,Miami,Test,Miami / Phoenix,9978.11
+2025-03-06,Miami,Test,Miami / Phoenix,10244.78
+2025-03-07,Miami,Test,Miami / Phoenix,10843.64
+2025-03-08,Miami,Test,Miami / Phoenix,12554.92
+2025-03-09,Miami,Test,Miami / Phoenix,12469.2
+2025-03-10,Miami,Test,Miami / Phoenix,10376.14
+2025-03-11,Miami,Test,Miami / Phoenix,10180.7
+2025-03-12,Miami,Test,Miami / Phoenix,10704.06
+2025-03-13,Miami,Test,Miami / Phoenix,10022.98
+2025-03-14,Miami,Test,Miami / Phoenix,10862.35
+2025-03-15,Miami,Test,Miami / Phoenix,12093.09
+2025-03-16,Miami,Test,Miami / Phoenix,12016.78
+2025-03-17,Miami,Test,Miami / Phoenix,10267.65
+2025-03-18,Miami,Test,Miami / Phoenix,11113.6
+2025-03-19,Miami,Test,Miami / Phoenix,10760.85
+2025-03-20,Miami,Test,Miami / Phoenix,10563.56
+2025-03-21,Miami,Test,Miami / Phoenix,9961.54
+2025-03-22,Miami,Test,Miami / Phoenix,12452.41
+2025-03-23,Miami,Test,Miami / Phoenix,13181.18
+2025-03-24,Miami,Test,Miami / Phoenix,11818.84
+2025-03-25,Miami,Test,Miami / Phoenix,11058.67
+2025-03-26,Miami,Test,Miami / Phoenix,11048.28
+2025-03-27,Miami,Test,Miami / Phoenix,11499.96
+2025-03-28,Miami,Test,Miami / Phoenix,10987.07
+2025-03-29,Miami,Test,Miami / Phoenix,12890.69
+2025-03-30,Miami,Test,Miami / Phoenix,13111.59
+2025-03-31,Miami,Test,Miami / Phoenix,11966.08
+2025-04-01,Miami,Test,Miami / Phoenix,11506.04
+2025-04-02,Miami,Test,Miami / Phoenix,11510.83
+2025-04-03,Miami,Test,Miami / Phoenix,11298.59
+2025-04-04,Miami,Test,Miami / Phoenix,11361.87
+2025-04-05,Miami,Test,Miami / Phoenix,12998.72
+2025-04-06,Miami,Test,Miami / Phoenix,13267.91
+2025-04-07,Miami,Test,Miami / Phoenix,12153.82
+2025-04-08,Miami,Test,Miami / Phoenix,11544.62
+2025-04-09,Miami,Test,Miami / Phoenix,12460.01
+2025-04-10,Miami,Test,Miami / Phoenix,11832.52
+2025-04-11,Miami,Test,Miami / Phoenix,11969.97
+2025-04-12,Miami,Test,Miami / Phoenix,13101.45
+2025-04-13,Miami,Test,Miami / Phoenix,12506.25
+2025-04-14,Miami,Test,Miami / Phoenix,12440.21
+2025-04-15,Miami,Test,Miami / Phoenix,12425.83
+2025-04-16,Miami,Test,Miami / Phoenix,12080.2
+2025-04-17,Miami,Test,Miami / Phoenix,12253.56
+2025-04-18,Miami,Test,Miami / Phoenix,12464.87
+2025-04-19,Miami,Test,Miami / Phoenix,13080.45
+2025-04-20,Miami,Test,Miami / Phoenix,13513.27
+2025-04-21,Miami,Test,Miami / Phoenix,12690.9
+2025-04-22,Miami,Test,Miami / Phoenix,11951.88
+2025-04-23,Miami,Test,Miami / Phoenix,12579.16
+2025-04-24,Miami,Test,Miami / Phoenix,11990.86
+2025-04-25,Miami,Test,Miami / Phoenix,12721.99
+2025-04-26,Miami,Test,Miami / Phoenix,13934.22
+2025-04-27,Miami,Test,Miami / Phoenix,13371.65
+2025-04-28,Miami,Test,Miami / Phoenix,13100.25
+2025-04-29,Miami,Test,Miami / Phoenix,12415.36
+2025-04-30,Miami,Test,Miami / Phoenix,12423.06
+2025-05-01,Miami,Test,Miami / Phoenix,12843.2
+2025-05-02,Miami,Test,Miami / Phoenix,13239.08
+2025-05-03,Miami,Test,Miami / Phoenix,13816.76
+2025-05-04,Miami,Test,Miami / Phoenix,14260.95
+2025-05-05,Miami,Test,Miami / Phoenix,13069.76
+2025-05-06,Miami,Test,Miami / Phoenix,13204.02
+2025-05-07,Miami,Test,Miami / Phoenix,13041.06
+2025-05-08,Miami,Test,Miami / Phoenix,12867.45
+2025-05-09,Miami,Test,Miami / Phoenix,12724.85
+2025-05-10,Miami,Test,Miami / Phoenix,14469.01
+2025-05-11,Miami,Test,Miami / Phoenix,14060.3
+2025-05-12,Miami,Test,Miami / Phoenix,12023.54
+2025-05-13,Miami,Test,Miami / Phoenix,13329.97
+2025-05-14,Miami,Test,Miami / Phoenix,13537.49
+2025-05-15,Miami,Test,Miami / Phoenix,12325.47
+2025-05-16,Miami,Test,Miami / Phoenix,12868.55
+2025-05-17,Miami,Test,Miami / Phoenix,14880.85
+2025-05-18,Miami,Test,Miami / Phoenix,15455.21
+2025-05-19,Miami,Test,Miami / Phoenix,13343.5
+2025-05-20,Miami,Test,Miami / Phoenix,13085.64
+2025-05-21,Miami,Test,Miami / Phoenix,13318.9
+2025-05-22,Miami,Test,Miami / Phoenix,13936.41
+2025-05-23,Miami,Test,Miami / Phoenix,13193.48
+2025-05-24,Miami,Test,Miami / Phoenix,14524.67
+2025-05-25,Miami,Test,Miami / Phoenix,14668.75
+2025-05-26,Miami,Test,Miami / Phoenix,14198.17
+2025-05-27,Miami,Test,Miami / Phoenix,13579.7
+2025-05-28,Miami,Test,Miami / Phoenix,14172.51
+2025-05-29,Miami,Test,Miami / Phoenix,13699.36
+2025-05-30,Miami,Test,Miami / Phoenix,13501.55
+2025-05-31,Miami,Test,Miami / Phoenix,14871.8
+2025-06-01,Miami,Test,Miami / Phoenix,14408.3
+2025-06-02,Miami,Test,Miami / Phoenix,13991.91
+2025-06-03,Miami,Test,Miami / Phoenix,13645.14
+2025-06-04,Miami,Test,Miami / Phoenix,13623.9
+2025-06-05,Miami,Test,Miami / Phoenix,14923.01
+2025-06-06,Miami,Test,Miami / Phoenix,13839.67
+2025-06-07,Miami,Test,Miami / Phoenix,14821.34
+2025-06-08,Miami,Test,Miami / Phoenix,14960.25
+2025-06-09,Miami,Test,Miami / Phoenix,14208.28
+2025-06-10,Miami,Test,Miami / Phoenix,13828.89
+2025-06-11,Miami,Test,Miami / Phoenix,13252.62
+2025-06-12,Miami,Test,Miami / Phoenix,14161.16
+2025-06-13,Miami,Test,Miami / Phoenix,13569.99
+2025-06-14,Miami,Test,Miami / Phoenix,15912.13
+2025-06-15,Miami,Test,Miami / Phoenix,15621.44
+2025-06-16,Miami,Test,Miami / Phoenix,13686.13
+2025-06-17,Miami,Test,Miami / Phoenix,14352.34
+2025-06-18,Miami,Test,Miami / Phoenix,13900.14
+2025-06-19,Miami,Test,Miami / Phoenix,14206.54
+2025-06-20,Miami,Test,Miami / Phoenix,14074.18
+2025-06-21,Miami,Test,Miami / Phoenix,14940.2
+2025-06-22,Miami,Test,Miami / Phoenix,15023.45
+2025-06-23,Miami,Test,Miami / Phoenix,14299.92
+2025-06-24,Miami,Test,Miami / Phoenix,13786.2
+2025-06-25,Miami,Test,Miami / Phoenix,13764.26
+2025-06-26,Miami,Test,Miami / Phoenix,13558.29
+2025-06-27,Miami,Test,Miami / Phoenix,14085.13
+2025-06-28,Miami,Test,Miami / Phoenix,16075.21
+2025-06-29,Miami,Test,Miami / Phoenix,14887.43
+2025-06-30,Miami,Test,Miami / Phoenix,13938.29
+2025-07-01,Miami,Test,Miami / Phoenix,14466.08
+2025-07-02,Miami,Test,Miami / Phoenix,13898.89
+2025-07-03,Miami,Test,Miami / Phoenix,14100.12
+2025-07-04,Miami,Test,Miami / Phoenix,14782.95
+2025-07-05,Miami,Test,Miami / Phoenix,15452.22
+2025-07-06,Miami,Test,Miami / Phoenix,15215.52
+2025-07-07,Miami,Test,Miami / Phoenix,14292.76
+2025-07-08,Miami,Test,Miami / Phoenix,14365.3
+2025-07-09,Miami,Test,Miami / Phoenix,14893.43
+2025-07-10,Miami,Test,Miami / Phoenix,14124.34
+2025-07-11,Miami,Test,Miami / Phoenix,14021.94
+2025-07-12,Miami,Test,Miami / Phoenix,15330.46
+2025-07-13,Miami,Test,Miami / Phoenix,15115.24
+2025-07-14,Miami,Test,Miami / Phoenix,14005.31
+2025-07-15,Miami,Test,Miami / Phoenix,13756.08
+2025-07-16,Miami,Test,Miami / Phoenix,13923.4
+2025-07-17,Miami,Test,Miami / Phoenix,14350.53
+2025-07-18,Miami,Test,Miami / Phoenix,13457.24
+2025-07-19,Miami,Test,Miami / Phoenix,15627.18
+2025-07-20,Miami,Test,Miami / Phoenix,15683.26
+2025-07-21,Miami,Test,Miami / Phoenix,13761.05
+2025-07-22,Miami,Test,Miami / Phoenix,12987.2
+2025-07-23,Miami,Test,Miami / Phoenix,13549.58
+2025-07-24,Miami,Test,Miami / Phoenix,14259.89
+2025-07-25,Miami,Test,Miami / Phoenix,13744.29
+2025-07-26,Miami,Test,Miami / Phoenix,14723.65
+2025-07-27,Miami,Test,Miami / Phoenix,14896.44
+2025-07-28,Miami,Test,Miami / Phoenix,14027.04
+2025-07-29,Miami,Test,Miami / Phoenix,13899.19
+2025-07-30,Miami,Test,Miami / Phoenix,13583.95
+2025-07-31,Miami,Test,Miami / Phoenix,13518.16
+2025-08-01,Miami,Test,Miami / Phoenix,13491.0
+2025-08-02,Miami,Test,Miami / Phoenix,14636.17
+2025-08-03,Miami,Test,Miami / Phoenix,15581.87
+2025-08-04,Miami,Test,Miami / Phoenix,13461.41
+2025-08-05,Miami,Test,Miami / Phoenix,14026.8
+2025-08-06,Miami,Test,Miami / Phoenix,14122.32
+2025-08-07,Miami,Test,Miami / Phoenix,13903.06
+2025-08-08,Miami,Test,Miami / Phoenix,13338.72
+2025-08-09,Miami,Test,Miami / Phoenix,14999.76
+2025-08-10,Miami,Test,Miami / Phoenix,14815.33
+2025-08-11,Miami,Test,Miami / Phoenix,13093.87
+2025-08-12,Miami,Test,Miami / Phoenix,13537.88
+2025-08-13,Miami,Test,Miami / Phoenix,12943.54
+2025-08-14,Miami,Test,Miami / Phoenix,13819.45
+2025-08-15,Miami,Test,Miami / Phoenix,13167.74
+2025-08-16,Miami,Test,Miami / Phoenix,14761.54
+2025-08-17,Miami,Test,Miami / Phoenix,14768.18
+2025-08-18,Miami,Test,Miami / Phoenix,13172.22
+2025-08-19,Miami,Test,Miami / Phoenix,13468.28
+2025-08-20,Miami,Test,Miami / Phoenix,13039.27
+2025-08-21,Miami,Test,Miami / Phoenix,13524.89
+2025-08-22,Miami,Test,Miami / Phoenix,12656.08
+2025-08-23,Miami,Test,Miami / Phoenix,14554.02
+2025-08-24,Miami,Test,Miami / Phoenix,15215.93
+2025-08-25,Miami,Test,Miami / Phoenix,12706.87
+2025-08-26,Miami,Test,Miami / Phoenix,12802.04
+2025-08-27,Miami,Test,Miami / Phoenix,13227.18
+2025-08-28,Miami,Test,Miami / Phoenix,13072.2
+2025-08-29,Miami,Test,Miami / Phoenix,13109.01
+2025-08-30,Miami,Test,Miami / Phoenix,14498.24
+2025-08-31,Miami,Test,Miami / Phoenix,14524.89
+2025-09-01,Miami,Test,Miami / Phoenix,14361.52
+2025-09-02,Miami,Test,Miami / Phoenix,13016.5
+2025-09-03,Miami,Test,Miami / Phoenix,12739.83
+2025-09-04,Miami,Test,Miami / Phoenix,13057.64
+2025-09-05,Miami,Test,Miami / Phoenix,13494.4
+2025-09-06,Miami,Test,Miami / Phoenix,14057.27
+2025-09-07,Miami,Test,Miami / Phoenix,13707.42
+2025-09-08,Miami,Test,Miami / Phoenix,13103.37
+2025-09-09,Miami,Test,Miami / Phoenix,12606.74
+2025-09-10,Miami,Test,Miami / Phoenix,11796.56
+2025-09-11,Miami,Test,Miami / Phoenix,12913.78
+2025-09-12,Miami,Test,Miami / Phoenix,12357.82
+2025-09-13,Miami,Test,Miami / Phoenix,13861.25
+2025-09-14,Miami,Test,Miami / Phoenix,13991.13
+2025-09-15,Miami,Test,Miami / Phoenix,12541.64
+2025-09-16,Miami,Test,Miami / Phoenix,12708.06
+2025-09-17,Miami,Test,Miami / Phoenix,12242.16
+2025-09-18,Miami,Test,Miami / Phoenix,12571.78
+2025-09-19,Miami,Test,Miami / Phoenix,12247.31
+2025-09-20,Miami,Test,Miami / Phoenix,13960.81
+2025-09-21,Miami,Test,Miami / Phoenix,13883.04
+2025-09-22,Miami,Test,Miami / Phoenix,11897.88
+2025-09-23,Miami,Test,Miami / Phoenix,12635.2
+2025-09-24,Miami,Test,Miami / Phoenix,11988.08
+2025-09-25,Miami,Test,Miami / Phoenix,12468.08
+2025-09-26,Miami,Test,Miami / Phoenix,12269.92
+2025-09-27,Miami,Test,Miami / Phoenix,14163.26
+2025-09-28,Miami,Test,Miami / Phoenix,13349.32
+2025-09-29,Miami,Test,Miami / Phoenix,11906.08
+2025-09-30,Miami,Test,Miami / Phoenix,12001.13
+2025-10-01,Miami,Test,Miami / Phoenix,11863.11
+2025-10-02,Miami,Test,Miami / Phoenix,12252.23
+2025-10-03,Miami,Test,Miami / Phoenix,11304.13
+2025-10-04,Miami,Test,Miami / Phoenix,12853.15
+2025-10-05,Miami,Test,Miami / Phoenix,12818.17
+2025-10-06,Miami,Test,Miami / Phoenix,12190.61
+2025-10-07,Miami,Test,Miami / Phoenix,12450.26
+2025-10-08,Miami,Test,Miami / Phoenix,11731.47
+2025-10-09,Miami,Test,Miami / Phoenix,11678.15
+2025-10-10,Miami,Test,Miami / Phoenix,11740.27
+2025-10-11,Miami,Test,Miami / Phoenix,13491.74
+2025-10-12,Miami,Test,Miami / Phoenix,12669.65
+2025-10-13,Miami,Test,Miami / Phoenix,11719.68
+2025-10-14,Miami,Test,Miami / Phoenix,11971.99
+2025-10-15,Miami,Test,Miami / Phoenix,11764.42
+2025-10-16,Miami,Test,Miami / Phoenix,11618.9
+2025-10-17,Miami,Test,Miami / Phoenix,11900.4
+2025-10-18,Miami,Test,Miami / Phoenix,11831.22
+2025-10-19,Miami,Test,Miami / Phoenix,13089.79
+2025-10-20,Miami,Test,Miami / Phoenix,11192.72
+2025-10-21,Miami,Test,Miami / Phoenix,10720.02
+2025-10-22,Miami,Test,Miami / Phoenix,11584.65
+2025-10-23,Miami,Test,Miami / Phoenix,11887.46
+2025-10-24,Miami,Test,Miami / Phoenix,11288.67
+2025-10-25,Miami,Test,Miami / Phoenix,13043.79
+2025-10-26,Miami,Test,Miami / Phoenix,13270.54
+2025-10-27,Miami,Test,Miami / Phoenix,11769.09
+2025-10-28,Miami,Test,Miami / Phoenix,11869.56
+2025-10-29,Miami,Test,Miami / Phoenix,11505.73
+2025-10-30,Miami,Test,Miami / Phoenix,11230.14
+2025-10-31,Miami,Test,Miami / Phoenix,10570.91
+2025-11-01,Miami,Test,Miami / Phoenix,12429.76
+2025-11-02,Miami,Test,Miami / Phoenix,12181.86
+2025-11-03,Miami,Test,Miami / Phoenix,11941.74
+2025-11-04,Miami,Test,Miami / Phoenix,11029.88
+2025-11-05,Miami,Test,Miami / Phoenix,11123.93
+2025-11-06,Miami,Test,Miami / Phoenix,11267.54
+2025-11-07,Miami,Test,Miami / Phoenix,11055.88
+2025-11-08,Miami,Test,Miami / Phoenix,13030.25
+2025-11-09,Miami,Test,Miami / Phoenix,12131.84
+2025-11-10,Miami,Test,Miami / Phoenix,11060.21
+2025-11-11,Miami,Test,Miami / Phoenix,10687.43
+2025-11-12,Miami,Test,Miami / Phoenix,10451.79
+2025-11-13,Miami,Test,Miami / Phoenix,10705.27
+2025-11-14,Miami,Test,Miami / Phoenix,10908.54
+2025-11-15,Miami,Test,Miami / Phoenix,12109.89
+2025-11-16,Miami,Test,Miami / Phoenix,11995.84
+2025-11-17,Miami,Test,Miami / Phoenix,10346.05
+2025-11-18,Miami,Test,Miami / Phoenix,10835.91
+2025-11-19,Miami,Test,Miami / Phoenix,10283.29
+2025-11-20,Miami,Test,Miami / Phoenix,11132.07
+2025-11-21,Miami,Test,Miami / Phoenix,10863.3
+2025-11-22,Miami,Test,Miami / Phoenix,11632.4
+2025-11-23,Miami,Test,Miami / Phoenix,12058.65
+2025-11-24,Miami,Test,Miami / Phoenix,10515.8
+2025-11-25,Miami,Test,Miami / Phoenix,10913.96
+2025-11-26,Miami,Test,Miami / Phoenix,11293.69
+2025-11-27,Miami,Test,Miami / Phoenix,13213.99
+2025-11-28,Miami,Test,Miami / Phoenix,15538.12
+2025-11-29,Miami,Test,Miami / Phoenix,12067.01
+2025-11-30,Miami,Test,Miami / Phoenix,12377.03
+2025-12-01,Miami,Test,Miami / Phoenix,11057.62
+2025-12-02,Miami,Test,Miami / Phoenix,10911.15
+2025-12-03,Miami,Test,Miami / Phoenix,11296.58
+2025-12-04,Miami,Test,Miami / Phoenix,11336.87
+2025-12-05,Miami,Test,Miami / Phoenix,12270.42
+2025-12-06,Miami,Test,Miami / Phoenix,13457.44
+2025-12-07,Miami,Test,Miami / Phoenix,14395.23
+2025-12-08,Miami,Test,Miami / Phoenix,12283.8
+2025-12-09,Miami,Test,Miami / Phoenix,12037.37
+2025-12-10,Miami,Test,Miami / Phoenix,11731.7
+2025-12-11,Miami,Test,Miami / Phoenix,11622.72
+2025-12-12,Miami,Test,Miami / Phoenix,11707.58
+2025-12-13,Miami,Test,Miami / Phoenix,13778.34
+2025-12-14,Miami,Test,Miami / Phoenix,13873.08
+2025-12-15,Miami,Test,Miami / Phoenix,11717.5
+2025-12-16,Miami,Test,Miami / Phoenix,12662.7
+2025-12-17,Miami,Test,Miami / Phoenix,12143.9
+2025-12-18,Miami,Test,Miami / Phoenix,12388.78
+2025-12-19,Miami,Test,Miami / Phoenix,12951.83
+2025-12-20,Miami,Test,Miami / Phoenix,14051.82
+2025-12-21,Miami,Test,Miami / Phoenix,13616.47
+2025-12-22,Miami,Test,Miami / Phoenix,12023.0
+2025-12-23,Miami,Test,Miami / Phoenix,11552.75
+2025-12-24,Miami,Test,Miami / Phoenix,14731.61
+2025-12-25,Miami,Test,Miami / Phoenix,13884.75
+2025-12-26,Miami,Test,Miami / Phoenix,12025.59
+2025-12-27,Miami,Test,Miami / Phoenix,13727.23
+2025-12-28,Miami,Test,Miami / Phoenix,13818.35
+2025-12-29,Miami,Test,Miami / Phoenix,12351.39
+2025-12-30,Miami,Test,Miami / Phoenix,12203.16
+2025-12-31,Miami,Test,Miami / Phoenix,13578.21
+2025-01-01,Phoenix,Control,Miami / Phoenix,9041.67
+2025-01-02,Phoenix,Control,Miami / Phoenix,7949.63
+2025-01-03,Phoenix,Control,Miami / Phoenix,8916.01
+2025-01-04,Phoenix,Control,Miami / Phoenix,9723.91
+2025-01-05,Phoenix,Control,Miami / Phoenix,9785.68
+2025-01-06,Phoenix,Control,Miami / Phoenix,8700.4
+2025-01-07,Phoenix,Control,Miami / Phoenix,8538.3
+2025-01-08,Phoenix,Control,Miami / Phoenix,8830.88
+2025-01-09,Phoenix,Control,Miami / Phoenix,8597.42
+2025-01-10,Phoenix,Control,Miami / Phoenix,8275.83
+2025-01-11,Phoenix,Control,Miami / Phoenix,10031.78
+2025-01-12,Phoenix,Control,Miami / Phoenix,9481.25
+2025-01-13,Phoenix,Control,Miami / Phoenix,8614.17
+2025-01-14,Phoenix,Control,Miami / Phoenix,8582.94
+2025-01-15,Phoenix,Control,Miami / Phoenix,8539.73
+2025-01-16,Phoenix,Control,Miami / Phoenix,8593.8
+2025-01-17,Phoenix,Control,Miami / Phoenix,7951.95
+2025-01-18,Phoenix,Control,Miami / Phoenix,9848.52
+2025-01-19,Phoenix,Control,Miami / Phoenix,10117.88
+2025-01-20,Phoenix,Control,Miami / Phoenix,8804.46
+2025-01-21,Phoenix,Control,Miami / Phoenix,8379.89
+2025-01-22,Phoenix,Control,Miami / Phoenix,9278.61
+2025-01-23,Phoenix,Control,Miami / Phoenix,8496.28
+2025-01-24,Phoenix,Control,Miami / Phoenix,9222.15
+2025-01-25,Phoenix,Control,Miami / Phoenix,10409.95
+2025-01-26,Phoenix,Control,Miami / Phoenix,10031.44
+2025-01-27,Phoenix,Control,Miami / Phoenix,9616.54
+2025-01-28,Phoenix,Control,Miami / Phoenix,8518.77
+2025-01-29,Phoenix,Control,Miami / Phoenix,9352.57
+2025-01-30,Phoenix,Control,Miami / Phoenix,9414.95
+2025-01-31,Phoenix,Control,Miami / Phoenix,8811.83
+2025-02-01,Phoenix,Control,Miami / Phoenix,10993.22
+2025-02-02,Phoenix,Control,Miami / Phoenix,10401.97
+2025-02-03,Phoenix,Control,Miami / Phoenix,9275.06
+2025-02-04,Phoenix,Control,Miami / Phoenix,9298.11
+2025-02-05,Phoenix,Control,Miami / Phoenix,9182.45
+2025-02-06,Phoenix,Control,Miami / Phoenix,9576.33
+2025-02-07,Phoenix,Control,Miami / Phoenix,9604.93
+2025-02-08,Phoenix,Control,Miami / Phoenix,10039.57
+2025-02-09,Phoenix,Control,Miami / Phoenix,11235.7
+2025-02-10,Phoenix,Control,Miami / Phoenix,8779.75
+2025-02-11,Phoenix,Control,Miami / Phoenix,9840.72
+2025-02-12,Phoenix,Control,Miami / Phoenix,9913.75
+2025-02-13,Phoenix,Control,Miami / Phoenix,9108.67
+2025-02-14,Phoenix,Control,Miami / Phoenix,10245.15
+2025-02-15,Phoenix,Control,Miami / Phoenix,10544.47
+2025-02-16,Phoenix,Control,Miami / Phoenix,10921.72
+2025-02-17,Phoenix,Control,Miami / Phoenix,9560.43
+2025-02-18,Phoenix,Control,Miami / Phoenix,10013.19
+2025-02-19,Phoenix,Control,Miami / Phoenix,10254.61
+2025-02-20,Phoenix,Control,Miami / Phoenix,10327.15
+2025-02-21,Phoenix,Control,Miami / Phoenix,9623.57
+2025-02-22,Phoenix,Control,Miami / Phoenix,11163.39
+2025-02-23,Phoenix,Control,Miami / Phoenix,10644.19
+2025-02-24,Phoenix,Control,Miami / Phoenix,9653.94
+2025-02-25,Phoenix,Control,Miami / Phoenix,10368.37
+2025-02-26,Phoenix,Control,Miami / Phoenix,10657.46
+2025-02-27,Phoenix,Control,Miami / Phoenix,9616.55
+2025-02-28,Phoenix,Control,Miami / Phoenix,9902.78
+2025-03-01,Phoenix,Control,Miami / Phoenix,11525.42
+2025-03-02,Phoenix,Control,Miami / Phoenix,11684.67
+2025-03-03,Phoenix,Control,Miami / Phoenix,9948.52
+2025-03-04,Phoenix,Control,Miami / Phoenix,10460.48
+2025-03-05,Phoenix,Control,Miami / Phoenix,10162.63
+2025-03-06,Phoenix,Control,Miami / Phoenix,10380.73
+2025-03-07,Phoenix,Control,Miami / Phoenix,10637.51
+2025-03-08,Phoenix,Control,Miami / Phoenix,11841.21
+2025-03-09,Phoenix,Control,Miami / Phoenix,11716.94
+2025-03-10,Phoenix,Control,Miami / Phoenix,10520.25
+2025-03-11,Phoenix,Control,Miami / Phoenix,10572.58
+2025-03-12,Phoenix,Control,Miami / Phoenix,10509.92
+2025-03-13,Phoenix,Control,Miami / Phoenix,10596.64
+2025-03-14,Phoenix,Control,Miami / Phoenix,11347.03
+2025-03-15,Phoenix,Control,Miami / Phoenix,12362.33
+2025-03-16,Phoenix,Control,Miami / Phoenix,12081.59
+2025-03-17,Phoenix,Control,Miami / Phoenix,11138.48
+2025-03-18,Phoenix,Control,Miami / Phoenix,10791.59
+2025-03-19,Phoenix,Control,Miami / Phoenix,11409.06
+2025-03-20,Phoenix,Control,Miami / Phoenix,11148.59
+2025-03-21,Phoenix,Control,Miami / Phoenix,11012.23
+2025-03-22,Phoenix,Control,Miami / Phoenix,12633.0
+2025-03-23,Phoenix,Control,Miami / Phoenix,11910.79
+2025-03-24,Phoenix,Control,Miami / Phoenix,10759.39
+2025-03-25,Phoenix,Control,Miami / Phoenix,10778.67
+2025-03-26,Phoenix,Control,Miami / Phoenix,11331.44
+2025-03-27,Phoenix,Control,Miami / Phoenix,11980.18
+2025-03-28,Phoenix,Control,Miami / Phoenix,12214.35
+2025-03-29,Phoenix,Control,Miami / Phoenix,13018.47
+2025-03-30,Phoenix,Control,Miami / Phoenix,13010.8
+2025-03-31,Phoenix,Control,Miami / Phoenix,10815.44
+2025-04-01,Phoenix,Control,Miami / Phoenix,11337.88
+2025-04-02,Phoenix,Control,Miami / Phoenix,11288.87
+2025-04-03,Phoenix,Control,Miami / Phoenix,11396.31
+2025-04-04,Phoenix,Control,Miami / Phoenix,11612.19
+2025-04-05,Phoenix,Control,Miami / Phoenix,12905.38
+2025-04-06,Phoenix,Control,Miami / Phoenix,12376.17
+2025-04-07,Phoenix,Control,Miami / Phoenix,12090.87
+2025-04-08,Phoenix,Control,Miami / Phoenix,11442.18
+2025-04-09,Phoenix,Control,Miami / Phoenix,11983.71
+2025-04-10,Phoenix,Control,Miami / Phoenix,12723.7
+2025-04-11,Phoenix,Control,Miami / Phoenix,11628.72
+2025-04-12,Phoenix,Control,Miami / Phoenix,12423.88
+2025-04-13,Phoenix,Control,Miami / Phoenix,13318.78
+2025-04-14,Phoenix,Control,Miami / Phoenix,12522.64
+2025-04-15,Phoenix,Control,Miami / Phoenix,12890.0
+2025-04-16,Phoenix,Control,Miami / Phoenix,11719.88
+2025-04-17,Phoenix,Control,Miami / Phoenix,12416.85
+2025-04-18,Phoenix,Control,Miami / Phoenix,12091.99
+2025-04-19,Phoenix,Control,Miami / Phoenix,13633.95
+2025-04-20,Phoenix,Control,Miami / Phoenix,14719.16
+2025-04-21,Phoenix,Control,Miami / Phoenix,11817.95
+2025-04-22,Phoenix,Control,Miami / Phoenix,12524.94
+2025-04-23,Phoenix,Control,Miami / Phoenix,12645.33
+2025-04-24,Phoenix,Control,Miami / Phoenix,12918.96
+2025-04-25,Phoenix,Control,Miami / Phoenix,12581.98
+2025-04-26,Phoenix,Control,Miami / Phoenix,14064.82
+2025-04-27,Phoenix,Control,Miami / Phoenix,13836.57
+2025-04-28,Phoenix,Control,Miami / Phoenix,12759.92
+2025-04-29,Phoenix,Control,Miami / Phoenix,12564.09
+2025-04-30,Phoenix,Control,Miami / Phoenix,12967.15
+2025-05-01,Phoenix,Control,Miami / Phoenix,12626.53
+2025-05-02,Phoenix,Control,Miami / Phoenix,12945.89
+2025-05-03,Phoenix,Control,Miami / Phoenix,14191.66
+2025-05-04,Phoenix,Control,Miami / Phoenix,14665.42
+2025-05-05,Phoenix,Control,Miami / Phoenix,12887.28
+2025-05-06,Phoenix,Control,Miami / Phoenix,12266.89
+2025-05-07,Phoenix,Control,Miami / Phoenix,13453.55
+2025-05-08,Phoenix,Control,Miami / Phoenix,12662.74
+2025-05-09,Phoenix,Control,Miami / Phoenix,12790.91
+2025-05-10,Phoenix,Control,Miami / Phoenix,14209.92
+2025-05-11,Phoenix,Control,Miami / Phoenix,14990.0
+2025-05-12,Phoenix,Control,Miami / Phoenix,12322.09
+2025-05-13,Phoenix,Control,Miami / Phoenix,14356.42
+2025-05-14,Phoenix,Control,Miami / Phoenix,13595.3
+2025-05-15,Phoenix,Control,Miami / Phoenix,13308.22
+2025-05-16,Phoenix,Control,Miami / Phoenix,13231.39
+2025-05-17,Phoenix,Control,Miami / Phoenix,14754.09
+2025-05-18,Phoenix,Control,Miami / Phoenix,14871.39
+2025-05-19,Phoenix,Control,Miami / Phoenix,13580.78
+2025-05-20,Phoenix,Control,Miami / Phoenix,13573.41
+2025-05-21,Phoenix,Control,Miami / Phoenix,13422.44
+2025-05-22,Phoenix,Control,Miami / Phoenix,13338.97
+2025-05-23,Phoenix,Control,Miami / Phoenix,13381.46
+2025-05-24,Phoenix,Control,Miami / Phoenix,14754.29
+2025-05-25,Phoenix,Control,Miami / Phoenix,15283.02
+2025-05-26,Phoenix,Control,Miami / Phoenix,14785.98
+2025-05-27,Phoenix,Control,Miami / Phoenix,12415.73
+2025-05-28,Phoenix,Control,Miami / Phoenix,13804.38
+2025-05-29,Phoenix,Control,Miami / Phoenix,13650.59
+2025-05-30,Phoenix,Control,Miami / Phoenix,13590.33
+2025-05-31,Phoenix,Control,Miami / Phoenix,14835.05
+2025-06-01,Phoenix,Control,Miami / Phoenix,15429.47
+2025-06-02,Phoenix,Control,Miami / Phoenix,14016.38
+2025-06-03,Phoenix,Control,Miami / Phoenix,13381.02
+2025-06-04,Phoenix,Control,Miami / Phoenix,13847.17
+2025-06-05,Phoenix,Control,Miami / Phoenix,13340.4
+2025-06-06,Phoenix,Control,Miami / Phoenix,13201.89
+2025-06-07,Phoenix,Control,Miami / Phoenix,14868.87
+2025-06-08,Phoenix,Control,Miami / Phoenix,15449.98
+2025-06-09,Phoenix,Control,Miami / Phoenix,14134.06
+2025-06-10,Phoenix,Control,Miami / Phoenix,13980.81
+2025-06-11,Phoenix,Control,Miami / Phoenix,14074.71
+2025-06-12,Phoenix,Control,Miami / Phoenix,14008.0
+2025-06-13,Phoenix,Control,Miami / Phoenix,13580.13
+2025-06-14,Phoenix,Control,Miami / Phoenix,15364.41
+2025-06-15,Phoenix,Control,Miami / Phoenix,15515.18
+2025-06-16,Phoenix,Control,Miami / Phoenix,14142.75
+2025-06-17,Phoenix,Control,Miami / Phoenix,14317.35
+2025-06-18,Phoenix,Control,Miami / Phoenix,14143.51
+2025-06-19,Phoenix,Control,Miami / Phoenix,14016.04
+2025-06-20,Phoenix,Control,Miami / Phoenix,14296.64
+2025-06-21,Phoenix,Control,Miami / Phoenix,15251.74
+2025-06-22,Phoenix,Control,Miami / Phoenix,14932.89
+2025-06-23,Phoenix,Control,Miami / Phoenix,13846.57
+2025-06-24,Phoenix,Control,Miami / Phoenix,13630.35
+2025-06-25,Phoenix,Control,Miami / Phoenix,13661.08
+2025-06-26,Phoenix,Control,Miami / Phoenix,13866.31
+2025-06-27,Phoenix,Control,Miami / Phoenix,13623.05
+2025-06-28,Phoenix,Control,Miami / Phoenix,15174.43
+2025-06-29,Phoenix,Control,Miami / Phoenix,14573.52
+2025-06-30,Phoenix,Control,Miami / Phoenix,14010.14
+2025-07-01,Phoenix,Control,Miami / Phoenix,13929.9
+2025-07-02,Phoenix,Control,Miami / Phoenix,13618.66
+2025-07-03,Phoenix,Control,Miami / Phoenix,14178.74
+2025-07-04,Phoenix,Control,Miami / Phoenix,15542.94
+2025-07-05,Phoenix,Control,Miami / Phoenix,14678.59
+2025-07-06,Phoenix,Control,Miami / Phoenix,14996.8
+2025-07-07,Phoenix,Control,Miami / Phoenix,13625.91
+2025-07-08,Phoenix,Control,Miami / Phoenix,13556.94
+2025-07-09,Phoenix,Control,Miami / Phoenix,14224.6
+2025-07-10,Phoenix,Control,Miami / Phoenix,13830.42
+2025-07-11,Phoenix,Control,Miami / Phoenix,13797.62
+2025-07-12,Phoenix,Control,Miami / Phoenix,14495.12
+2025-07-13,Phoenix,Control,Miami / Phoenix,15490.9
+2025-07-14,Phoenix,Control,Miami / Phoenix,13405.77
+2025-07-15,Phoenix,Control,Miami / Phoenix,13891.1
+2025-07-16,Phoenix,Control,Miami / Phoenix,13964.79
+2025-07-17,Phoenix,Control,Miami / Phoenix,14366.9
+2025-07-18,Phoenix,Control,Miami / Phoenix,13342.37
+2025-07-19,Phoenix,Control,Miami / Phoenix,14046.61
+2025-07-20,Phoenix,Control,Miami / Phoenix,15252.62
+2025-07-21,Phoenix,Control,Miami / Phoenix,14490.11
+2025-07-22,Phoenix,Control,Miami / Phoenix,14264.31
+2025-07-23,Phoenix,Control,Miami / Phoenix,13860.22
+2025-07-24,Phoenix,Control,Miami / Phoenix,13580.21
+2025-07-25,Phoenix,Control,Miami / Phoenix,14059.69
+2025-07-26,Phoenix,Control,Miami / Phoenix,14733.44
+2025-07-27,Phoenix,Control,Miami / Phoenix,15269.27
+2025-07-28,Phoenix,Control,Miami / Phoenix,13899.68
+2025-07-29,Phoenix,Control,Miami / Phoenix,14094.31
+2025-07-30,Phoenix,Control,Miami / Phoenix,14723.42
+2025-07-31,Phoenix,Control,Miami / Phoenix,13806.67
+2025-08-01,Phoenix,Control,Miami / Phoenix,13446.46
+2025-08-02,Phoenix,Control,Miami / Phoenix,14976.97
+2025-08-03,Phoenix,Control,Miami / Phoenix,14295.78
+2025-08-04,Phoenix,Control,Miami / Phoenix,13319.9
+2025-08-05,Phoenix,Control,Miami / Phoenix,13408.76
+2025-08-06,Phoenix,Control,Miami / Phoenix,13345.07
+2025-08-07,Phoenix,Control,Miami / Phoenix,13581.6
+2025-08-08,Phoenix,Control,Miami / Phoenix,13190.22
+2025-08-09,Phoenix,Control,Miami / Phoenix,15272.34
+2025-08-10,Phoenix,Control,Miami / Phoenix,14824.6
+2025-08-11,Phoenix,Control,Miami / Phoenix,13433.74
+2025-08-12,Phoenix,Control,Miami / Phoenix,13290.03
+2025-08-13,Phoenix,Control,Miami / Phoenix,13450.55
+2025-08-14,Phoenix,Control,Miami / Phoenix,13681.66
+2025-08-15,Phoenix,Control,Miami / Phoenix,13014.79
+2025-08-16,Phoenix,Control,Miami / Phoenix,14435.01
+2025-08-17,Phoenix,Control,Miami / Phoenix,14545.11
+2025-08-18,Phoenix,Control,Miami / Phoenix,12759.18
+2025-08-19,Phoenix,Control,Miami / Phoenix,12934.02
+2025-08-20,Phoenix,Control,Miami / Phoenix,13038.77
+2025-08-21,Phoenix,Control,Miami / Phoenix,13526.07
+2025-08-22,Phoenix,Control,Miami / Phoenix,13267.32
+2025-08-23,Phoenix,Control,Miami / Phoenix,14579.56
+2025-08-24,Phoenix,Control,Miami / Phoenix,14802.48
+2025-08-25,Phoenix,Control,Miami / Phoenix,13034.8
+2025-08-26,Phoenix,Control,Miami / Phoenix,13207.96
+2025-08-27,Phoenix,Control,Miami / Phoenix,12992.67
+2025-08-28,Phoenix,Control,Miami / Phoenix,13104.8
+2025-08-29,Phoenix,Control,Miami / Phoenix,12754.32
+2025-08-30,Phoenix,Control,Miami / Phoenix,13385.6
+2025-08-31,Phoenix,Control,Miami / Phoenix,14232.67
+2025-09-01,Phoenix,Control,Miami / Phoenix,14480.48
+2025-09-02,Phoenix,Control,Miami / Phoenix,13212.73
+2025-09-03,Phoenix,Control,Miami / Phoenix,13198.36
+2025-09-04,Phoenix,Control,Miami / Phoenix,13271.79
+2025-09-05,Phoenix,Control,Miami / Phoenix,12806.14
+2025-09-06,Phoenix,Control,Miami / Phoenix,14182.65
+2025-09-07,Phoenix,Control,Miami / Phoenix,13843.04
+2025-09-08,Phoenix,Control,Miami / Phoenix,12562.57
+2025-09-09,Phoenix,Control,Miami / Phoenix,12886.48
+2025-09-10,Phoenix,Control,Miami / Phoenix,13079.65
+2025-09-11,Phoenix,Control,Miami / Phoenix,12538.77
+2025-09-12,Phoenix,Control,Miami / Phoenix,12390.17
+2025-09-13,Phoenix,Control,Miami / Phoenix,13895.85
+2025-09-14,Phoenix,Control,Miami / Phoenix,14093.44
+2025-09-15,Phoenix,Control,Miami / Phoenix,11920.59
+2025-09-16,Phoenix,Control,Miami / Phoenix,11565.92
+2025-09-17,Phoenix,Control,Miami / Phoenix,12198.44
+2025-09-18,Phoenix,Control,Miami / Phoenix,11912.93
+2025-09-19,Phoenix,Control,Miami / Phoenix,12152.84
+2025-09-20,Phoenix,Control,Miami / Phoenix,13623.91
+2025-09-21,Phoenix,Control,Miami / Phoenix,13476.97
+2025-09-22,Phoenix,Control,Miami / Phoenix,12805.29
+2025-09-23,Phoenix,Control,Miami / Phoenix,12346.69
+2025-09-24,Phoenix,Control,Miami / Phoenix,12305.93
+2025-09-25,Phoenix,Control,Miami / Phoenix,12397.46
+2025-09-26,Phoenix,Control,Miami / Phoenix,11697.59
+2025-09-27,Phoenix,Control,Miami / Phoenix,13859.62
+2025-09-28,Phoenix,Control,Miami / Phoenix,13405.45
+2025-09-29,Phoenix,Control,Miami / Phoenix,12293.61
+2025-09-30,Phoenix,Control,Miami / Phoenix,11601.21
+2025-10-01,Phoenix,Control,Miami / Phoenix,11387.89
+2025-10-02,Phoenix,Control,Miami / Phoenix,12259.05
+2025-10-03,Phoenix,Control,Miami / Phoenix,12061.36
+2025-10-04,Phoenix,Control,Miami / Phoenix,12910.77
+2025-10-05,Phoenix,Control,Miami / Phoenix,12893.46
+2025-10-06,Phoenix,Control,Miami / Phoenix,12257.16
+2025-10-07,Phoenix,Control,Miami / Phoenix,11348.26
+2025-10-08,Phoenix,Control,Miami / Phoenix,12395.38
+2025-10-09,Phoenix,Control,Miami / Phoenix,11400.07
+2025-10-10,Phoenix,Control,Miami / Phoenix,11956.24
+2025-10-11,Phoenix,Control,Miami / Phoenix,12925.35
+2025-10-12,Phoenix,Control,Miami / Phoenix,13251.25
+2025-10-13,Phoenix,Control,Miami / Phoenix,11422.34
+2025-10-14,Phoenix,Control,Miami / Phoenix,11539.56
+2025-10-15,Phoenix,Control,Miami / Phoenix,11589.55
+2025-10-16,Phoenix,Control,Miami / Phoenix,11166.03
+2025-10-17,Phoenix,Control,Miami / Phoenix,11801.52
+2025-10-18,Phoenix,Control,Miami / Phoenix,12663.43
+2025-10-19,Phoenix,Control,Miami / Phoenix,12745.33
+2025-10-20,Phoenix,Control,Miami / Phoenix,11063.42
+2025-10-21,Phoenix,Control,Miami / Phoenix,10441.98
+2025-10-22,Phoenix,Control,Miami / Phoenix,11317.8
+2025-10-23,Phoenix,Control,Miami / Phoenix,12282.26
+2025-10-24,Phoenix,Control,Miami / Phoenix,11639.05
+2025-10-25,Phoenix,Control,Miami / Phoenix,12674.38
+2025-10-26,Phoenix,Control,Miami / Phoenix,12557.97
+2025-10-27,Phoenix,Control,Miami / Phoenix,11277.96
+2025-10-28,Phoenix,Control,Miami / Phoenix,11454.28
+2025-10-29,Phoenix,Control,Miami / Phoenix,10775.01
+2025-10-30,Phoenix,Control,Miami / Phoenix,11624.92
+2025-10-31,Phoenix,Control,Miami / Phoenix,11451.5
+2025-11-01,Phoenix,Control,Miami / Phoenix,12796.17
+2025-11-02,Phoenix,Control,Miami / Phoenix,12668.92
+2025-11-03,Phoenix,Control,Miami / Phoenix,11124.24
+2025-11-04,Phoenix,Control,Miami / Phoenix,11352.4
+2025-11-05,Phoenix,Control,Miami / Phoenix,11302.0
+2025-11-06,Phoenix,Control,Miami / Phoenix,10923.44
+2025-11-07,Phoenix,Control,Miami / Phoenix,10821.34
+2025-11-08,Phoenix,Control,Miami / Phoenix,12424.84
+2025-11-09,Phoenix,Control,Miami / Phoenix,12957.07
+2025-11-10,Phoenix,Control,Miami / Phoenix,10515.39
+2025-11-11,Phoenix,Control,Miami / Phoenix,10411.91
+2025-11-12,Phoenix,Control,Miami / Phoenix,11016.01
+2025-11-13,Phoenix,Control,Miami / Phoenix,10957.08
+2025-11-14,Phoenix,Control,Miami / Phoenix,10988.49
+2025-11-15,Phoenix,Control,Miami / Phoenix,12365.72
+2025-11-16,Phoenix,Control,Miami / Phoenix,12174.15
+2025-11-17,Phoenix,Control,Miami / Phoenix,11446.6
+2025-11-18,Phoenix,Control,Miami / Phoenix,10259.15
+2025-11-19,Phoenix,Control,Miami / Phoenix,10540.26
+2025-11-20,Phoenix,Control,Miami / Phoenix,10804.01
+2025-11-21,Phoenix,Control,Miami / Phoenix,10207.56
+2025-11-22,Phoenix,Control,Miami / Phoenix,12119.45
+2025-11-23,Phoenix,Control,Miami / Phoenix,12807.51
+2025-11-24,Phoenix,Control,Miami / Phoenix,10809.55
+2025-11-25,Phoenix,Control,Miami / Phoenix,10880.34
+2025-11-26,Phoenix,Control,Miami / Phoenix,10305.45
+2025-11-27,Phoenix,Control,Miami / Phoenix,13692.34
+2025-11-28,Phoenix,Control,Miami / Phoenix,15351.83
+2025-11-29,Phoenix,Control,Miami / Phoenix,12007.13
+2025-11-30,Phoenix,Control,Miami / Phoenix,12608.95
+2025-12-01,Phoenix,Control,Miami / Phoenix,10963.53
+2025-12-02,Phoenix,Control,Miami / Phoenix,10324.55
+2025-12-03,Phoenix,Control,Miami / Phoenix,10836.49
+2025-12-04,Phoenix,Control,Miami / Phoenix,10928.69
+2025-12-05,Phoenix,Control,Miami / Phoenix,11169.79
+2025-12-06,Phoenix,Control,Miami / Phoenix,12699.95
+2025-12-07,Phoenix,Control,Miami / Phoenix,11712.04
+2025-12-08,Phoenix,Control,Miami / Phoenix,10423.72
+2025-12-09,Phoenix,Control,Miami / Phoenix,10253.68
+2025-12-10,Phoenix,Control,Miami / Phoenix,10642.99
+2025-12-11,Phoenix,Control,Miami / Phoenix,10910.13
+2025-12-12,Phoenix,Control,Miami / Phoenix,11109.74
+2025-12-13,Phoenix,Control,Miami / Phoenix,12072.97
+2025-12-14,Phoenix,Control,Miami / Phoenix,11983.23
+2025-12-15,Phoenix,Control,Miami / Phoenix,10801.02
+2025-12-16,Phoenix,Control,Miami / Phoenix,10430.23
+2025-12-17,Phoenix,Control,Miami / Phoenix,11546.49
+2025-12-18,Phoenix,Control,Miami / Phoenix,10147.09
+2025-12-19,Phoenix,Control,Miami / Phoenix,10834.38
+2025-12-20,Phoenix,Control,Miami / Phoenix,12904.99
+2025-12-21,Phoenix,Control,Miami / Phoenix,12146.09
+2025-12-22,Phoenix,Control,Miami / Phoenix,10714.44
+2025-12-23,Phoenix,Control,Miami / Phoenix,10659.61
+2025-12-24,Phoenix,Control,Miami / Phoenix,13361.34
+2025-12-25,Phoenix,Control,Miami / Phoenix,12911.66
+2025-12-26,Phoenix,Control,Miami / Phoenix,9985.21
+2025-12-27,Phoenix,Control,Miami / Phoenix,12784.82
+2025-12-28,Phoenix,Control,Miami / Phoenix,11673.04
+2025-12-29,Phoenix,Control,Miami / Phoenix,10760.5
+2025-12-30,Phoenix,Control,Miami / Phoenix,10712.04
+2025-12-31,Phoenix,Control,Miami / Phoenix,12162.78
+2025-01-01,Chicago,Test,Chicago / Boston,8531.95
+2025-01-02,Chicago,Test,Chicago / Boston,8863.77
+2025-01-03,Chicago,Test,Chicago / Boston,9537.06
+2025-01-04,Chicago,Test,Chicago / Boston,9562.19
+2025-01-05,Chicago,Test,Chicago / Boston,10232.97
+2025-01-06,Chicago,Test,Chicago / Boston,8464.5
+2025-01-07,Chicago,Test,Chicago / Boston,8941.34
+2025-01-08,Chicago,Test,Chicago / Boston,8791.11
+2025-01-09,Chicago,Test,Chicago / Boston,8534.92
+2025-01-10,Chicago,Test,Chicago / Boston,9031.2
+2025-01-11,Chicago,Test,Chicago / Boston,11036.73
+2025-01-12,Chicago,Test,Chicago / Boston,10221.99
+2025-01-13,Chicago,Test,Chicago / Boston,9198.39
+2025-01-14,Chicago,Test,Chicago / Boston,8377.49
+2025-01-15,Chicago,Test,Chicago / Boston,8544.18
+2025-01-16,Chicago,Test,Chicago / Boston,9170.16
+2025-01-17,Chicago,Test,Chicago / Boston,9621.57
+2025-01-18,Chicago,Test,Chicago / Boston,10604.72
+2025-01-19,Chicago,Test,Chicago / Boston,10351.62
+2025-01-20,Chicago,Test,Chicago / Boston,9081.17
+2025-01-21,Chicago,Test,Chicago / Boston,8585.27
+2025-01-22,Chicago,Test,Chicago / Boston,9393.91
+2025-01-23,Chicago,Test,Chicago / Boston,9540.77
+2025-01-24,Chicago,Test,Chicago / Boston,9011.08
+2025-01-25,Chicago,Test,Chicago / Boston,10464.89
+2025-01-26,Chicago,Test,Chicago / Boston,10805.9
+2025-01-27,Chicago,Test,Chicago / Boston,9113.31
+2025-01-28,Chicago,Test,Chicago / Boston,9302.01
+2025-01-29,Chicago,Test,Chicago / Boston,10245.29
+2025-01-30,Chicago,Test,Chicago / Boston,9293.82
+2025-01-31,Chicago,Test,Chicago / Boston,9281.76
+2025-02-01,Chicago,Test,Chicago / Boston,10625.53
+2025-02-02,Chicago,Test,Chicago / Boston,11245.81
+2025-02-03,Chicago,Test,Chicago / Boston,9463.41
+2025-02-04,Chicago,Test,Chicago / Boston,9303.56
+2025-02-05,Chicago,Test,Chicago / Boston,10168.52
+2025-02-06,Chicago,Test,Chicago / Boston,10247.57
+2025-02-07,Chicago,Test,Chicago / Boston,9437.4
+2025-02-08,Chicago,Test,Chicago / Boston,10374.34
+2025-02-09,Chicago,Test,Chicago / Boston,11620.62
+2025-02-10,Chicago,Test,Chicago / Boston,9519.54
+2025-02-11,Chicago,Test,Chicago / Boston,10179.22
+2025-02-12,Chicago,Test,Chicago / Boston,9060.21
+2025-02-13,Chicago,Test,Chicago / Boston,10303.47
+2025-02-14,Chicago,Test,Chicago / Boston,10341.22
+2025-02-15,Chicago,Test,Chicago / Boston,11748.58
+2025-02-16,Chicago,Test,Chicago / Boston,11489.78
+2025-02-17,Chicago,Test,Chicago / Boston,9695.65
+2025-02-18,Chicago,Test,Chicago / Boston,9968.23
+2025-02-19,Chicago,Test,Chicago / Boston,10470.69
+2025-02-20,Chicago,Test,Chicago / Boston,10270.51
+2025-02-21,Chicago,Test,Chicago / Boston,10515.43
+2025-02-22,Chicago,Test,Chicago / Boston,12574.35
+2025-02-23,Chicago,Test,Chicago / Boston,11131.86
+2025-02-24,Chicago,Test,Chicago / Boston,11082.96
+2025-02-25,Chicago,Test,Chicago / Boston,10492.76
+2025-02-26,Chicago,Test,Chicago / Boston,10116.92
+2025-02-27,Chicago,Test,Chicago / Boston,9981.43
+2025-02-28,Chicago,Test,Chicago / Boston,10506.75
+2025-03-01,Chicago,Test,Chicago / Boston,12449.54
+2025-03-02,Chicago,Test,Chicago / Boston,12055.38
+2025-03-03,Chicago,Test,Chicago / Boston,11360.37
+2025-03-04,Chicago,Test,Chicago / Boston,10163.15
+2025-03-05,Chicago,Test,Chicago / Boston,10814.72
+2025-03-06,Chicago,Test,Chicago / Boston,10341.15
+2025-03-07,Chicago,Test,Chicago / Boston,11067.41
+2025-03-08,Chicago,Test,Chicago / Boston,12764.88
+2025-03-09,Chicago,Test,Chicago / Boston,12263.53
+2025-03-10,Chicago,Test,Chicago / Boston,9964.49
+2025-03-11,Chicago,Test,Chicago / Boston,11189.95
+2025-03-12,Chicago,Test,Chicago / Boston,11338.09
+2025-03-13,Chicago,Test,Chicago / Boston,11372.83
+2025-03-14,Chicago,Test,Chicago / Boston,11770.53
+2025-03-15,Chicago,Test,Chicago / Boston,12280.21
+2025-03-16,Chicago,Test,Chicago / Boston,13064.38
+2025-03-17,Chicago,Test,Chicago / Boston,11898.23
+2025-03-18,Chicago,Test,Chicago / Boston,10699.11
+2025-03-19,Chicago,Test,Chicago / Boston,11629.14
+2025-03-20,Chicago,Test,Chicago / Boston,11331.93
+2025-03-21,Chicago,Test,Chicago / Boston,11558.26
+2025-03-22,Chicago,Test,Chicago / Boston,13217.34
+2025-03-23,Chicago,Test,Chicago / Boston,12915.48
+2025-03-24,Chicago,Test,Chicago / Boston,11455.09
+2025-03-25,Chicago,Test,Chicago / Boston,11801.97
+2025-03-26,Chicago,Test,Chicago / Boston,11379.67
+2025-03-27,Chicago,Test,Chicago / Boston,11428.9
+2025-03-28,Chicago,Test,Chicago / Boston,12218.84
+2025-03-29,Chicago,Test,Chicago / Boston,12929.48
+2025-03-30,Chicago,Test,Chicago / Boston,13740.19
+2025-03-31,Chicago,Test,Chicago / Boston,12272.89
+2025-04-01,Chicago,Test,Chicago / Boston,11401.91
+2025-04-02,Chicago,Test,Chicago / Boston,11890.17
+2025-04-03,Chicago,Test,Chicago / Boston,12724.14
+2025-04-04,Chicago,Test,Chicago / Boston,11858.23
+2025-04-05,Chicago,Test,Chicago / Boston,13552.8
+2025-04-06,Chicago,Test,Chicago / Boston,13989.27
+2025-04-07,Chicago,Test,Chicago / Boston,12741.38
+2025-04-08,Chicago,Test,Chicago / Boston,12353.66
+2025-04-09,Chicago,Test,Chicago / Boston,12255.09
+2025-04-10,Chicago,Test,Chicago / Boston,13149.95
+2025-04-11,Chicago,Test,Chicago / Boston,13329.16
+2025-04-12,Chicago,Test,Chicago / Boston,14485.96
+2025-04-13,Chicago,Test,Chicago / Boston,14156.43
+2025-04-14,Chicago,Test,Chicago / Boston,12396.6
+2025-04-15,Chicago,Test,Chicago / Boston,12432.48
+2025-04-16,Chicago,Test,Chicago / Boston,13045.62
+2025-04-17,Chicago,Test,Chicago / Boston,13046.48
+2025-04-18,Chicago,Test,Chicago / Boston,13503.69
+2025-04-19,Chicago,Test,Chicago / Boston,14662.15
+2025-04-20,Chicago,Test,Chicago / Boston,13801.27
+2025-04-21,Chicago,Test,Chicago / Boston,13487.63
+2025-04-22,Chicago,Test,Chicago / Boston,12669.51
+2025-04-23,Chicago,Test,Chicago / Boston,12969.94
+2025-04-24,Chicago,Test,Chicago / Boston,13278.43
+2025-04-25,Chicago,Test,Chicago / Boston,14053.26
+2025-04-26,Chicago,Test,Chicago / Boston,15992.59
+2025-04-27,Chicago,Test,Chicago / Boston,14982.17
+2025-04-28,Chicago,Test,Chicago / Boston,13260.9
+2025-04-29,Chicago,Test,Chicago / Boston,13602.4
+2025-04-30,Chicago,Test,Chicago / Boston,13790.35
+2025-05-01,Chicago,Test,Chicago / Boston,13322.03
+2025-05-02,Chicago,Test,Chicago / Boston,14249.41
+2025-05-03,Chicago,Test,Chicago / Boston,15060.29
+2025-05-04,Chicago,Test,Chicago / Boston,15210.48
+2025-05-05,Chicago,Test,Chicago / Boston,13888.39
+2025-05-06,Chicago,Test,Chicago / Boston,13822.54
+2025-05-07,Chicago,Test,Chicago / Boston,14034.1
+2025-05-08,Chicago,Test,Chicago / Boston,13458.25
+2025-05-09,Chicago,Test,Chicago / Boston,13518.25
+2025-05-10,Chicago,Test,Chicago / Boston,14755.37
+2025-05-11,Chicago,Test,Chicago / Boston,15436.19
+2025-05-12,Chicago,Test,Chicago / Boston,14182.36
+2025-05-13,Chicago,Test,Chicago / Boston,14080.53
+2025-05-14,Chicago,Test,Chicago / Boston,14624.05
+2025-05-15,Chicago,Test,Chicago / Boston,13950.34
+2025-05-16,Chicago,Test,Chicago / Boston,14264.92
+2025-05-17,Chicago,Test,Chicago / Boston,14986.3
+2025-05-18,Chicago,Test,Chicago / Boston,15312.4
+2025-05-19,Chicago,Test,Chicago / Boston,14366.69
+2025-05-20,Chicago,Test,Chicago / Boston,14460.16
+2025-05-21,Chicago,Test,Chicago / Boston,14008.43
+2025-05-22,Chicago,Test,Chicago / Boston,14129.57
+2025-05-23,Chicago,Test,Chicago / Boston,13549.26
+2025-05-24,Chicago,Test,Chicago / Boston,15493.3
+2025-05-25,Chicago,Test,Chicago / Boston,16043.08
+2025-05-26,Chicago,Test,Chicago / Boston,15605.92
+2025-05-27,Chicago,Test,Chicago / Boston,14499.19
+2025-05-28,Chicago,Test,Chicago / Boston,14333.74
+2025-05-29,Chicago,Test,Chicago / Boston,14339.07
+2025-05-30,Chicago,Test,Chicago / Boston,14081.37
+2025-05-31,Chicago,Test,Chicago / Boston,16104.16
+2025-06-01,Chicago,Test,Chicago / Boston,16008.74
+2025-06-02,Chicago,Test,Chicago / Boston,14629.18
+2025-06-03,Chicago,Test,Chicago / Boston,14221.53
+2025-06-04,Chicago,Test,Chicago / Boston,13557.31
+2025-06-05,Chicago,Test,Chicago / Boston,14941.08
+2025-06-06,Chicago,Test,Chicago / Boston,14297.04
+2025-06-07,Chicago,Test,Chicago / Boston,15582.98
+2025-06-08,Chicago,Test,Chicago / Boston,16253.1
+2025-06-09,Chicago,Test,Chicago / Boston,14382.99
+2025-06-10,Chicago,Test,Chicago / Boston,15007.91
+2025-06-11,Chicago,Test,Chicago / Boston,14836.28
+2025-06-12,Chicago,Test,Chicago / Boston,14877.94
+2025-06-13,Chicago,Test,Chicago / Boston,14030.13
+2025-06-14,Chicago,Test,Chicago / Boston,16555.14
+2025-06-15,Chicago,Test,Chicago / Boston,16167.43
+2025-06-16,Chicago,Test,Chicago / Boston,14483.48
+2025-06-17,Chicago,Test,Chicago / Boston,14708.97
+2025-06-18,Chicago,Test,Chicago / Boston,13912.18
+2025-06-19,Chicago,Test,Chicago / Boston,14838.58
+2025-06-20,Chicago,Test,Chicago / Boston,14242.64
+2025-06-21,Chicago,Test,Chicago / Boston,15544.18
+2025-06-22,Chicago,Test,Chicago / Boston,15479.52
+2025-06-23,Chicago,Test,Chicago / Boston,15162.14
+2025-06-24,Chicago,Test,Chicago / Boston,14435.71
+2025-06-25,Chicago,Test,Chicago / Boston,15348.65
+2025-06-26,Chicago,Test,Chicago / Boston,14483.22
+2025-06-27,Chicago,Test,Chicago / Boston,13994.23
+2025-06-28,Chicago,Test,Chicago / Boston,15674.73
+2025-06-29,Chicago,Test,Chicago / Boston,16664.37
+2025-06-30,Chicago,Test,Chicago / Boston,14650.8
+2025-07-01,Chicago,Test,Chicago / Boston,14486.24
+2025-07-02,Chicago,Test,Chicago / Boston,14783.28
+2025-07-03,Chicago,Test,Chicago / Boston,14925.67
+2025-07-04,Chicago,Test,Chicago / Boston,16502.39
+2025-07-05,Chicago,Test,Chicago / Boston,16748.92
+2025-07-06,Chicago,Test,Chicago / Boston,15986.23
+2025-07-07,Chicago,Test,Chicago / Boston,14146.48
+2025-07-08,Chicago,Test,Chicago / Boston,14525.18
+2025-07-09,Chicago,Test,Chicago / Boston,14802.89
+2025-07-10,Chicago,Test,Chicago / Boston,14282.85
+2025-07-11,Chicago,Test,Chicago / Boston,14279.01
+2025-07-12,Chicago,Test,Chicago / Boston,16248.13
+2025-07-13,Chicago,Test,Chicago / Boston,16075.36
+2025-07-14,Chicago,Test,Chicago / Boston,14670.98
+2025-07-15,Chicago,Test,Chicago / Boston,14329.38
+2025-07-16,Chicago,Test,Chicago / Boston,14541.29
+2025-07-17,Chicago,Test,Chicago / Boston,14239.34
+2025-07-18,Chicago,Test,Chicago / Boston,14990.22
+2025-07-19,Chicago,Test,Chicago / Boston,16469.33
+2025-07-20,Chicago,Test,Chicago / Boston,15246.7
+2025-07-21,Chicago,Test,Chicago / Boston,14188.65
+2025-07-22,Chicago,Test,Chicago / Boston,13936.83
+2025-07-23,Chicago,Test,Chicago / Boston,14278.09
+2025-07-24,Chicago,Test,Chicago / Boston,14501.18
+2025-07-25,Chicago,Test,Chicago / Boston,13911.9
+2025-07-26,Chicago,Test,Chicago / Boston,15547.51
+2025-07-27,Chicago,Test,Chicago / Boston,15496.39
+2025-07-28,Chicago,Test,Chicago / Boston,14557.89
+2025-07-29,Chicago,Test,Chicago / Boston,14482.18
+2025-07-30,Chicago,Test,Chicago / Boston,14131.59
+2025-07-31,Chicago,Test,Chicago / Boston,14490.1
+2025-08-01,Chicago,Test,Chicago / Boston,14166.79
+2025-08-02,Chicago,Test,Chicago / Boston,15692.34
+2025-08-03,Chicago,Test,Chicago / Boston,16488.79
+2025-08-04,Chicago,Test,Chicago / Boston,14897.92
+2025-08-05,Chicago,Test,Chicago / Boston,13767.58
+2025-08-06,Chicago,Test,Chicago / Boston,14639.86
+2025-08-07,Chicago,Test,Chicago / Boston,14609.64
+2025-08-08,Chicago,Test,Chicago / Boston,13763.58
+2025-08-09,Chicago,Test,Chicago / Boston,15996.26
+2025-08-10,Chicago,Test,Chicago / Boston,16274.36
+2025-08-11,Chicago,Test,Chicago / Boston,13702.56
+2025-08-12,Chicago,Test,Chicago / Boston,13763.83
+2025-08-13,Chicago,Test,Chicago / Boston,14551.32
+2025-08-14,Chicago,Test,Chicago / Boston,14212.21
+2025-08-15,Chicago,Test,Chicago / Boston,14303.67
+2025-08-16,Chicago,Test,Chicago / Boston,15618.56
+2025-08-17,Chicago,Test,Chicago / Boston,15612.67
+2025-08-18,Chicago,Test,Chicago / Boston,13434.13
+2025-08-19,Chicago,Test,Chicago / Boston,14403.42
+2025-08-20,Chicago,Test,Chicago / Boston,14426.71
+2025-08-21,Chicago,Test,Chicago / Boston,13810.71
+2025-08-22,Chicago,Test,Chicago / Boston,13860.02
+2025-08-23,Chicago,Test,Chicago / Boston,14636.11
+2025-08-24,Chicago,Test,Chicago / Boston,15465.73
+2025-08-25,Chicago,Test,Chicago / Boston,14030.26
+2025-08-26,Chicago,Test,Chicago / Boston,13733.83
+2025-08-27,Chicago,Test,Chicago / Boston,14201.85
+2025-08-28,Chicago,Test,Chicago / Boston,13558.69
+2025-08-29,Chicago,Test,Chicago / Boston,13905.25
+2025-08-30,Chicago,Test,Chicago / Boston,14638.71
+2025-08-31,Chicago,Test,Chicago / Boston,15025.69
+2025-09-01,Chicago,Test,Chicago / Boston,14600.73
+2025-09-02,Chicago,Test,Chicago / Boston,13636.74
+2025-09-03,Chicago,Test,Chicago / Boston,13354.85
+2025-09-04,Chicago,Test,Chicago / Boston,13422.58
+2025-09-05,Chicago,Test,Chicago / Boston,13792.29
+2025-09-06,Chicago,Test,Chicago / Boston,14659.29
+2025-09-07,Chicago,Test,Chicago / Boston,14135.19
+2025-09-08,Chicago,Test,Chicago / Boston,14081.84
+2025-09-09,Chicago,Test,Chicago / Boston,13894.15
+2025-09-10,Chicago,Test,Chicago / Boston,12737.99
+2025-09-11,Chicago,Test,Chicago / Boston,13537.1
+2025-09-12,Chicago,Test,Chicago / Boston,13002.75
+2025-09-13,Chicago,Test,Chicago / Boston,14721.15
+2025-09-14,Chicago,Test,Chicago / Boston,14700.46
+2025-09-15,Chicago,Test,Chicago / Boston,13014.78
+2025-09-16,Chicago,Test,Chicago / Boston,12750.33
+2025-09-17,Chicago,Test,Chicago / Boston,12755.73
+2025-09-18,Chicago,Test,Chicago / Boston,12627.16
+2025-09-19,Chicago,Test,Chicago / Boston,12628.79
+2025-09-20,Chicago,Test,Chicago / Boston,14346.13
+2025-09-21,Chicago,Test,Chicago / Boston,14039.92
+2025-09-22,Chicago,Test,Chicago / Boston,13163.21
+2025-09-23,Chicago,Test,Chicago / Boston,13467.63
+2025-09-24,Chicago,Test,Chicago / Boston,12565.65
+2025-09-25,Chicago,Test,Chicago / Boston,12876.16
+2025-09-26,Chicago,Test,Chicago / Boston,12951.89
+2025-09-27,Chicago,Test,Chicago / Boston,14336.75
+2025-09-28,Chicago,Test,Chicago / Boston,14136.98
+2025-09-29,Chicago,Test,Chicago / Boston,12953.69
+2025-09-30,Chicago,Test,Chicago / Boston,12811.1
+2025-10-01,Chicago,Test,Chicago / Boston,12055.67
+2025-10-02,Chicago,Test,Chicago / Boston,12907.6
+2025-10-03,Chicago,Test,Chicago / Boston,12882.43
+2025-10-04,Chicago,Test,Chicago / Boston,13586.57
+2025-10-05,Chicago,Test,Chicago / Boston,13890.64
+2025-10-06,Chicago,Test,Chicago / Boston,12699.44
+2025-10-07,Chicago,Test,Chicago / Boston,12292.48
+2025-10-08,Chicago,Test,Chicago / Boston,12799.19
+2025-10-09,Chicago,Test,Chicago / Boston,13309.75
+2025-10-10,Chicago,Test,Chicago / Boston,11955.42
+2025-10-11,Chicago,Test,Chicago / Boston,13104.35
+2025-10-12,Chicago,Test,Chicago / Boston,13781.1
+2025-10-13,Chicago,Test,Chicago / Boston,12495.94
+2025-10-14,Chicago,Test,Chicago / Boston,12065.58
+2025-10-15,Chicago,Test,Chicago / Boston,12742.87
+2025-10-16,Chicago,Test,Chicago / Boston,11540.54
+2025-10-17,Chicago,Test,Chicago / Boston,12364.35
+2025-10-18,Chicago,Test,Chicago / Boston,13219.76
+2025-10-19,Chicago,Test,Chicago / Boston,14167.58
+2025-10-20,Chicago,Test,Chicago / Boston,12823.88
+2025-10-21,Chicago,Test,Chicago / Boston,11636.95
+2025-10-22,Chicago,Test,Chicago / Boston,11700.43
+2025-10-23,Chicago,Test,Chicago / Boston,12264.95
+2025-10-24,Chicago,Test,Chicago / Boston,11714.39
+2025-10-25,Chicago,Test,Chicago / Boston,13261.37
+2025-10-26,Chicago,Test,Chicago / Boston,13264.98
+2025-10-27,Chicago,Test,Chicago / Boston,10992.34
+2025-10-28,Chicago,Test,Chicago / Boston,11767.51
+2025-10-29,Chicago,Test,Chicago / Boston,11458.78
+2025-10-30,Chicago,Test,Chicago / Boston,11516.96
+2025-10-31,Chicago,Test,Chicago / Boston,12306.45
+2025-11-01,Chicago,Test,Chicago / Boston,12578.91
+2025-11-02,Chicago,Test,Chicago / Boston,13425.19
+2025-11-03,Chicago,Test,Chicago / Boston,11513.96
+2025-11-04,Chicago,Test,Chicago / Boston,11491.6
+2025-11-05,Chicago,Test,Chicago / Boston,11919.53
+2025-11-06,Chicago,Test,Chicago / Boston,11709.38
+2025-11-07,Chicago,Test,Chicago / Boston,11785.72
+2025-11-08,Chicago,Test,Chicago / Boston,13362.74
+2025-11-09,Chicago,Test,Chicago / Boston,12797.52
+2025-11-10,Chicago,Test,Chicago / Boston,11230.64
+2025-11-11,Chicago,Test,Chicago / Boston,11013.68
+2025-11-12,Chicago,Test,Chicago / Boston,11104.99
+2025-11-13,Chicago,Test,Chicago / Boston,12673.07
+2025-11-14,Chicago,Test,Chicago / Boston,11940.57
+2025-11-15,Chicago,Test,Chicago / Boston,12264.3
+2025-11-16,Chicago,Test,Chicago / Boston,12260.85
+2025-11-17,Chicago,Test,Chicago / Boston,11573.79
+2025-11-18,Chicago,Test,Chicago / Boston,11586.98
+2025-11-19,Chicago,Test,Chicago / Boston,11573.99
+2025-11-20,Chicago,Test,Chicago / Boston,11223.32
+2025-11-21,Chicago,Test,Chicago / Boston,11265.28
+2025-11-22,Chicago,Test,Chicago / Boston,12873.87
+2025-11-23,Chicago,Test,Chicago / Boston,12761.06
+2025-11-24,Chicago,Test,Chicago / Boston,10352.34
+2025-11-25,Chicago,Test,Chicago / Boston,11178.03
+2025-11-26,Chicago,Test,Chicago / Boston,10907.71
+2025-11-27,Chicago,Test,Chicago / Boston,14630.29
+2025-11-28,Chicago,Test,Chicago / Boston,17452.57
+2025-11-29,Chicago,Test,Chicago / Boston,12825.83
+2025-11-30,Chicago,Test,Chicago / Boston,12533.19
+2025-12-01,Chicago,Test,Chicago / Boston,11930.37
+2025-12-02,Chicago,Test,Chicago / Boston,12054.97
+2025-12-03,Chicago,Test,Chicago / Boston,12338.37
+2025-12-04,Chicago,Test,Chicago / Boston,12727.19
+2025-12-05,Chicago,Test,Chicago / Boston,13647.13
+2025-12-06,Chicago,Test,Chicago / Boston,14050.16
+2025-12-07,Chicago,Test,Chicago / Boston,15036.5
+2025-12-08,Chicago,Test,Chicago / Boston,13017.35
+2025-12-09,Chicago,Test,Chicago / Boston,13639.29
+2025-12-10,Chicago,Test,Chicago / Boston,13020.38
+2025-12-11,Chicago,Test,Chicago / Boston,13231.88
+2025-12-12,Chicago,Test,Chicago / Boston,13284.89
+2025-12-13,Chicago,Test,Chicago / Boston,15251.03
+2025-12-14,Chicago,Test,Chicago / Boston,15230.0
+2025-12-15,Chicago,Test,Chicago / Boston,12894.82
+2025-12-16,Chicago,Test,Chicago / Boston,13445.57
+2025-12-17,Chicago,Test,Chicago / Boston,13129.67
+2025-12-18,Chicago,Test,Chicago / Boston,12905.02
+2025-12-19,Chicago,Test,Chicago / Boston,13349.05
+2025-12-20,Chicago,Test,Chicago / Boston,14747.96
+2025-12-21,Chicago,Test,Chicago / Boston,15904.78
+2025-12-22,Chicago,Test,Chicago / Boston,13646.14
+2025-12-23,Chicago,Test,Chicago / Boston,12895.16
+2025-12-24,Chicago,Test,Chicago / Boston,15996.71
+2025-12-25,Chicago,Test,Chicago / Boston,15573.78
+2025-12-26,Chicago,Test,Chicago / Boston,14383.52
+2025-12-27,Chicago,Test,Chicago / Boston,14282.55
+2025-12-28,Chicago,Test,Chicago / Boston,14172.09
+2025-12-29,Chicago,Test,Chicago / Boston,14331.17
+2025-12-30,Chicago,Test,Chicago / Boston,13723.4
+2025-12-31,Chicago,Test,Chicago / Boston,14310.18
+2025-01-01,Boston,Control,Chicago / Boston,9427.71
+2025-01-02,Boston,Control,Chicago / Boston,7562.64
+2025-01-03,Boston,Control,Chicago / Boston,8688.26
+2025-01-04,Boston,Control,Chicago / Boston,10272.41
+2025-01-05,Boston,Control,Chicago / Boston,10541.48
+2025-01-06,Boston,Control,Chicago / Boston,8316.7
+2025-01-07,Boston,Control,Chicago / Boston,8798.45
+2025-01-08,Boston,Control,Chicago / Boston,8394.39
+2025-01-09,Boston,Control,Chicago / Boston,8911.61
+2025-01-10,Boston,Control,Chicago / Boston,8450.25
+2025-01-11,Boston,Control,Chicago / Boston,10107.5
+2025-01-12,Boston,Control,Chicago / Boston,9883.93
+2025-01-13,Boston,Control,Chicago / Boston,9169.57
+2025-01-14,Boston,Control,Chicago / Boston,9281.22
+2025-01-15,Boston,Control,Chicago / Boston,8847.35
+2025-01-16,Boston,Control,Chicago / Boston,8987.8
+2025-01-17,Boston,Control,Chicago / Boston,8389.83
+2025-01-18,Boston,Control,Chicago / Boston,10329.5
+2025-01-19,Boston,Control,Chicago / Boston,10462.02
+2025-01-20,Boston,Control,Chicago / Boston,10182.2
+2025-01-21,Boston,Control,Chicago / Boston,8643.41
+2025-01-22,Boston,Control,Chicago / Boston,9754.97
+2025-01-23,Boston,Control,Chicago / Boston,9588.87
+2025-01-24,Boston,Control,Chicago / Boston,9318.82
+2025-01-25,Boston,Control,Chicago / Boston,11400.93
+2025-01-26,Boston,Control,Chicago / Boston,10850.52
+2025-01-27,Boston,Control,Chicago / Boston,9460.18
+2025-01-28,Boston,Control,Chicago / Boston,9307.48
+2025-01-29,Boston,Control,Chicago / Boston,9877.3
+2025-01-30,Boston,Control,Chicago / Boston,9858.08
+2025-01-31,Boston,Control,Chicago / Boston,9169.48
+2025-02-01,Boston,Control,Chicago / Boston,10343.42
+2025-02-02,Boston,Control,Chicago / Boston,10848.0
+2025-02-03,Boston,Control,Chicago / Boston,9203.51
+2025-02-04,Boston,Control,Chicago / Boston,9549.62
+2025-02-05,Boston,Control,Chicago / Boston,10133.3
+2025-02-06,Boston,Control,Chicago / Boston,9459.27
+2025-02-07,Boston,Control,Chicago / Boston,9671.59
+2025-02-08,Boston,Control,Chicago / Boston,11182.66
+2025-02-09,Boston,Control,Chicago / Boston,11553.8
+2025-02-10,Boston,Control,Chicago / Boston,8863.39
+2025-02-11,Boston,Control,Chicago / Boston,9592.34
+2025-02-12,Boston,Control,Chicago / Boston,9976.4
+2025-02-13,Boston,Control,Chicago / Boston,10432.61
+2025-02-14,Boston,Control,Chicago / Boston,10643.32
+2025-02-15,Boston,Control,Chicago / Boston,10653.5
+2025-02-16,Boston,Control,Chicago / Boston,11744.07
+2025-02-17,Boston,Control,Chicago / Boston,9829.45
+2025-02-18,Boston,Control,Chicago / Boston,9639.53
+2025-02-19,Boston,Control,Chicago / Boston,9920.21
+2025-02-20,Boston,Control,Chicago / Boston,10148.54
+2025-02-21,Boston,Control,Chicago / Boston,10015.99
+2025-02-22,Boston,Control,Chicago / Boston,10817.91
+2025-02-23,Boston,Control,Chicago / Boston,12165.61
+2025-02-24,Boston,Control,Chicago / Boston,10939.18
+2025-02-25,Boston,Control,Chicago / Boston,10722.57
+2025-02-26,Boston,Control,Chicago / Boston,10016.58
+2025-02-27,Boston,Control,Chicago / Boston,10455.53
+2025-02-28,Boston,Control,Chicago / Boston,10583.44
+2025-03-01,Boston,Control,Chicago / Boston,12313.94
+2025-03-02,Boston,Control,Chicago / Boston,12389.66
+2025-03-03,Boston,Control,Chicago / Boston,10417.34
+2025-03-04,Boston,Control,Chicago / Boston,10807.08
+2025-03-05,Boston,Control,Chicago / Boston,11011.86
+2025-03-06,Boston,Control,Chicago / Boston,11478.6
+2025-03-07,Boston,Control,Chicago / Boston,11210.58
+2025-03-08,Boston,Control,Chicago / Boston,12723.79
+2025-03-09,Boston,Control,Chicago / Boston,12475.46
+2025-03-10,Boston,Control,Chicago / Boston,11650.65
+2025-03-11,Boston,Control,Chicago / Boston,11278.5
+2025-03-12,Boston,Control,Chicago / Boston,10793.0
+2025-03-13,Boston,Control,Chicago / Boston,11792.45
+2025-03-14,Boston,Control,Chicago / Boston,11544.62
+2025-03-15,Boston,Control,Chicago / Boston,12543.98
+2025-03-16,Boston,Control,Chicago / Boston,12577.3
+2025-03-17,Boston,Control,Chicago / Boston,11521.94
+2025-03-18,Boston,Control,Chicago / Boston,11640.65
+2025-03-19,Boston,Control,Chicago / Boston,11577.75
+2025-03-20,Boston,Control,Chicago / Boston,11674.44
+2025-03-21,Boston,Control,Chicago / Boston,12306.48
+2025-03-22,Boston,Control,Chicago / Boston,13521.36
+2025-03-23,Boston,Control,Chicago / Boston,13200.18
+2025-03-24,Boston,Control,Chicago / Boston,12134.24
+2025-03-25,Boston,Control,Chicago / Boston,11353.97
+2025-03-26,Boston,Control,Chicago / Boston,12003.44
+2025-03-27,Boston,Control,Chicago / Boston,12644.85
+2025-03-28,Boston,Control,Chicago / Boston,11841.92
+2025-03-29,Boston,Control,Chicago / Boston,13055.96
+2025-03-30,Boston,Control,Chicago / Boston,13186.46
+2025-03-31,Boston,Control,Chicago / Boston,11620.96
+2025-04-01,Boston,Control,Chicago / Boston,11797.14
+2025-04-02,Boston,Control,Chicago / Boston,12019.14
+2025-04-03,Boston,Control,Chicago / Boston,11632.27
+2025-04-04,Boston,Control,Chicago / Boston,12276.87
+2025-04-05,Boston,Control,Chicago / Boston,14126.8
+2025-04-06,Boston,Control,Chicago / Boston,13413.94
+2025-04-07,Boston,Control,Chicago / Boston,13050.46
+2025-04-08,Boston,Control,Chicago / Boston,12673.84
+2025-04-09,Boston,Control,Chicago / Boston,12938.89
+2025-04-10,Boston,Control,Chicago / Boston,12276.26
+2025-04-11,Boston,Control,Chicago / Boston,12957.72
+2025-04-12,Boston,Control,Chicago / Boston,13616.23
+2025-04-13,Boston,Control,Chicago / Boston,14494.5
+2025-04-14,Boston,Control,Chicago / Boston,12808.24
+2025-04-15,Boston,Control,Chicago / Boston,13013.63
+2025-04-16,Boston,Control,Chicago / Boston,12332.41
+2025-04-17,Boston,Control,Chicago / Boston,12494.82
+2025-04-18,Boston,Control,Chicago / Boston,13165.86
+2025-04-19,Boston,Control,Chicago / Boston,13990.66
+2025-04-20,Boston,Control,Chicago / Boston,14627.11
+2025-04-21,Boston,Control,Chicago / Boston,12471.61
+2025-04-22,Boston,Control,Chicago / Boston,13444.93
+2025-04-23,Boston,Control,Chicago / Boston,12613.55
+2025-04-24,Boston,Control,Chicago / Boston,13405.31
+2025-04-25,Boston,Control,Chicago / Boston,13477.85
+2025-04-26,Boston,Control,Chicago / Boston,14393.78
+2025-04-27,Boston,Control,Chicago / Boston,14971.8
+2025-04-28,Boston,Control,Chicago / Boston,13447.23
+2025-04-29,Boston,Control,Chicago / Boston,13151.6
+2025-04-30,Boston,Control,Chicago / Boston,12993.94
+2025-05-01,Boston,Control,Chicago / Boston,12632.41
+2025-05-02,Boston,Control,Chicago / Boston,13642.28
+2025-05-03,Boston,Control,Chicago / Boston,14306.45
+2025-05-04,Boston,Control,Chicago / Boston,15041.47
+2025-05-05,Boston,Control,Chicago / Boston,13498.05
+2025-05-06,Boston,Control,Chicago / Boston,13930.72
+2025-05-07,Boston,Control,Chicago / Boston,13554.89
+2025-05-08,Boston,Control,Chicago / Boston,13579.13
+2025-05-09,Boston,Control,Chicago / Boston,14060.12
+2025-05-10,Boston,Control,Chicago / Boston,15358.16
+2025-05-11,Boston,Control,Chicago / Boston,15384.38
+2025-05-12,Boston,Control,Chicago / Boston,14052.3
+2025-05-13,Boston,Control,Chicago / Boston,13243.33
+2025-05-14,Boston,Control,Chicago / Boston,14238.62
+2025-05-15,Boston,Control,Chicago / Boston,14209.93
+2025-05-16,Boston,Control,Chicago / Boston,13557.04
+2025-05-17,Boston,Control,Chicago / Boston,15342.3
+2025-05-18,Boston,Control,Chicago / Boston,15458.48
+2025-05-19,Boston,Control,Chicago / Boston,14018.07
+2025-05-20,Boston,Control,Chicago / Boston,14243.75
+2025-05-21,Boston,Control,Chicago / Boston,14733.07
+2025-05-22,Boston,Control,Chicago / Boston,14613.98
+2025-05-23,Boston,Control,Chicago / Boston,13635.63
+2025-05-24,Boston,Control,Chicago / Boston,15904.52
+2025-05-25,Boston,Control,Chicago / Boston,16227.27
+2025-05-26,Boston,Control,Chicago / Boston,15526.79
+2025-05-27,Boston,Control,Chicago / Boston,14747.12
+2025-05-28,Boston,Control,Chicago / Boston,15157.98
+2025-05-29,Boston,Control,Chicago / Boston,14766.06
+2025-05-30,Boston,Control,Chicago / Boston,14463.42
+2025-05-31,Boston,Control,Chicago / Boston,16249.59
+2025-06-01,Boston,Control,Chicago / Boston,15892.78
+2025-06-02,Boston,Control,Chicago / Boston,14432.57
+2025-06-03,Boston,Control,Chicago / Boston,14294.87
+2025-06-04,Boston,Control,Chicago / Boston,15118.35
+2025-06-05,Boston,Control,Chicago / Boston,14136.54
+2025-06-06,Boston,Control,Chicago / Boston,15141.75
+2025-06-07,Boston,Control,Chicago / Boston,16155.28
+2025-06-08,Boston,Control,Chicago / Boston,15374.13
+2025-06-09,Boston,Control,Chicago / Boston,14702.05
+2025-06-10,Boston,Control,Chicago / Boston,13680.73
+2025-06-11,Boston,Control,Chicago / Boston,14839.85
+2025-06-12,Boston,Control,Chicago / Boston,14962.64
+2025-06-13,Boston,Control,Chicago / Boston,14355.04
+2025-06-14,Boston,Control,Chicago / Boston,16098.01
+2025-06-15,Boston,Control,Chicago / Boston,16878.45
+2025-06-16,Boston,Control,Chicago / Boston,14426.17
+2025-06-17,Boston,Control,Chicago / Boston,14204.0
+2025-06-18,Boston,Control,Chicago / Boston,15280.5
+2025-06-19,Boston,Control,Chicago / Boston,15491.23
+2025-06-20,Boston,Control,Chicago / Boston,14676.53
+2025-06-21,Boston,Control,Chicago / Boston,16537.11
+2025-06-22,Boston,Control,Chicago / Boston,16682.33
+2025-06-23,Boston,Control,Chicago / Boston,14382.97
+2025-06-24,Boston,Control,Chicago / Boston,14496.17
+2025-06-25,Boston,Control,Chicago / Boston,15221.45
+2025-06-26,Boston,Control,Chicago / Boston,15415.96
+2025-06-27,Boston,Control,Chicago / Boston,14947.73
+2025-06-28,Boston,Control,Chicago / Boston,15774.15
+2025-06-29,Boston,Control,Chicago / Boston,16979.89
+2025-06-30,Boston,Control,Chicago / Boston,14493.27
+2025-07-01,Boston,Control,Chicago / Boston,14575.77
+2025-07-02,Boston,Control,Chicago / Boston,14859.85
+2025-07-03,Boston,Control,Chicago / Boston,15367.67
+2025-07-04,Boston,Control,Chicago / Boston,16391.75
+2025-07-05,Boston,Control,Chicago / Boston,16314.79
+2025-07-06,Boston,Control,Chicago / Boston,16331.91
+2025-07-07,Boston,Control,Chicago / Boston,14721.7
+2025-07-08,Boston,Control,Chicago / Boston,14933.25
+2025-07-09,Boston,Control,Chicago / Boston,13631.15
+2025-07-10,Boston,Control,Chicago / Boston,14563.05
+2025-07-11,Boston,Control,Chicago / Boston,14782.37
+2025-07-12,Boston,Control,Chicago / Boston,15620.31
+2025-07-13,Boston,Control,Chicago / Boston,16258.05
+2025-07-14,Boston,Control,Chicago / Boston,14571.32
+2025-07-15,Boston,Control,Chicago / Boston,15385.25
+2025-07-16,Boston,Control,Chicago / Boston,15298.72
+2025-07-17,Boston,Control,Chicago / Boston,14431.88
+2025-07-18,Boston,Control,Chicago / Boston,14552.99
+2025-07-19,Boston,Control,Chicago / Boston,16003.47
+2025-07-20,Boston,Control,Chicago / Boston,15832.4
+2025-07-21,Boston,Control,Chicago / Boston,14660.95
+2025-07-22,Boston,Control,Chicago / Boston,14246.89
+2025-07-23,Boston,Control,Chicago / Boston,14076.24
+2025-07-24,Boston,Control,Chicago / Boston,14797.76
+2025-07-25,Boston,Control,Chicago / Boston,14785.15
+2025-07-26,Boston,Control,Chicago / Boston,15596.88
+2025-07-27,Boston,Control,Chicago / Boston,16294.1
+2025-07-28,Boston,Control,Chicago / Boston,14205.58
+2025-07-29,Boston,Control,Chicago / Boston,14559.39
+2025-07-30,Boston,Control,Chicago / Boston,14779.27
+2025-07-31,Boston,Control,Chicago / Boston,14401.72
+2025-08-01,Boston,Control,Chicago / Boston,14587.39
+2025-08-02,Boston,Control,Chicago / Boston,15589.53
+2025-08-03,Boston,Control,Chicago / Boston,15703.42
+2025-08-04,Boston,Control,Chicago / Boston,14248.46
+2025-08-05,Boston,Control,Chicago / Boston,13999.84
+2025-08-06,Boston,Control,Chicago / Boston,14217.13
+2025-08-07,Boston,Control,Chicago / Boston,13618.44
+2025-08-08,Boston,Control,Chicago / Boston,14039.57
+2025-08-09,Boston,Control,Chicago / Boston,15532.73
+2025-08-10,Boston,Control,Chicago / Boston,15520.84
+2025-08-11,Boston,Control,Chicago / Boston,14072.6
+2025-08-12,Boston,Control,Chicago / Boston,14123.24
+2025-08-13,Boston,Control,Chicago / Boston,14325.26
+2025-08-14,Boston,Control,Chicago / Boston,14465.48
+2025-08-15,Boston,Control,Chicago / Boston,13799.15
+2025-08-16,Boston,Control,Chicago / Boston,14970.17
+2025-08-17,Boston,Control,Chicago / Boston,15010.92
+2025-08-18,Boston,Control,Chicago / Boston,13786.63
+2025-08-19,Boston,Control,Chicago / Boston,13815.74
+2025-08-20,Boston,Control,Chicago / Boston,13612.08
+2025-08-21,Boston,Control,Chicago / Boston,13362.69
+2025-08-22,Boston,Control,Chicago / Boston,13686.71
+2025-08-23,Boston,Control,Chicago / Boston,15355.38
+2025-08-24,Boston,Control,Chicago / Boston,15499.66
+2025-08-25,Boston,Control,Chicago / Boston,13555.88
+2025-08-26,Boston,Control,Chicago / Boston,13586.5
+2025-08-27,Boston,Control,Chicago / Boston,13340.4
+2025-08-28,Boston,Control,Chicago / Boston,13685.79
+2025-08-29,Boston,Control,Chicago / Boston,13311.77
+2025-08-30,Boston,Control,Chicago / Boston,15307.68
+2025-08-31,Boston,Control,Chicago / Boston,14285.52
+2025-09-01,Boston,Control,Chicago / Boston,14522.91
+2025-09-02,Boston,Control,Chicago / Boston,13668.58
+2025-09-03,Boston,Control,Chicago / Boston,13587.26
+2025-09-04,Boston,Control,Chicago / Boston,14608.87
+2025-09-05,Boston,Control,Chicago / Boston,13592.27
+2025-09-06,Boston,Control,Chicago / Boston,14421.03
+2025-09-07,Boston,Control,Chicago / Boston,14769.86
+2025-09-08,Boston,Control,Chicago / Boston,12600.99
+2025-09-09,Boston,Control,Chicago / Boston,13280.09
+2025-09-10,Boston,Control,Chicago / Boston,12930.85
+2025-09-11,Boston,Control,Chicago / Boston,13631.88
+2025-09-12,Boston,Control,Chicago / Boston,12983.19
+2025-09-13,Boston,Control,Chicago / Boston,14561.44
+2025-09-14,Boston,Control,Chicago / Boston,14309.95
+2025-09-15,Boston,Control,Chicago / Boston,13843.55
+2025-09-16,Boston,Control,Chicago / Boston,12944.59
+2025-09-17,Boston,Control,Chicago / Boston,13815.43
+2025-09-18,Boston,Control,Chicago / Boston,13353.91
+2025-09-19,Boston,Control,Chicago / Boston,13180.62
+2025-09-20,Boston,Control,Chicago / Boston,14529.21
+2025-09-21,Boston,Control,Chicago / Boston,14505.93
+2025-09-22,Boston,Control,Chicago / Boston,12067.12
+2025-09-23,Boston,Control,Chicago / Boston,12725.86
+2025-09-24,Boston,Control,Chicago / Boston,13164.24
+2025-09-25,Boston,Control,Chicago / Boston,12755.07
+2025-09-26,Boston,Control,Chicago / Boston,12151.84
+2025-09-27,Boston,Control,Chicago / Boston,14116.49
+2025-09-28,Boston,Control,Chicago / Boston,14820.81
+2025-09-29,Boston,Control,Chicago / Boston,13165.46
+2025-09-30,Boston,Control,Chicago / Boston,12582.52
+2025-10-01,Boston,Control,Chicago / Boston,12975.09
+2025-10-02,Boston,Control,Chicago / Boston,12388.62
+2025-10-03,Boston,Control,Chicago / Boston,11794.14
+2025-10-04,Boston,Control,Chicago / Boston,13518.87
+2025-10-05,Boston,Control,Chicago / Boston,14531.12
+2025-10-06,Boston,Control,Chicago / Boston,12297.37
+2025-10-07,Boston,Control,Chicago / Boston,12278.17
+2025-10-08,Boston,Control,Chicago / Boston,12222.61
+2025-10-09,Boston,Control,Chicago / Boston,13116.66
+2025-10-10,Boston,Control,Chicago / Boston,12968.43
+2025-10-11,Boston,Control,Chicago / Boston,14616.27
+2025-10-12,Boston,Control,Chicago / Boston,13586.7
+2025-10-13,Boston,Control,Chicago / Boston,12317.05
+2025-10-14,Boston,Control,Chicago / Boston,11525.56
+2025-10-15,Boston,Control,Chicago / Boston,12752.81
+2025-10-16,Boston,Control,Chicago / Boston,11612.29
+2025-10-17,Boston,Control,Chicago / Boston,12164.37
+2025-10-18,Boston,Control,Chicago / Boston,13013.35
+2025-10-19,Boston,Control,Chicago / Boston,13198.12
+2025-10-20,Boston,Control,Chicago / Boston,11635.37
+2025-10-21,Boston,Control,Chicago / Boston,11703.64
+2025-10-22,Boston,Control,Chicago / Boston,11704.82
+2025-10-23,Boston,Control,Chicago / Boston,11673.65
+2025-10-24,Boston,Control,Chicago / Boston,12226.99
+2025-10-25,Boston,Control,Chicago / Boston,12816.4
+2025-10-26,Boston,Control,Chicago / Boston,13346.94
+2025-10-27,Boston,Control,Chicago / Boston,12310.15
+2025-10-28,Boston,Control,Chicago / Boston,11557.77
+2025-10-29,Boston,Control,Chicago / Boston,11446.94
+2025-10-30,Boston,Control,Chicago / Boston,11627.25
+2025-10-31,Boston,Control,Chicago / Boston,12195.61
+2025-11-01,Boston,Control,Chicago / Boston,13188.17
+2025-11-02,Boston,Control,Chicago / Boston,12860.53
+2025-11-03,Boston,Control,Chicago / Boston,11834.35
+2025-11-04,Boston,Control,Chicago / Boston,11146.14
+2025-11-05,Boston,Control,Chicago / Boston,11873.75
+2025-11-06,Boston,Control,Chicago / Boston,11738.18
+2025-11-07,Boston,Control,Chicago / Boston,11416.79
+2025-11-08,Boston,Control,Chicago / Boston,12603.89
+2025-11-09,Boston,Control,Chicago / Boston,12564.26
+2025-11-10,Boston,Control,Chicago / Boston,11712.4
+2025-11-11,Boston,Control,Chicago / Boston,11985.61
+2025-11-12,Boston,Control,Chicago / Boston,11183.99
+2025-11-13,Boston,Control,Chicago / Boston,11626.97
+2025-11-14,Boston,Control,Chicago / Boston,10541.26
+2025-11-15,Boston,Control,Chicago / Boston,12586.21
+2025-11-16,Boston,Control,Chicago / Boston,12803.23
+2025-11-17,Boston,Control,Chicago / Boston,10989.34
+2025-11-18,Boston,Control,Chicago / Boston,10963.79
+2025-11-19,Boston,Control,Chicago / Boston,11062.99
+2025-11-20,Boston,Control,Chicago / Boston,11453.13
+2025-11-21,Boston,Control,Chicago / Boston,11239.29
+2025-11-22,Boston,Control,Chicago / Boston,11796.11
+2025-11-23,Boston,Control,Chicago / Boston,11834.29
+2025-11-24,Boston,Control,Chicago / Boston,11029.56
+2025-11-25,Boston,Control,Chicago / Boston,11466.78
+2025-11-26,Boston,Control,Chicago / Boston,10111.35
+2025-11-27,Boston,Control,Chicago / Boston,14346.82
+2025-11-28,Boston,Control,Chicago / Boston,15977.74
+2025-11-29,Boston,Control,Chicago / Boston,13254.59
+2025-11-30,Boston,Control,Chicago / Boston,12503.16
+2025-12-01,Boston,Control,Chicago / Boston,11389.79
+2025-12-02,Boston,Control,Chicago / Boston,11282.99
+2025-12-03,Boston,Control,Chicago / Boston,10324.24
+2025-12-04,Boston,Control,Chicago / Boston,11537.82
+2025-12-05,Boston,Control,Chicago / Boston,11302.42
+2025-12-06,Boston,Control,Chicago / Boston,12852.89
+2025-12-07,Boston,Control,Chicago / Boston,14286.59
+2025-12-08,Boston,Control,Chicago / Boston,10331.1
+2025-12-09,Boston,Control,Chicago / Boston,11930.35
+2025-12-10,Boston,Control,Chicago / Boston,11085.5
+2025-12-11,Boston,Control,Chicago / Boston,11327.85
+2025-12-12,Boston,Control,Chicago / Boston,11189.71
+2025-12-13,Boston,Control,Chicago / Boston,12463.0
+2025-12-14,Boston,Control,Chicago / Boston,12404.92
+2025-12-15,Boston,Control,Chicago / Boston,11356.41
+2025-12-16,Boston,Control,Chicago / Boston,10585.29
+2025-12-17,Boston,Control,Chicago / Boston,11542.93
+2025-12-18,Boston,Control,Chicago / Boston,11058.79
+2025-12-19,Boston,Control,Chicago / Boston,10765.57
+2025-12-20,Boston,Control,Chicago / Boston,12488.52
+2025-12-21,Boston,Control,Chicago / Boston,13213.56
+2025-12-22,Boston,Control,Chicago / Boston,11039.46
+2025-12-23,Boston,Control,Chicago / Boston,11424.31
+2025-12-24,Boston,Control,Chicago / Boston,13726.92
+2025-12-25,Boston,Control,Chicago / Boston,13263.12
+2025-12-26,Boston,Control,Chicago / Boston,11594.29
+2025-12-27,Boston,Control,Chicago / Boston,13525.08
+2025-12-28,Boston,Control,Chicago / Boston,12687.93
+2025-12-29,Boston,Control,Chicago / Boston,11626.2
+2025-12-30,Boston,Control,Chicago / Boston,11400.95
+2025-12-31,Boston,Control,Chicago / Boston,13019.13
+2025-01-01,Dallas,Test,Dallas / Atlanta,8271.09
+2025-01-02,Dallas,Test,Dallas / Atlanta,8320.82
+2025-01-03,Dallas,Test,Dallas / Atlanta,7995.79
+2025-01-04,Dallas,Test,Dallas / Atlanta,9330.56
+2025-01-05,Dallas,Test,Dallas / Atlanta,9401.0
+2025-01-06,Dallas,Test,Dallas / Atlanta,8199.58
+2025-01-07,Dallas,Test,Dallas / Atlanta,8082.26
+2025-01-08,Dallas,Test,Dallas / Atlanta,8217.22
+2025-01-09,Dallas,Test,Dallas / Atlanta,8724.38
+2025-01-10,Dallas,Test,Dallas / Atlanta,8527.85
+2025-01-11,Dallas,Test,Dallas / Atlanta,9777.32
+2025-01-12,Dallas,Test,Dallas / Atlanta,9318.26
+2025-01-13,Dallas,Test,Dallas / Atlanta,7906.44
+2025-01-14,Dallas,Test,Dallas / Atlanta,8589.28
+2025-01-15,Dallas,Test,Dallas / Atlanta,8580.04
+2025-01-16,Dallas,Test,Dallas / Atlanta,8814.6
+2025-01-17,Dallas,Test,Dallas / Atlanta,8087.25
+2025-01-18,Dallas,Test,Dallas / Atlanta,9516.76
+2025-01-19,Dallas,Test,Dallas / Atlanta,9030.36
+2025-01-20,Dallas,Test,Dallas / Atlanta,8226.94
+2025-01-21,Dallas,Test,Dallas / Atlanta,8749.09
+2025-01-22,Dallas,Test,Dallas / Atlanta,8244.95
+2025-01-23,Dallas,Test,Dallas / Atlanta,8666.47
+2025-01-24,Dallas,Test,Dallas / Atlanta,8390.76
+2025-01-25,Dallas,Test,Dallas / Atlanta,9873.89
+2025-01-26,Dallas,Test,Dallas / Atlanta,9368.38
+2025-01-27,Dallas,Test,Dallas / Atlanta,8562.97
+2025-01-28,Dallas,Test,Dallas / Atlanta,7480.66
+2025-01-29,Dallas,Test,Dallas / Atlanta,8515.77
+2025-01-30,Dallas,Test,Dallas / Atlanta,8022.08
+2025-01-31,Dallas,Test,Dallas / Atlanta,9069.61
+2025-02-01,Dallas,Test,Dallas / Atlanta,10216.12
+2025-02-02,Dallas,Test,Dallas / Atlanta,10131.44
+2025-02-03,Dallas,Test,Dallas / Atlanta,9264.58
+2025-02-04,Dallas,Test,Dallas / Atlanta,8403.37
+2025-02-05,Dallas,Test,Dallas / Atlanta,9402.36
+2025-02-06,Dallas,Test,Dallas / Atlanta,9137.59
+2025-02-07,Dallas,Test,Dallas / Atlanta,8745.9
+2025-02-08,Dallas,Test,Dallas / Atlanta,10543.29
+2025-02-09,Dallas,Test,Dallas / Atlanta,9765.96
+2025-02-10,Dallas,Test,Dallas / Atlanta,8623.49
+2025-02-11,Dallas,Test,Dallas / Atlanta,8731.65
+2025-02-12,Dallas,Test,Dallas / Atlanta,8791.06
+2025-02-13,Dallas,Test,Dallas / Atlanta,8632.2
+2025-02-14,Dallas,Test,Dallas / Atlanta,10268.25
+2025-02-15,Dallas,Test,Dallas / Atlanta,10256.43
+2025-02-16,Dallas,Test,Dallas / Atlanta,10508.49
+2025-02-17,Dallas,Test,Dallas / Atlanta,8934.53
+2025-02-18,Dallas,Test,Dallas / Atlanta,8516.98
+2025-02-19,Dallas,Test,Dallas / Atlanta,9302.42
+2025-02-20,Dallas,Test,Dallas / Atlanta,8549.87
+2025-02-21,Dallas,Test,Dallas / Atlanta,9246.9
+2025-02-22,Dallas,Test,Dallas / Atlanta,10086.59
+2025-02-23,Dallas,Test,Dallas / Atlanta,11328.42
+2025-02-24,Dallas,Test,Dallas / Atlanta,9701.14
+2025-02-25,Dallas,Test,Dallas / Atlanta,9445.39
+2025-02-26,Dallas,Test,Dallas / Atlanta,9896.74
+2025-02-27,Dallas,Test,Dallas / Atlanta,9171.82
+2025-02-28,Dallas,Test,Dallas / Atlanta,9707.04
+2025-03-01,Dallas,Test,Dallas / Atlanta,10892.39
+2025-03-02,Dallas,Test,Dallas / Atlanta,10950.76
+2025-03-03,Dallas,Test,Dallas / Atlanta,10075.19
+2025-03-04,Dallas,Test,Dallas / Atlanta,9916.43
+2025-03-05,Dallas,Test,Dallas / Atlanta,9792.42
+2025-03-06,Dallas,Test,Dallas / Atlanta,9128.6
+2025-03-07,Dallas,Test,Dallas / Atlanta,9414.77
+2025-03-08,Dallas,Test,Dallas / Atlanta,11026.37
+2025-03-09,Dallas,Test,Dallas / Atlanta,11140.43
+2025-03-10,Dallas,Test,Dallas / Atlanta,9462.32
+2025-03-11,Dallas,Test,Dallas / Atlanta,10773.88
+2025-03-12,Dallas,Test,Dallas / Atlanta,10488.15
+2025-03-13,Dallas,Test,Dallas / Atlanta,10195.66
+2025-03-14,Dallas,Test,Dallas / Atlanta,10041.56
+2025-03-15,Dallas,Test,Dallas / Atlanta,11250.02
+2025-03-16,Dallas,Test,Dallas / Atlanta,11020.57
+2025-03-17,Dallas,Test,Dallas / Atlanta,10154.05
+2025-03-18,Dallas,Test,Dallas / Atlanta,10255.88
+2025-03-19,Dallas,Test,Dallas / Atlanta,9753.01
+2025-03-20,Dallas,Test,Dallas / Atlanta,10357.32
+2025-03-21,Dallas,Test,Dallas / Atlanta,10218.11
+2025-03-22,Dallas,Test,Dallas / Atlanta,10898.17
+2025-03-23,Dallas,Test,Dallas / Atlanta,11312.22
+2025-03-24,Dallas,Test,Dallas / Atlanta,10236.02
+2025-03-25,Dallas,Test,Dallas / Atlanta,11101.41
+2025-03-26,Dallas,Test,Dallas / Atlanta,10659.1
+2025-03-27,Dallas,Test,Dallas / Atlanta,10014.81
+2025-03-28,Dallas,Test,Dallas / Atlanta,10707.35
+2025-03-29,Dallas,Test,Dallas / Atlanta,11286.07
+2025-03-30,Dallas,Test,Dallas / Atlanta,12269.52
+2025-03-31,Dallas,Test,Dallas / Atlanta,10472.72
+2025-04-01,Dallas,Test,Dallas / Atlanta,10645.1
+2025-04-02,Dallas,Test,Dallas / Atlanta,11192.47
+2025-04-03,Dallas,Test,Dallas / Atlanta,10288.08
+2025-04-04,Dallas,Test,Dallas / Atlanta,10284.65
+2025-04-05,Dallas,Test,Dallas / Atlanta,11887.54
+2025-04-06,Dallas,Test,Dallas / Atlanta,12507.34
+2025-04-07,Dallas,Test,Dallas / Atlanta,10348.3
+2025-04-08,Dallas,Test,Dallas / Atlanta,9911.28
+2025-04-09,Dallas,Test,Dallas / Atlanta,10803.87
+2025-04-10,Dallas,Test,Dallas / Atlanta,11200.17
+2025-04-11,Dallas,Test,Dallas / Atlanta,11468.71
+2025-04-12,Dallas,Test,Dallas / Atlanta,12178.77
+2025-04-13,Dallas,Test,Dallas / Atlanta,12232.08
+2025-04-14,Dallas,Test,Dallas / Atlanta,11556.08
+2025-04-15,Dallas,Test,Dallas / Atlanta,10501.84
+2025-04-16,Dallas,Test,Dallas / Atlanta,11069.13
+2025-04-17,Dallas,Test,Dallas / Atlanta,11311.37
+2025-04-18,Dallas,Test,Dallas / Atlanta,11438.11
+2025-04-19,Dallas,Test,Dallas / Atlanta,12400.19
+2025-04-20,Dallas,Test,Dallas / Atlanta,12629.19
+2025-04-21,Dallas,Test,Dallas / Atlanta,10479.81
+2025-04-22,Dallas,Test,Dallas / Atlanta,11171.18
+2025-04-23,Dallas,Test,Dallas / Atlanta,11603.67
+2025-04-24,Dallas,Test,Dallas / Atlanta,11118.76
+2025-04-25,Dallas,Test,Dallas / Atlanta,11525.3
+2025-04-26,Dallas,Test,Dallas / Atlanta,12970.31
+2025-04-27,Dallas,Test,Dallas / Atlanta,12717.19
+2025-04-28,Dallas,Test,Dallas / Atlanta,11658.63
+2025-04-29,Dallas,Test,Dallas / Atlanta,11281.1
+2025-04-30,Dallas,Test,Dallas / Atlanta,11583.4
+2025-05-01,Dallas,Test,Dallas / Atlanta,11907.21
+2025-05-02,Dallas,Test,Dallas / Atlanta,11773.45
+2025-05-03,Dallas,Test,Dallas / Atlanta,12808.85
+2025-05-04,Dallas,Test,Dallas / Atlanta,13129.41
+2025-05-05,Dallas,Test,Dallas / Atlanta,12060.28
+2025-05-06,Dallas,Test,Dallas / Atlanta,11093.0
+2025-05-07,Dallas,Test,Dallas / Atlanta,12275.83
+2025-05-08,Dallas,Test,Dallas / Atlanta,11764.7
+2025-05-09,Dallas,Test,Dallas / Atlanta,12065.73
+2025-05-10,Dallas,Test,Dallas / Atlanta,13643.96
+2025-05-11,Dallas,Test,Dallas / Atlanta,12745.14
+2025-05-12,Dallas,Test,Dallas / Atlanta,11735.13
+2025-05-13,Dallas,Test,Dallas / Atlanta,11911.82
+2025-05-14,Dallas,Test,Dallas / Atlanta,11758.3
+2025-05-15,Dallas,Test,Dallas / Atlanta,12689.35
+2025-05-16,Dallas,Test,Dallas / Atlanta,11780.22
+2025-05-17,Dallas,Test,Dallas / Atlanta,13186.11
+2025-05-18,Dallas,Test,Dallas / Atlanta,13482.69
+2025-05-19,Dallas,Test,Dallas / Atlanta,11724.9
+2025-05-20,Dallas,Test,Dallas / Atlanta,12037.33
+2025-05-21,Dallas,Test,Dallas / Atlanta,12315.7
+2025-05-22,Dallas,Test,Dallas / Atlanta,12102.78
+2025-05-23,Dallas,Test,Dallas / Atlanta,12209.7
+2025-05-24,Dallas,Test,Dallas / Atlanta,13347.01
+2025-05-25,Dallas,Test,Dallas / Atlanta,13012.13
+2025-05-26,Dallas,Test,Dallas / Atlanta,13398.4
+2025-05-27,Dallas,Test,Dallas / Atlanta,12953.21
+2025-05-28,Dallas,Test,Dallas / Atlanta,12346.37
+2025-05-29,Dallas,Test,Dallas / Atlanta,12438.67
+2025-05-30,Dallas,Test,Dallas / Atlanta,12624.29
+2025-05-31,Dallas,Test,Dallas / Atlanta,13208.78
+2025-06-01,Dallas,Test,Dallas / Atlanta,14294.98
+2025-06-02,Dallas,Test,Dallas / Atlanta,12496.74
+2025-06-03,Dallas,Test,Dallas / Atlanta,13026.69
+2025-06-04,Dallas,Test,Dallas / Atlanta,12190.14
+2025-06-05,Dallas,Test,Dallas / Atlanta,13122.83
+2025-06-06,Dallas,Test,Dallas / Atlanta,12761.17
+2025-06-07,Dallas,Test,Dallas / Atlanta,13968.48
+2025-06-08,Dallas,Test,Dallas / Atlanta,13866.38
+2025-06-09,Dallas,Test,Dallas / Atlanta,12430.88
+2025-06-10,Dallas,Test,Dallas / Atlanta,12964.24
+2025-06-11,Dallas,Test,Dallas / Atlanta,12593.76
+2025-06-12,Dallas,Test,Dallas / Atlanta,11845.73
+2025-06-13,Dallas,Test,Dallas / Atlanta,12161.81
+2025-06-14,Dallas,Test,Dallas / Atlanta,13780.69
+2025-06-15,Dallas,Test,Dallas / Atlanta,13968.25
+2025-06-16,Dallas,Test,Dallas / Atlanta,12570.81
+2025-06-17,Dallas,Test,Dallas / Atlanta,13038.01
+2025-06-18,Dallas,Test,Dallas / Atlanta,11904.25
+2025-06-19,Dallas,Test,Dallas / Atlanta,12665.27
+2025-06-20,Dallas,Test,Dallas / Atlanta,11965.51
+2025-06-21,Dallas,Test,Dallas / Atlanta,14173.35
+2025-06-22,Dallas,Test,Dallas / Atlanta,13871.18
+2025-06-23,Dallas,Test,Dallas / Atlanta,12787.04
+2025-06-24,Dallas,Test,Dallas / Atlanta,12329.25
+2025-06-25,Dallas,Test,Dallas / Atlanta,13104.59
+2025-06-26,Dallas,Test,Dallas / Atlanta,13022.21
+2025-06-27,Dallas,Test,Dallas / Atlanta,12859.94
+2025-06-28,Dallas,Test,Dallas / Atlanta,13879.38
+2025-06-29,Dallas,Test,Dallas / Atlanta,14136.37
+2025-06-30,Dallas,Test,Dallas / Atlanta,12400.23
+2025-07-01,Dallas,Test,Dallas / Atlanta,12963.27
+2025-07-02,Dallas,Test,Dallas / Atlanta,13249.12
+2025-07-03,Dallas,Test,Dallas / Atlanta,13040.24
+2025-07-04,Dallas,Test,Dallas / Atlanta,13567.16
+2025-07-05,Dallas,Test,Dallas / Atlanta,14056.4
+2025-07-06,Dallas,Test,Dallas / Atlanta,13458.72
+2025-07-07,Dallas,Test,Dallas / Atlanta,12853.75
+2025-07-08,Dallas,Test,Dallas / Atlanta,12806.84
+2025-07-09,Dallas,Test,Dallas / Atlanta,11967.92
+2025-07-10,Dallas,Test,Dallas / Atlanta,12218.73
+2025-07-11,Dallas,Test,Dallas / Atlanta,12530.46
+2025-07-12,Dallas,Test,Dallas / Atlanta,13792.99
+2025-07-13,Dallas,Test,Dallas / Atlanta,13460.31
+2025-07-14,Dallas,Test,Dallas / Atlanta,12755.68
+2025-07-15,Dallas,Test,Dallas / Atlanta,12699.62
+2025-07-16,Dallas,Test,Dallas / Atlanta,12532.1
+2025-07-17,Dallas,Test,Dallas / Atlanta,12322.43
+2025-07-18,Dallas,Test,Dallas / Atlanta,12964.04
+2025-07-19,Dallas,Test,Dallas / Atlanta,14447.97
+2025-07-20,Dallas,Test,Dallas / Atlanta,13668.99
+2025-07-21,Dallas,Test,Dallas / Atlanta,12339.28
+2025-07-22,Dallas,Test,Dallas / Atlanta,12726.61
+2025-07-23,Dallas,Test,Dallas / Atlanta,12410.56
+2025-07-24,Dallas,Test,Dallas / Atlanta,12478.48
+2025-07-25,Dallas,Test,Dallas / Atlanta,12783.71
+2025-07-26,Dallas,Test,Dallas / Atlanta,13092.4
+2025-07-27,Dallas,Test,Dallas / Atlanta,14242.25
+2025-07-28,Dallas,Test,Dallas / Atlanta,12507.29
+2025-07-29,Dallas,Test,Dallas / Atlanta,12320.03
+2025-07-30,Dallas,Test,Dallas / Atlanta,12422.67
+2025-07-31,Dallas,Test,Dallas / Atlanta,12427.47
+2025-08-01,Dallas,Test,Dallas / Atlanta,11803.57
+2025-08-02,Dallas,Test,Dallas / Atlanta,14224.38
+2025-08-03,Dallas,Test,Dallas / Atlanta,13686.08
+2025-08-04,Dallas,Test,Dallas / Atlanta,12541.3
+2025-08-05,Dallas,Test,Dallas / Atlanta,12708.61
+2025-08-06,Dallas,Test,Dallas / Atlanta,11982.29
+2025-08-07,Dallas,Test,Dallas / Atlanta,12503.84
+2025-08-08,Dallas,Test,Dallas / Atlanta,12220.16
+2025-08-09,Dallas,Test,Dallas / Atlanta,13878.12
+2025-08-10,Dallas,Test,Dallas / Atlanta,12789.9
+2025-08-11,Dallas,Test,Dallas / Atlanta,12228.1
+2025-08-12,Dallas,Test,Dallas / Atlanta,12028.5
+2025-08-13,Dallas,Test,Dallas / Atlanta,12382.54
+2025-08-14,Dallas,Test,Dallas / Atlanta,12377.23
+2025-08-15,Dallas,Test,Dallas / Atlanta,11934.04
+2025-08-16,Dallas,Test,Dallas / Atlanta,13186.88
+2025-08-17,Dallas,Test,Dallas / Atlanta,13383.59
+2025-08-18,Dallas,Test,Dallas / Atlanta,11806.52
+2025-08-19,Dallas,Test,Dallas / Atlanta,12412.03
+2025-08-20,Dallas,Test,Dallas / Atlanta,11955.32
+2025-08-21,Dallas,Test,Dallas / Atlanta,11020.78
+2025-08-22,Dallas,Test,Dallas / Atlanta,11911.15
+2025-08-23,Dallas,Test,Dallas / Atlanta,12924.76
+2025-08-24,Dallas,Test,Dallas / Atlanta,12689.67
+2025-08-25,Dallas,Test,Dallas / Atlanta,11535.53
+2025-08-26,Dallas,Test,Dallas / Atlanta,11998.23
+2025-08-27,Dallas,Test,Dallas / Atlanta,12414.77
+2025-08-28,Dallas,Test,Dallas / Atlanta,12026.62
+2025-08-29,Dallas,Test,Dallas / Atlanta,11672.74
+2025-08-30,Dallas,Test,Dallas / Atlanta,13306.23
+2025-08-31,Dallas,Test,Dallas / Atlanta,12953.66
+2025-09-01,Dallas,Test,Dallas / Atlanta,12551.54
+2025-09-02,Dallas,Test,Dallas / Atlanta,11382.51
+2025-09-03,Dallas,Test,Dallas / Atlanta,11143.76
+2025-09-04,Dallas,Test,Dallas / Atlanta,11610.23
+2025-09-05,Dallas,Test,Dallas / Atlanta,11783.54
+2025-09-06,Dallas,Test,Dallas / Atlanta,12941.77
+2025-09-07,Dallas,Test,Dallas / Atlanta,12802.59
+2025-09-08,Dallas,Test,Dallas / Atlanta,11313.54
+2025-09-09,Dallas,Test,Dallas / Atlanta,11848.55
+2025-09-10,Dallas,Test,Dallas / Atlanta,11130.89
+2025-09-11,Dallas,Test,Dallas / Atlanta,11859.81
+2025-09-12,Dallas,Test,Dallas / Atlanta,11194.95
+2025-09-13,Dallas,Test,Dallas / Atlanta,12534.11
+2025-09-14,Dallas,Test,Dallas / Atlanta,12252.12
+2025-09-15,Dallas,Test,Dallas / Atlanta,11300.79
+2025-09-16,Dallas,Test,Dallas / Atlanta,11807.5
+2025-09-17,Dallas,Test,Dallas / Atlanta,11617.07
+2025-09-18,Dallas,Test,Dallas / Atlanta,11758.71
+2025-09-19,Dallas,Test,Dallas / Atlanta,11569.46
+2025-09-20,Dallas,Test,Dallas / Atlanta,12233.19
+2025-09-21,Dallas,Test,Dallas / Atlanta,12486.44
+2025-09-22,Dallas,Test,Dallas / Atlanta,11025.69
+2025-09-23,Dallas,Test,Dallas / Atlanta,11760.62
+2025-09-24,Dallas,Test,Dallas / Atlanta,10825.86
+2025-09-25,Dallas,Test,Dallas / Atlanta,11553.57
+2025-09-26,Dallas,Test,Dallas / Atlanta,11528.48
+2025-09-27,Dallas,Test,Dallas / Atlanta,13114.92
+2025-09-28,Dallas,Test,Dallas / Atlanta,12284.07
+2025-09-29,Dallas,Test,Dallas / Atlanta,11389.38
+2025-09-30,Dallas,Test,Dallas / Atlanta,11929.81
+2025-10-01,Dallas,Test,Dallas / Atlanta,10861.64
+2025-10-02,Dallas,Test,Dallas / Atlanta,10507.05
+2025-10-03,Dallas,Test,Dallas / Atlanta,10358.65
+2025-10-04,Dallas,Test,Dallas / Atlanta,12541.94
+2025-10-05,Dallas,Test,Dallas / Atlanta,11583.47
+2025-10-06,Dallas,Test,Dallas / Atlanta,10829.55
+2025-10-07,Dallas,Test,Dallas / Atlanta,11097.35
+2025-10-08,Dallas,Test,Dallas / Atlanta,10983.07
+2025-10-09,Dallas,Test,Dallas / Atlanta,11046.22
+2025-10-10,Dallas,Test,Dallas / Atlanta,10949.92
+2025-10-11,Dallas,Test,Dallas / Atlanta,12581.31
+2025-10-12,Dallas,Test,Dallas / Atlanta,11755.29
+2025-10-13,Dallas,Test,Dallas / Atlanta,10557.82
+2025-10-14,Dallas,Test,Dallas / Atlanta,10501.0
+2025-10-15,Dallas,Test,Dallas / Atlanta,11055.87
+2025-10-16,Dallas,Test,Dallas / Atlanta,11059.21
+2025-10-17,Dallas,Test,Dallas / Atlanta,10875.81
+2025-10-18,Dallas,Test,Dallas / Atlanta,12391.97
+2025-10-19,Dallas,Test,Dallas / Atlanta,11520.61
+2025-10-20,Dallas,Test,Dallas / Atlanta,11249.97
+2025-10-21,Dallas,Test,Dallas / Atlanta,11177.45
+2025-10-22,Dallas,Test,Dallas / Atlanta,10873.51
+2025-10-23,Dallas,Test,Dallas / Atlanta,11230.01
+2025-10-24,Dallas,Test,Dallas / Atlanta,9972.35
+2025-10-25,Dallas,Test,Dallas / Atlanta,11634.41
+2025-10-26,Dallas,Test,Dallas / Atlanta,11539.28
+2025-10-27,Dallas,Test,Dallas / Atlanta,10770.81
+2025-10-28,Dallas,Test,Dallas / Atlanta,10114.44
+2025-10-29,Dallas,Test,Dallas / Atlanta,10746.93
+2025-10-30,Dallas,Test,Dallas / Atlanta,10949.69
+2025-10-31,Dallas,Test,Dallas / Atlanta,10688.99
+2025-11-01,Dallas,Test,Dallas / Atlanta,11797.64
+2025-11-02,Dallas,Test,Dallas / Atlanta,11322.97
+2025-11-03,Dallas,Test,Dallas / Atlanta,10083.23
+2025-11-04,Dallas,Test,Dallas / Atlanta,10821.81
+2025-11-05,Dallas,Test,Dallas / Atlanta,10636.75
+2025-11-06,Dallas,Test,Dallas / Atlanta,10326.75
+2025-11-07,Dallas,Test,Dallas / Atlanta,10175.35
+2025-11-08,Dallas,Test,Dallas / Atlanta,10855.91
+2025-11-09,Dallas,Test,Dallas / Atlanta,11185.49
+2025-11-10,Dallas,Test,Dallas / Atlanta,10971.32
+2025-11-11,Dallas,Test,Dallas / Atlanta,9808.87
+2025-11-12,Dallas,Test,Dallas / Atlanta,10325.08
+2025-11-13,Dallas,Test,Dallas / Atlanta,10607.02
+2025-11-14,Dallas,Test,Dallas / Atlanta,9780.46
+2025-11-15,Dallas,Test,Dallas / Atlanta,11561.06
+2025-11-16,Dallas,Test,Dallas / Atlanta,11820.98
+2025-11-17,Dallas,Test,Dallas / Atlanta,10203.05
+2025-11-18,Dallas,Test,Dallas / Atlanta,11220.85
+2025-11-19,Dallas,Test,Dallas / Atlanta,9577.65
+2025-11-20,Dallas,Test,Dallas / Atlanta,10550.07
+2025-11-21,Dallas,Test,Dallas / Atlanta,10097.77
+2025-11-22,Dallas,Test,Dallas / Atlanta,11703.39
+2025-11-23,Dallas,Test,Dallas / Atlanta,11576.36
+2025-11-24,Dallas,Test,Dallas / Atlanta,9872.02
+2025-11-25,Dallas,Test,Dallas / Atlanta,10211.35
+2025-11-26,Dallas,Test,Dallas / Atlanta,9453.5
+2025-11-27,Dallas,Test,Dallas / Atlanta,13273.45
+2025-11-28,Dallas,Test,Dallas / Atlanta,14628.03
+2025-11-29,Dallas,Test,Dallas / Atlanta,11609.53
+2025-11-30,Dallas,Test,Dallas / Atlanta,11755.95
+2025-12-01,Dallas,Test,Dallas / Atlanta,10467.29
+2025-12-02,Dallas,Test,Dallas / Atlanta,10622.69
+2025-12-03,Dallas,Test,Dallas / Atlanta,10487.12
+2025-12-04,Dallas,Test,Dallas / Atlanta,10783.35
+2025-12-05,Dallas,Test,Dallas / Atlanta,11702.94
+2025-12-06,Dallas,Test,Dallas / Atlanta,13303.27
+2025-12-07,Dallas,Test,Dallas / Atlanta,12937.46
+2025-12-08,Dallas,Test,Dallas / Atlanta,11765.26
+2025-12-09,Dallas,Test,Dallas / Atlanta,11423.07
+2025-12-10,Dallas,Test,Dallas / Atlanta,12171.49
+2025-12-11,Dallas,Test,Dallas / Atlanta,11989.93
+2025-12-12,Dallas,Test,Dallas / Atlanta,12450.83
+2025-12-13,Dallas,Test,Dallas / Atlanta,12711.94
+2025-12-14,Dallas,Test,Dallas / Atlanta,12894.73
+2025-12-15,Dallas,Test,Dallas / Atlanta,11843.33
+2025-12-16,Dallas,Test,Dallas / Atlanta,11996.49
+2025-12-17,Dallas,Test,Dallas / Atlanta,11690.38
+2025-12-18,Dallas,Test,Dallas / Atlanta,11458.55
+2025-12-19,Dallas,Test,Dallas / Atlanta,12095.46
+2025-12-20,Dallas,Test,Dallas / Atlanta,13317.63
+2025-12-21,Dallas,Test,Dallas / Atlanta,12734.56
+2025-12-22,Dallas,Test,Dallas / Atlanta,12285.31
+2025-12-23,Dallas,Test,Dallas / Atlanta,12226.09
+2025-12-24,Dallas,Test,Dallas / Atlanta,14311.16
+2025-12-25,Dallas,Test,Dallas / Atlanta,13320.0
+2025-12-26,Dallas,Test,Dallas / Atlanta,12029.87
+2025-12-27,Dallas,Test,Dallas / Atlanta,12803.79
+2025-12-28,Dallas,Test,Dallas / Atlanta,13134.93
+2025-12-29,Dallas,Test,Dallas / Atlanta,11085.91
+2025-12-30,Dallas,Test,Dallas / Atlanta,12187.47
+2025-12-31,Dallas,Test,Dallas / Atlanta,12301.51
+2025-01-01,Atlanta,Control,Dallas / Atlanta,9071.1
+2025-01-02,Atlanta,Control,Dallas / Atlanta,7933.78
+2025-01-03,Atlanta,Control,Dallas / Atlanta,7989.68
+2025-01-04,Atlanta,Control,Dallas / Atlanta,9127.68
+2025-01-05,Atlanta,Control,Dallas / Atlanta,9264.27
+2025-01-06,Atlanta,Control,Dallas / Atlanta,8619.45
+2025-01-07,Atlanta,Control,Dallas / Atlanta,7228.49
+2025-01-08,Atlanta,Control,Dallas / Atlanta,8599.63
+2025-01-09,Atlanta,Control,Dallas / Atlanta,8277.95
+2025-01-10,Atlanta,Control,Dallas / Atlanta,7738.57
+2025-01-11,Atlanta,Control,Dallas / Atlanta,9077.31
+2025-01-12,Atlanta,Control,Dallas / Atlanta,10085.75
+2025-01-13,Atlanta,Control,Dallas / Atlanta,7886.19
+2025-01-14,Atlanta,Control,Dallas / Atlanta,7830.17
+2025-01-15,Atlanta,Control,Dallas / Atlanta,8674.1
+2025-01-16,Atlanta,Control,Dallas / Atlanta,8406.31
+2025-01-17,Atlanta,Control,Dallas / Atlanta,7967.03
+2025-01-18,Atlanta,Control,Dallas / Atlanta,9677.38
+2025-01-19,Atlanta,Control,Dallas / Atlanta,9251.31
+2025-01-20,Atlanta,Control,Dallas / Atlanta,8764.52
+2025-01-21,Atlanta,Control,Dallas / Atlanta,8772.42
+2025-01-22,Atlanta,Control,Dallas / Atlanta,8604.41
+2025-01-23,Atlanta,Control,Dallas / Atlanta,8566.09
+2025-01-24,Atlanta,Control,Dallas / Atlanta,9093.37
+2025-01-25,Atlanta,Control,Dallas / Atlanta,9757.12
+2025-01-26,Atlanta,Control,Dallas / Atlanta,9356.08
+2025-01-27,Atlanta,Control,Dallas / Atlanta,8694.11
+2025-01-28,Atlanta,Control,Dallas / Atlanta,9308.44
+2025-01-29,Atlanta,Control,Dallas / Atlanta,8217.74
+2025-01-30,Atlanta,Control,Dallas / Atlanta,8478.92
+2025-01-31,Atlanta,Control,Dallas / Atlanta,8785.37
+2025-02-01,Atlanta,Control,Dallas / Atlanta,9916.84
+2025-02-02,Atlanta,Control,Dallas / Atlanta,9609.81
+2025-02-03,Atlanta,Control,Dallas / Atlanta,9120.89
+2025-02-04,Atlanta,Control,Dallas / Atlanta,9580.19
+2025-02-05,Atlanta,Control,Dallas / Atlanta,8843.91
+2025-02-06,Atlanta,Control,Dallas / Atlanta,8476.54
+2025-02-07,Atlanta,Control,Dallas / Atlanta,8273.43
+2025-02-08,Atlanta,Control,Dallas / Atlanta,10227.34
+2025-02-09,Atlanta,Control,Dallas / Atlanta,10561.62
+2025-02-10,Atlanta,Control,Dallas / Atlanta,9091.38
+2025-02-11,Atlanta,Control,Dallas / Atlanta,8949.88
+2025-02-12,Atlanta,Control,Dallas / Atlanta,8769.35
+2025-02-13,Atlanta,Control,Dallas / Atlanta,8619.38
+2025-02-14,Atlanta,Control,Dallas / Atlanta,10128.45
+2025-02-15,Atlanta,Control,Dallas / Atlanta,10678.57
+2025-02-16,Atlanta,Control,Dallas / Atlanta,9825.13
+2025-02-17,Atlanta,Control,Dallas / Atlanta,9712.19
+2025-02-18,Atlanta,Control,Dallas / Atlanta,9379.06
+2025-02-19,Atlanta,Control,Dallas / Atlanta,9709.06
+2025-02-20,Atlanta,Control,Dallas / Atlanta,8755.11
+2025-02-21,Atlanta,Control,Dallas / Atlanta,8779.91
+2025-02-22,Atlanta,Control,Dallas / Atlanta,10525.56
+2025-02-23,Atlanta,Control,Dallas / Atlanta,10794.01
+2025-02-24,Atlanta,Control,Dallas / Atlanta,10019.74
+2025-02-25,Atlanta,Control,Dallas / Atlanta,9661.51
+2025-02-26,Atlanta,Control,Dallas / Atlanta,9354.44
+2025-02-27,Atlanta,Control,Dallas / Atlanta,9107.0
+2025-02-28,Atlanta,Control,Dallas / Atlanta,9954.18
+2025-03-01,Atlanta,Control,Dallas / Atlanta,10473.16
+2025-03-02,Atlanta,Control,Dallas / Atlanta,11441.96
+2025-03-03,Atlanta,Control,Dallas / Atlanta,9514.76
+2025-03-04,Atlanta,Control,Dallas / Atlanta,10225.34
+2025-03-05,Atlanta,Control,Dallas / Atlanta,9932.89
+2025-03-06,Atlanta,Control,Dallas / Atlanta,9675.05
+2025-03-07,Atlanta,Control,Dallas / Atlanta,9573.41
+2025-03-08,Atlanta,Control,Dallas / Atlanta,10947.81
+2025-03-09,Atlanta,Control,Dallas / Atlanta,11261.01
+2025-03-10,Atlanta,Control,Dallas / Atlanta,9896.97
+2025-03-11,Atlanta,Control,Dallas / Atlanta,9691.9
+2025-03-12,Atlanta,Control,Dallas / Atlanta,9882.62
+2025-03-13,Atlanta,Control,Dallas / Atlanta,10007.19
+2025-03-14,Atlanta,Control,Dallas / Atlanta,9249.28
+2025-03-15,Atlanta,Control,Dallas / Atlanta,11491.36
+2025-03-16,Atlanta,Control,Dallas / Atlanta,11010.56
+2025-03-17,Atlanta,Control,Dallas / Atlanta,9710.96
+2025-03-18,Atlanta,Control,Dallas / Atlanta,9555.64
+2025-03-19,Atlanta,Control,Dallas / Atlanta,9554.24
+2025-03-20,Atlanta,Control,Dallas / Atlanta,9749.05
+2025-03-21,Atlanta,Control,Dallas / Atlanta,10018.75
+2025-03-22,Atlanta,Control,Dallas / Atlanta,12288.16
+2025-03-23,Atlanta,Control,Dallas / Atlanta,11432.64
+2025-03-24,Atlanta,Control,Dallas / Atlanta,10448.91
+2025-03-25,Atlanta,Control,Dallas / Atlanta,10566.02
+2025-03-26,Atlanta,Control,Dallas / Atlanta,10505.92
+2025-03-27,Atlanta,Control,Dallas / Atlanta,10467.7
+2025-03-28,Atlanta,Control,Dallas / Atlanta,10102.07
+2025-03-29,Atlanta,Control,Dallas / Atlanta,12365.44
+2025-03-30,Atlanta,Control,Dallas / Atlanta,12530.35
+2025-03-31,Atlanta,Control,Dallas / Atlanta,10036.57
+2025-04-01,Atlanta,Control,Dallas / Atlanta,10310.16
+2025-04-02,Atlanta,Control,Dallas / Atlanta,10614.46
+2025-04-03,Atlanta,Control,Dallas / Atlanta,10404.23
+2025-04-04,Atlanta,Control,Dallas / Atlanta,10969.76
+2025-04-05,Atlanta,Control,Dallas / Atlanta,11835.46
+2025-04-06,Atlanta,Control,Dallas / Atlanta,12912.94
+2025-04-07,Atlanta,Control,Dallas / Atlanta,11323.87
+2025-04-08,Atlanta,Control,Dallas / Atlanta,11007.38
+2025-04-09,Atlanta,Control,Dallas / Atlanta,11336.0
+2025-04-10,Atlanta,Control,Dallas / Atlanta,11399.67
+2025-04-11,Atlanta,Control,Dallas / Atlanta,10833.6
+2025-04-12,Atlanta,Control,Dallas / Atlanta,12051.67
+2025-04-13,Atlanta,Control,Dallas / Atlanta,12408.33
+2025-04-14,Atlanta,Control,Dallas / Atlanta,11450.87
+2025-04-15,Atlanta,Control,Dallas / Atlanta,11225.01
+2025-04-16,Atlanta,Control,Dallas / Atlanta,10641.28
+2025-04-17,Atlanta,Control,Dallas / Atlanta,10953.8
+2025-04-18,Atlanta,Control,Dallas / Atlanta,11249.76
+2025-04-19,Atlanta,Control,Dallas / Atlanta,12556.48
+2025-04-20,Atlanta,Control,Dallas / Atlanta,13326.91
+2025-04-21,Atlanta,Control,Dallas / Atlanta,10876.65
+2025-04-22,Atlanta,Control,Dallas / Atlanta,11590.16
+2025-04-23,Atlanta,Control,Dallas / Atlanta,11976.49
+2025-04-24,Atlanta,Control,Dallas / Atlanta,12290.11
+2025-04-25,Atlanta,Control,Dallas / Atlanta,11358.48
+2025-04-26,Atlanta,Control,Dallas / Atlanta,12986.36
+2025-04-27,Atlanta,Control,Dallas / Atlanta,13045.62
+2025-04-28,Atlanta,Control,Dallas / Atlanta,11667.63
+2025-04-29,Atlanta,Control,Dallas / Atlanta,11592.1
+2025-04-30,Atlanta,Control,Dallas / Atlanta,11814.73
+2025-05-01,Atlanta,Control,Dallas / Atlanta,10775.92
+2025-05-02,Atlanta,Control,Dallas / Atlanta,11962.49
+2025-05-03,Atlanta,Control,Dallas / Atlanta,13065.42
+2025-05-04,Atlanta,Control,Dallas / Atlanta,12968.6
+2025-05-05,Atlanta,Control,Dallas / Atlanta,12539.9
+2025-05-06,Atlanta,Control,Dallas / Atlanta,11588.01
+2025-05-07,Atlanta,Control,Dallas / Atlanta,11713.45
+2025-05-08,Atlanta,Control,Dallas / Atlanta,12602.71
+2025-05-09,Atlanta,Control,Dallas / Atlanta,11613.01
+2025-05-10,Atlanta,Control,Dallas / Atlanta,13014.91
+2025-05-11,Atlanta,Control,Dallas / Atlanta,13186.02
+2025-05-12,Atlanta,Control,Dallas / Atlanta,12293.2
+2025-05-13,Atlanta,Control,Dallas / Atlanta,12090.51
+2025-05-14,Atlanta,Control,Dallas / Atlanta,11575.1
+2025-05-15,Atlanta,Control,Dallas / Atlanta,11873.19
+2025-05-16,Atlanta,Control,Dallas / Atlanta,11870.01
+2025-05-17,Atlanta,Control,Dallas / Atlanta,13358.31
+2025-05-18,Atlanta,Control,Dallas / Atlanta,13562.42
+2025-05-19,Atlanta,Control,Dallas / Atlanta,12308.22
+2025-05-20,Atlanta,Control,Dallas / Atlanta,11540.41
+2025-05-21,Atlanta,Control,Dallas / Atlanta,12584.44
+2025-05-22,Atlanta,Control,Dallas / Atlanta,12313.53
+2025-05-23,Atlanta,Control,Dallas / Atlanta,12741.75
+2025-05-24,Atlanta,Control,Dallas / Atlanta,13697.48
+2025-05-25,Atlanta,Control,Dallas / Atlanta,13953.81
+2025-05-26,Atlanta,Control,Dallas / Atlanta,13450.58
+2025-05-27,Atlanta,Control,Dallas / Atlanta,12806.07
+2025-05-28,Atlanta,Control,Dallas / Atlanta,12527.76
+2025-05-29,Atlanta,Control,Dallas / Atlanta,12322.33
+2025-05-30,Atlanta,Control,Dallas / Atlanta,13192.98
+2025-05-31,Atlanta,Control,Dallas / Atlanta,13985.79
+2025-06-01,Atlanta,Control,Dallas / Atlanta,13888.62
+2025-06-02,Atlanta,Control,Dallas / Atlanta,11964.43
+2025-06-03,Atlanta,Control,Dallas / Atlanta,11975.43
+2025-06-04,Atlanta,Control,Dallas / Atlanta,12559.41
+2025-06-05,Atlanta,Control,Dallas / Atlanta,12520.72
+2025-06-06,Atlanta,Control,Dallas / Atlanta,12261.03
+2025-06-07,Atlanta,Control,Dallas / Atlanta,13820.13
+2025-06-08,Atlanta,Control,Dallas / Atlanta,14354.03
+2025-06-09,Atlanta,Control,Dallas / Atlanta,12770.7
+2025-06-10,Atlanta,Control,Dallas / Atlanta,12121.29
+2025-06-11,Atlanta,Control,Dallas / Atlanta,12503.09
+2025-06-12,Atlanta,Control,Dallas / Atlanta,12264.09
+2025-06-13,Atlanta,Control,Dallas / Atlanta,12424.43
+2025-06-14,Atlanta,Control,Dallas / Atlanta,13698.69
+2025-06-15,Atlanta,Control,Dallas / Atlanta,13684.7
+2025-06-16,Atlanta,Control,Dallas / Atlanta,12139.34
+2025-06-17,Atlanta,Control,Dallas / Atlanta,12553.23
+2025-06-18,Atlanta,Control,Dallas / Atlanta,12404.83
+2025-06-19,Atlanta,Control,Dallas / Atlanta,11558.98
+2025-06-20,Atlanta,Control,Dallas / Atlanta,13359.05
+2025-06-21,Atlanta,Control,Dallas / Atlanta,14291.81
+2025-06-22,Atlanta,Control,Dallas / Atlanta,13769.72
+2025-06-23,Atlanta,Control,Dallas / Atlanta,12642.76
+2025-06-24,Atlanta,Control,Dallas / Atlanta,12218.46
+2025-06-25,Atlanta,Control,Dallas / Atlanta,13254.45
+2025-06-26,Atlanta,Control,Dallas / Atlanta,13330.21
+2025-06-27,Atlanta,Control,Dallas / Atlanta,12706.27
+2025-06-28,Atlanta,Control,Dallas / Atlanta,14294.48
+2025-06-29,Atlanta,Control,Dallas / Atlanta,13990.72
+2025-06-30,Atlanta,Control,Dallas / Atlanta,12173.49
+2025-07-01,Atlanta,Control,Dallas / Atlanta,12507.01
+2025-07-02,Atlanta,Control,Dallas / Atlanta,12702.8
+2025-07-03,Atlanta,Control,Dallas / Atlanta,12491.18
+2025-07-04,Atlanta,Control,Dallas / Atlanta,13751.1
+2025-07-05,Atlanta,Control,Dallas / Atlanta,13893.38
+2025-07-06,Atlanta,Control,Dallas / Atlanta,13895.13
+2025-07-07,Atlanta,Control,Dallas / Atlanta,12666.51
+2025-07-08,Atlanta,Control,Dallas / Atlanta,12262.81
+2025-07-09,Atlanta,Control,Dallas / Atlanta,12382.93
+2025-07-10,Atlanta,Control,Dallas / Atlanta,12174.52
+2025-07-11,Atlanta,Control,Dallas / Atlanta,12984.4
+2025-07-12,Atlanta,Control,Dallas / Atlanta,13143.27
+2025-07-13,Atlanta,Control,Dallas / Atlanta,14311.02
+2025-07-14,Atlanta,Control,Dallas / Atlanta,13114.74
+2025-07-15,Atlanta,Control,Dallas / Atlanta,12500.3
+2025-07-16,Atlanta,Control,Dallas / Atlanta,11664.91
+2025-07-17,Atlanta,Control,Dallas / Atlanta,12464.44
+2025-07-18,Atlanta,Control,Dallas / Atlanta,12563.4
+2025-07-19,Atlanta,Control,Dallas / Atlanta,13488.21
+2025-07-20,Atlanta,Control,Dallas / Atlanta,13657.59
+2025-07-21,Atlanta,Control,Dallas / Atlanta,13110.53
+2025-07-22,Atlanta,Control,Dallas / Atlanta,12789.15
+2025-07-23,Atlanta,Control,Dallas / Atlanta,12206.61
+2025-07-24,Atlanta,Control,Dallas / Atlanta,11953.53
+2025-07-25,Atlanta,Control,Dallas / Atlanta,12399.71
+2025-07-26,Atlanta,Control,Dallas / Atlanta,13702.92
+2025-07-27,Atlanta,Control,Dallas / Atlanta,13946.3
+2025-07-28,Atlanta,Control,Dallas / Atlanta,12288.42
+2025-07-29,Atlanta,Control,Dallas / Atlanta,12652.31
+2025-07-30,Atlanta,Control,Dallas / Atlanta,13151.45
+2025-07-31,Atlanta,Control,Dallas / Atlanta,12734.58
+2025-08-01,Atlanta,Control,Dallas / Atlanta,12409.49
+2025-08-02,Atlanta,Control,Dallas / Atlanta,13620.27
+2025-08-03,Atlanta,Control,Dallas / Atlanta,13542.8
+2025-08-04,Atlanta,Control,Dallas / Atlanta,12806.85
+2025-08-05,Atlanta,Control,Dallas / Atlanta,12140.22
+2025-08-06,Atlanta,Control,Dallas / Atlanta,12366.19
+2025-08-07,Atlanta,Control,Dallas / Atlanta,12351.82
+2025-08-08,Atlanta,Control,Dallas / Atlanta,12135.87
+2025-08-09,Atlanta,Control,Dallas / Atlanta,13079.19
+2025-08-10,Atlanta,Control,Dallas / Atlanta,13671.97
+2025-08-11,Atlanta,Control,Dallas / Atlanta,12241.81
+2025-08-12,Atlanta,Control,Dallas / Atlanta,12425.6
+2025-08-13,Atlanta,Control,Dallas / Atlanta,12034.83
+2025-08-14,Atlanta,Control,Dallas / Atlanta,12647.51
+2025-08-15,Atlanta,Control,Dallas / Atlanta,11873.15
+2025-08-16,Atlanta,Control,Dallas / Atlanta,14059.6
+2025-08-17,Atlanta,Control,Dallas / Atlanta,12794.28
+2025-08-18,Atlanta,Control,Dallas / Atlanta,12285.83
+2025-08-19,Atlanta,Control,Dallas / Atlanta,12280.07
+2025-08-20,Atlanta,Control,Dallas / Atlanta,11801.83
+2025-08-21,Atlanta,Control,Dallas / Atlanta,12220.07
+2025-08-22,Atlanta,Control,Dallas / Atlanta,12506.71
+2025-08-23,Atlanta,Control,Dallas / Atlanta,12500.58
+2025-08-24,Atlanta,Control,Dallas / Atlanta,13457.92
+2025-08-25,Atlanta,Control,Dallas / Atlanta,11083.42
+2025-08-26,Atlanta,Control,Dallas / Atlanta,11611.2
+2025-08-27,Atlanta,Control,Dallas / Atlanta,12522.96
+2025-08-28,Atlanta,Control,Dallas / Atlanta,11704.43
+2025-08-29,Atlanta,Control,Dallas / Atlanta,11468.49
+2025-08-30,Atlanta,Control,Dallas / Atlanta,13070.84
+2025-08-31,Atlanta,Control,Dallas / Atlanta,13863.38
+2025-09-01,Atlanta,Control,Dallas / Atlanta,12142.19
+2025-09-02,Atlanta,Control,Dallas / Atlanta,11419.61
+2025-09-03,Atlanta,Control,Dallas / Atlanta,12313.49
+2025-09-04,Atlanta,Control,Dallas / Atlanta,12419.37
+2025-09-05,Atlanta,Control,Dallas / Atlanta,11689.4
+2025-09-06,Atlanta,Control,Dallas / Atlanta,12530.49
+2025-09-07,Atlanta,Control,Dallas / Atlanta,13706.84
+2025-09-08,Atlanta,Control,Dallas / Atlanta,12228.01
+2025-09-09,Atlanta,Control,Dallas / Atlanta,11874.0
+2025-09-10,Atlanta,Control,Dallas / Atlanta,11312.59
+2025-09-11,Atlanta,Control,Dallas / Atlanta,11562.79
+2025-09-12,Atlanta,Control,Dallas / Atlanta,11498.02
+2025-09-13,Atlanta,Control,Dallas / Atlanta,12924.09
+2025-09-14,Atlanta,Control,Dallas / Atlanta,13302.53
+2025-09-15,Atlanta,Control,Dallas / Atlanta,11797.89
+2025-09-16,Atlanta,Control,Dallas / Atlanta,11068.53
+2025-09-17,Atlanta,Control,Dallas / Atlanta,11926.98
+2025-09-18,Atlanta,Control,Dallas / Atlanta,11519.2
+2025-09-19,Atlanta,Control,Dallas / Atlanta,11628.84
+2025-09-20,Atlanta,Control,Dallas / Atlanta,13158.46
+2025-09-21,Atlanta,Control,Dallas / Atlanta,12205.36
+2025-09-22,Atlanta,Control,Dallas / Atlanta,11293.66
+2025-09-23,Atlanta,Control,Dallas / Atlanta,11090.29
+2025-09-24,Atlanta,Control,Dallas / Atlanta,10692.27
+2025-09-25,Atlanta,Control,Dallas / Atlanta,11356.65
+2025-09-26,Atlanta,Control,Dallas / Atlanta,12111.17
+2025-09-27,Atlanta,Control,Dallas / Atlanta,11793.83
+2025-09-28,Atlanta,Control,Dallas / Atlanta,12419.94
+2025-09-29,Atlanta,Control,Dallas / Atlanta,11363.54
+2025-09-30,Atlanta,Control,Dallas / Atlanta,11152.73
+2025-10-01,Atlanta,Control,Dallas / Atlanta,11043.26
+2025-10-02,Atlanta,Control,Dallas / Atlanta,10591.94
+2025-10-03,Atlanta,Control,Dallas / Atlanta,11119.25
+2025-10-04,Atlanta,Control,Dallas / Atlanta,12012.93
+2025-10-05,Atlanta,Control,Dallas / Atlanta,11473.03
+2025-10-06,Atlanta,Control,Dallas / Atlanta,11393.64
+2025-10-07,Atlanta,Control,Dallas / Atlanta,11284.94
+2025-10-08,Atlanta,Control,Dallas / Atlanta,10935.01
+2025-10-09,Atlanta,Control,Dallas / Atlanta,10975.53
+2025-10-10,Atlanta,Control,Dallas / Atlanta,11256.65
+2025-10-11,Atlanta,Control,Dallas / Atlanta,12201.68
+2025-10-12,Atlanta,Control,Dallas / Atlanta,12423.57
+2025-10-13,Atlanta,Control,Dallas / Atlanta,10694.44
+2025-10-14,Atlanta,Control,Dallas / Atlanta,11251.47
+2025-10-15,Atlanta,Control,Dallas / Atlanta,10872.48
+2025-10-16,Atlanta,Control,Dallas / Atlanta,10804.92
+2025-10-17,Atlanta,Control,Dallas / Atlanta,10256.15
+2025-10-18,Atlanta,Control,Dallas / Atlanta,12069.22
+2025-10-19,Atlanta,Control,Dallas / Atlanta,11645.21
+2025-10-20,Atlanta,Control,Dallas / Atlanta,10419.98
+2025-10-21,Atlanta,Control,Dallas / Atlanta,10335.55
+2025-10-22,Atlanta,Control,Dallas / Atlanta,10224.84
+2025-10-23,Atlanta,Control,Dallas / Atlanta,11353.48
+2025-10-24,Atlanta,Control,Dallas / Atlanta,11048.02
+2025-10-25,Atlanta,Control,Dallas / Atlanta,12514.54
+2025-10-26,Atlanta,Control,Dallas / Atlanta,11363.74
+2025-10-27,Atlanta,Control,Dallas / Atlanta,10536.73
+2025-10-28,Atlanta,Control,Dallas / Atlanta,10026.82
+2025-10-29,Atlanta,Control,Dallas / Atlanta,10223.78
+2025-10-30,Atlanta,Control,Dallas / Atlanta,10125.78
+2025-10-31,Atlanta,Control,Dallas / Atlanta,10884.97
+2025-11-01,Atlanta,Control,Dallas / Atlanta,11552.84
+2025-11-02,Atlanta,Control,Dallas / Atlanta,12063.22
+2025-11-03,Atlanta,Control,Dallas / Atlanta,10605.58
+2025-11-04,Atlanta,Control,Dallas / Atlanta,11201.26
+2025-11-05,Atlanta,Control,Dallas / Atlanta,9823.58
+2025-11-06,Atlanta,Control,Dallas / Atlanta,10794.12
+2025-11-07,Atlanta,Control,Dallas / Atlanta,10738.52
+2025-11-08,Atlanta,Control,Dallas / Atlanta,11234.78
+2025-11-09,Atlanta,Control,Dallas / Atlanta,11933.57
+2025-11-10,Atlanta,Control,Dallas / Atlanta,10404.22
+2025-11-11,Atlanta,Control,Dallas / Atlanta,10187.94
+2025-11-12,Atlanta,Control,Dallas / Atlanta,9960.25
+2025-11-13,Atlanta,Control,Dallas / Atlanta,9985.46
+2025-11-14,Atlanta,Control,Dallas / Atlanta,10970.16
+2025-11-15,Atlanta,Control,Dallas / Atlanta,11494.81
+2025-11-16,Atlanta,Control,Dallas / Atlanta,11764.9
+2025-11-17,Atlanta,Control,Dallas / Atlanta,9913.83
+2025-11-18,Atlanta,Control,Dallas / Atlanta,9907.47
+2025-11-19,Atlanta,Control,Dallas / Atlanta,10567.86
+2025-11-20,Atlanta,Control,Dallas / Atlanta,9683.08
+2025-11-21,Atlanta,Control,Dallas / Atlanta,10010.5
+2025-11-22,Atlanta,Control,Dallas / Atlanta,11437.75
+2025-11-23,Atlanta,Control,Dallas / Atlanta,11457.58
+2025-11-24,Atlanta,Control,Dallas / Atlanta,10071.49
+2025-11-25,Atlanta,Control,Dallas / Atlanta,10271.41
+2025-11-26,Atlanta,Control,Dallas / Atlanta,10371.78
+2025-11-27,Atlanta,Control,Dallas / Atlanta,13320.75
+2025-11-28,Atlanta,Control,Dallas / Atlanta,14165.81
+2025-11-29,Atlanta,Control,Dallas / Atlanta,11277.32
+2025-11-30,Atlanta,Control,Dallas / Atlanta,11805.14
+2025-12-01,Atlanta,Control,Dallas / Atlanta,10419.02
+2025-12-02,Atlanta,Control,Dallas / Atlanta,9599.14
+2025-12-03,Atlanta,Control,Dallas / Atlanta,10216.84
+2025-12-04,Atlanta,Control,Dallas / Atlanta,9375.59
+2025-12-05,Atlanta,Control,Dallas / Atlanta,10102.61
+2025-12-06,Atlanta,Control,Dallas / Atlanta,12041.38
+2025-12-07,Atlanta,Control,Dallas / Atlanta,11015.94
+2025-12-08,Atlanta,Control,Dallas / Atlanta,9782.34
+2025-12-09,Atlanta,Control,Dallas / Atlanta,10357.78
+2025-12-10,Atlanta,Control,Dallas / Atlanta,9527.88
+2025-12-11,Atlanta,Control,Dallas / Atlanta,9856.59
+2025-12-12,Atlanta,Control,Dallas / Atlanta,10300.71
+2025-12-13,Atlanta,Control,Dallas / Atlanta,11133.79
+2025-12-14,Atlanta,Control,Dallas / Atlanta,11279.86
+2025-12-15,Atlanta,Control,Dallas / Atlanta,10361.92
+2025-12-16,Atlanta,Control,Dallas / Atlanta,10249.51
+2025-12-17,Atlanta,Control,Dallas / Atlanta,10198.07
+2025-12-18,Atlanta,Control,Dallas / Atlanta,9984.73
+2025-12-19,Atlanta,Control,Dallas / Atlanta,10245.37
+2025-12-20,Atlanta,Control,Dallas / Atlanta,11347.47
+2025-12-21,Atlanta,Control,Dallas / Atlanta,11563.23
+2025-12-22,Atlanta,Control,Dallas / Atlanta,9952.45
+2025-12-23,Atlanta,Control,Dallas / Atlanta,10073.09
+2025-12-24,Atlanta,Control,Dallas / Atlanta,12240.43
+2025-12-25,Atlanta,Control,Dallas / Atlanta,11612.74
+2025-12-26,Atlanta,Control,Dallas / Atlanta,9872.45
+2025-12-27,Atlanta,Control,Dallas / Atlanta,11046.94
+2025-12-28,Atlanta,Control,Dallas / Atlanta,11551.24
+2025-12-29,Atlanta,Control,Dallas / Atlanta,10271.36
+2025-12-30,Atlanta,Control,Dallas / Atlanta,10487.78
+2025-12-31,Atlanta,Control,Dallas / Atlanta,11042.44

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive dashboard measuring the incremental lift of a $100k retail ad campaign using twin-city quasi-experiment and causal inference.">
+    <title>Retail Marketing Incrementality Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-card: rgba(17, 24, 39, 0.7);
+            --bg-glass: rgba(255, 255, 255, 0.03);
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-teal: #2dd4bf;
+            --accent-red: #f43f5e;
+            --accent-blue: #3b82f6;
+            --accent-gold: #f59e0b;
+            --accent-purple: #a78bfa;
+            --accent-green: #22c55e;
+            --gradient-teal: linear-gradient(135deg, #2dd4bf 0%, #0d9488 100%);
+            --gradient-red: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+            --gradient-blue: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            --shadow-glow-teal: 0 0 40px rgba(45, 212, 191, 0.15);
+            --shadow-glow-red: 0 0 40px rgba(244, 63, 94, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated background gradient */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(45, 212, 191, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ── Header ─────────────────────────────────────── */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2.5rem 0;
+        }
+
+        .header-badge {
+            display: inline-block;
+            padding: 0.4rem 1.2rem;
+            background: rgba(45, 212, 191, 0.1);
+            border: 1px solid rgba(45, 212, 191, 0.3);
+            border-radius: 50px;
+            color: var(--accent-teal);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f1f5f9 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.6rem;
+            letter-spacing: -0.02em;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .header p strong {
+            color: var(--accent-teal);
+            font-weight: 600;
+        }
+
+        /* ── KPI Cards ──────────────────────────────────── */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .kpi-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 1.8rem;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .kpi-card:nth-child(1)::before { background: var(--gradient-teal); }
+        .kpi-card:nth-child(2)::before { background: var(--gradient-blue); }
+        .kpi-card:nth-child(3)::before { background: var(--gradient-gold); }
+        .kpi-card:nth-child(4)::before { background: var(--gradient-red); }
+
+        .kpi-card:nth-child(1):hover { box-shadow: var(--shadow-glow-teal); }
+        .kpi-card:nth-child(4):hover { box-shadow: var(--shadow-glow-red); }
+
+        .kpi-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+        }
+
+        .kpi-value {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.3rem;
+        }
+
+        .kpi-card:nth-child(1) .kpi-value { color: var(--accent-teal); }
+        .kpi-card:nth-child(2) .kpi-value { color: var(--accent-blue); }
+        .kpi-card:nth-child(3) .kpi-value { color: var(--accent-gold); }
+        .kpi-card:nth-child(4) .kpi-value { color: var(--accent-red); }
+
+        .kpi-detail {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .kpi-detail .ci {
+            color: var(--text-muted);
+            font-size: 0.7rem;
+        }
+
+        /* ── Chart Section ──────────────────────────────── */
+        .chart-section {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .chart-section:hover {
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .chart-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        .chart-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 380px;
+        }
+
+        .chart-container.short {
+            height: 320px;
+        }
+
+        /* ── Grid Layouts ───────────────────────────────── */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* ── Twin Pair Selector ─────────────────────────── */
+        .twin-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .twin-btn {
+            padding: 0.5rem 1.2rem;
+            border: 1px solid var(--border-glass);
+            border-radius: 8px;
+            background: var(--bg-glass);
+            color: var(--text-secondary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .twin-btn:hover {
+            border-color: var(--accent-teal);
+            color: var(--accent-teal);
+            background: rgba(45, 212, 191, 0.08);
+        }
+
+        .twin-btn.active {
+            border-color: var(--accent-teal);
+            color: var(--accent-teal);
+            background: rgba(45, 212, 191, 0.12);
+            box-shadow: 0 0 15px rgba(45, 212, 191, 0.1);
+        }
+
+        /* ── Results Table ──────────────────────────────── */
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        .results-table th {
+            text-align: left;
+            padding: 1rem 1.2rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .results-table td {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            color: var(--text-secondary);
+        }
+
+        .results-table tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+            color: var(--text-primary);
+        }
+
+        .results-table .num {
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .results-table .positive {
+            color: var(--accent-teal);
+        }
+
+        /* ── Methodology Badge ──────────────────────────── */
+        .method-badges {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .method-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 1.5rem;
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .method-badge .icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .method-badge:nth-child(1) .icon {
+            background: rgba(59, 130, 246, 0.15);
+        }
+        .method-badge:nth-child(2) .icon {
+            background: rgba(45, 212, 191, 0.15);
+        }
+
+        .method-badge .info h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+
+        .method-badge .info p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* ── Footer ─────────────────────────────────────── */
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
+
+        .footer a {
+            color: var(--accent-teal);
+            text-decoration: none;
+        }
+
+        /* ── Animations ─────────────────────────────────── */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+
+        /* ── Responsive ─────────────────────────────────── */
+        @media (max-width: 1024px) {
+            .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+            .grid-2 { grid-template-columns: 1fr; }
+            .grid-3 { grid-template-columns: 1fr; }
+            .header h1 { font-size: 2rem; }
+        }
+
+        @media (max-width: 600px) {
+            .kpi-grid { grid-template-columns: 1fr; }
+            .container { padding: 1rem; }
+            .header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <header class="header animate-in">
+        <div class="header-badge">Portfolio Project</div>
+        <h1>Retail Marketing Incrementality</h1>
+        <p>Measuring the <strong>Incremental Lift</strong> of a $100k Ad Campaign &mdash; Twin-City Quasi-Experiment &amp; Causal Inference</p>
+    </header>
+
+    <!-- KPI Cards -->
+    <div class="kpi-grid">
+        <div class="kpi-card animate-in delay-1" id="kpi-roi">
+            <div class="kpi-label">Campaign ROI</div>
+            <div class="kpi-value" id="kpi-roi-val">0%</div>
+            <div class="kpi-detail">95% CI: [148,992 &ndash; 169,880]</div>
+        </div>
+        <div class="kpi-card animate-in delay-2" id="kpi-revenue">
+            <div class="kpi-label">Incremental Revenue</div>
+            <div class="kpi-value" id="kpi-rev-val">$0</div>
+            <div class="kpi-detail">
+                Across 5 test cities in December
+                <div class="ci">95% CI: [$248,992 &ndash; $269,880]</div>
+            </div>
+        </div>
+        <div class="kpi-card animate-in delay-3" id="kpi-lift">
+            <div class="kpi-label">Average Lift</div>
+            <div class="kpi-value" id="kpi-lift-val">0%</div>
+            <div class="kpi-detail">Sales increase vs. control cities</div>
+        </div>
+        <div class="kpi-card animate-in delay-4" id="kpi-pval">
+            <div class="kpi-label">Statistical Significance</div>
+            <div class="kpi-value" style="font-size: 1.6rem;">p &lt; 0.001</div>
+            <div class="kpi-detail">DiD regression p = 1.95 &times; 10&sup2;&sup3;</div>
+        </div>
+    </div>
+
+    <!-- Methodology Badges -->
+    <div class="method-badges animate-in delay-3">
+        <div class="method-badge">
+            <div class="icon">&Delta;</div>
+            <div class="info">
+                <h4>Difference-in-Differences</h4>
+                <p>OLS regression with HC1 robust standard errors &bull; Pooled estimate: $1,713/day</p>
+            </div>
+        </div>
+        <div class="method-badge">
+            <div class="icon">&fnof;</div>
+            <div class="info">
+                <h4>Bayesian Counterfactual (CausalImpact)</h4>
+                <p>Structural time-series with 1,000-iteration bootstrap CIs</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Combined Time Series -->
+    <div class="chart-section animate-in delay-4">
+        <div class="chart-title">Test vs Control Cities &mdash; Full Year 2025</div>
+        <div class="chart-subtitle">7-day rolling average &bull; Shaded region = December campaign period</div>
+        <div class="chart-container">
+            <canvas id="combinedChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Twin Pair Explorer -->
+    <div class="chart-section animate-in delay-5">
+        <div class="chart-title">Twin-Pair Explorer</div>
+        <div class="chart-subtitle">Select a city pair to compare test and control performance</div>
+        <div class="twin-selector" id="twinSelector"></div>
+        <div class="chart-container">
+            <canvas id="twinChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Lift by City + ROI -->
+    <div class="grid-2 animate-in delay-5">
+        <div class="chart-section" style="margin-bottom:0">
+            <div class="chart-title">Incremental Revenue by City</div>
+            <div class="chart-subtitle">CausalImpact cumulative estimates with 95% CI error bars</div>
+            <div class="chart-container short">
+                <canvas id="liftChart"></canvas>
+            </div>
+        </div>
+        <div class="chart-section" style="margin-bottom:0">
+            <div class="chart-title">Campaign Economics</div>
+            <div class="chart-subtitle">$100k investment &rarr; $259k incremental revenue</div>
+            <div class="chart-container short">
+                <canvas id="roiChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- December Deep-Dive -->
+    <div class="chart-section animate-in delay-5">
+        <div class="chart-title">December Avg Daily Sales: Test vs Control</div>
+        <div class="chart-subtitle">Grouped bar comparison showing lift in every test market</div>
+        <div class="chart-container short">
+            <canvas id="decChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Detailed Results Table -->
+    <div class="chart-section animate-in delay-6">
+        <div class="chart-title">Detailed City-Level Results</div>
+        <div class="chart-subtitle">Comparing Diff-in-Diff and CausalImpact estimates side-by-side</div>
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>DiD Lift ($/day)</th>
+                    <th>CI Lift ($/day)</th>
+                    <th>DiD Lift %</th>
+                    <th>CI Lift %</th>
+                    <th>Cumulative ($)</th>
+                    <th>95% CI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight:600; color:var(--text-primary)">San Francisco</td>
+                    <td class="num">$1,973</td>
+                    <td class="num">$1,946</td>
+                    <td class="num positive">+15.3%</td>
+                    <td class="num positive">+15.1%</td>
+                    <td class="num positive">$60,333</td>
+                    <td class="num" style="font-size:0.75rem">[$58,027 &ndash; $62,591]</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:600; color:var(--text-primary)">Austin</td>
+                    <td class="num">$1,748</td>
+                    <td class="num">$1,723</td>
+                    <td class="num positive">+16.8%</td>
+                    <td class="num positive">+16.5%</td>
+                    <td class="num positive">$53,423</td>
+                    <td class="num" style="font-size:0.75rem">[$51,472 &ndash; $55,490]</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:600; color:var(--text-primary)">Miami</td>
+                    <td class="num">$1,284</td>
+                    <td class="num">$1,254</td>
+                    <td class="num positive">+11.3%</td>
+                    <td class="num positive">+11.0%</td>
+                    <td class="num positive">$38,875</td>
+                    <td class="num" style="font-size:0.75rem">[$36,940 &ndash; $40,821]</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:600; color:var(--text-primary)">Chicago</td>
+                    <td class="num">$1,929</td>
+                    <td class="num">$1,872</td>
+                    <td class="num positive">+16.2%</td>
+                    <td class="num positive">+15.7%</td>
+                    <td class="num positive">$58,044</td>
+                    <td class="num" style="font-size:0.75rem">[$55,780 &ndash; $60,364]</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:600; color:var(--text-primary)">Dallas</td>
+                    <td class="num">$1,629</td>
+                    <td class="num">$1,569</td>
+                    <td class="num positive">+15.4%</td>
+                    <td class="num positive">+14.8%</td>
+                    <td class="num positive">$48,649</td>
+                    <td class="num" style="font-size:0.75rem">[$46,772 &ndash; $50,615]</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="border-top: 2px solid var(--border-glass)">
+                    <td style="font-weight:700; color:var(--accent-teal)">TOTAL</td>
+                    <td class="num" style="color:var(--accent-teal)">$8,563</td>
+                    <td class="num" style="color:var(--accent-teal)">$8,365</td>
+                    <td class="num" style="color:var(--accent-teal)">+15.0%</td>
+                    <td class="num" style="color:var(--accent-teal)">+14.6%</td>
+                    <td class="num" style="color:var(--accent-teal)">$259,324</td>
+                    <td class="num" style="font-size:0.75rem; color:var(--accent-teal)">[$248,992 &ndash; $269,880]</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Retail Marketing Incrementality Project &bull; Portfolio Demo &bull; Built with Python, Chart.js &amp; Causal Inference
+    </footer>
+</div>
+
+<script>
+// ── Data ────────────────────────────────────────────────────────────────────
+const combinedDates = ["2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-11", "2025-01-12", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-18", "2025-01-19", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-25", "2025-01-26", "2025-01-27", "2025-01-28", "2025-01-29", "2025-01-30", "2025-01-31", "2025-02-01", "2025-02-02", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-08", "2025-02-09", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-15", "2025-02-16", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-22", "2025-02-23", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28", "2025-03-01", "2025-03-02", "2025-03-03", "2025-03-04", "2025-03-05", "2025-03-06", "2025-03-07", "2025-03-08", "2025-03-09", "2025-03-10", "2025-03-11", "2025-03-12", "2025-03-13", "2025-03-14", "2025-03-15", "2025-03-16", "2025-03-17", "2025-03-18", "2025-03-19", "2025-03-20", "2025-03-21", "2025-03-22", "2025-03-23", "2025-03-24", "2025-03-25", "2025-03-26", "2025-03-27", "2025-03-28", "2025-03-29", "2025-03-30", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-05", "2025-04-06", "2025-04-07", "2025-04-08", "2025-04-09", "2025-04-10", "2025-04-11", "2025-04-12", "2025-04-13", "2025-04-14", "2025-04-15", "2025-04-16", "2025-04-17", "2025-04-18", "2025-04-19", "2025-04-20", "2025-04-21", "2025-04-22", "2025-04-23", "2025-04-24", "2025-04-25", "2025-04-26", "2025-04-27", "2025-04-28", "2025-04-29", "2025-04-30", "2025-05-01", "2025-05-02", "2025-05-03", "2025-05-04", "2025-05-05", "2025-05-06", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-10", "2025-05-11", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-17", "2025-05-18", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-24", "2025-05-25", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30", "2025-05-31", "2025-06-01", "2025-06-02", "2025-06-03", "2025-06-04", "2025-06-05", "2025-06-06", "2025-06-07", "2025-06-08", "2025-06-09", "2025-06-10", "2025-06-11", "2025-06-12", "2025-06-13", "2025-06-14", "2025-06-15", "2025-06-16", "2025-06-17", "2025-06-18", "2025-06-19", "2025-06-20", "2025-06-21", "2025-06-22", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-28", "2025-06-29", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-05", "2025-07-06", "2025-07-07", "2025-07-08", "2025-07-09", "2025-07-10", "2025-07-11", "2025-07-12", "2025-07-13", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-19", "2025-07-20", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-26", "2025-07-27", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-02", "2025-08-03", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-09", "2025-08-10", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-15", "2025-08-16", "2025-08-17", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-23", "2025-08-24", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-08-30", "2025-08-31", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-06", "2025-09-07", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-13", "2025-09-14", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-20", "2025-09-21", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-27", "2025-09-28", "2025-09-29", "2025-09-30", "2025-10-01", "2025-10-02", "2025-10-03", "2025-10-04", "2025-10-05", "2025-10-06", "2025-10-07", "2025-10-08", "2025-10-09", "2025-10-10", "2025-10-11", "2025-10-12", "2025-10-13", "2025-10-14", "2025-10-15", "2025-10-16", "2025-10-17", "2025-10-18", "2025-10-19", "2025-10-20", "2025-10-21", "2025-10-22", "2025-10-23", "2025-10-24", "2025-10-25", "2025-10-26", "2025-10-27", "2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03", "2025-11-04", "2025-11-05", "2025-11-06", "2025-11-07", "2025-11-08", "2025-11-09", "2025-11-10", "2025-11-11", "2025-11-12", "2025-11-13", "2025-11-14", "2025-11-15", "2025-11-16", "2025-11-17", "2025-11-18", "2025-11-19", "2025-11-20", "2025-11-21", "2025-11-22", "2025-11-23", "2025-11-24", "2025-11-25", "2025-11-26", "2025-11-27", "2025-11-28", "2025-11-29", "2025-11-30", "2025-12-01", "2025-12-02", "2025-12-03", "2025-12-04", "2025-12-05", "2025-12-06", "2025-12-07", "2025-12-08", "2025-12-09", "2025-12-10", "2025-12-11", "2025-12-12", "2025-12-13", "2025-12-14", "2025-12-15", "2025-12-16", "2025-12-17", "2025-12-18", "2025-12-19", "2025-12-20", "2025-12-21", "2025-12-22", "2025-12-23", "2025-12-24", "2025-12-25", "2025-12-26", "2025-12-27", "2025-12-28", "2025-12-29", "2025-12-30", "2025-12-31"];
+const combinedTest  = [8969.0, 8956.0, 8992.0, 9016.0, 9081.0, 9064.0, 9075.0, 9026.0, 8997.0, 9026.0, 9012.0, 9018.0, 9026.0, 9017.0, 9079.0, 9113.0, 9151.0, 9160.0, 9169.0, 9272.0, 9311.0, 9285.0, 9323.0, 9323.0, 9361.0, 9457.0, 9492.0, 9555.0, 9651.0, 9727.0, 9814.0, 9857.0, 9819.0, 9848.0, 9888.0, 9897.0, 9865.0, 9856.0, 10000.0, 10035.0, 10044.0, 10077.0, 10102.0, 10187.0, 10194.0, 10114.0, 10174.0, 10209.0, 10292.0, 10374.0, 10419.0, 10469.0, 10519.0, 10590.0, 10650.0, 10685.0, 10682.0, 10673.0, 10695.0, 10775.0, 10819.0, 10879.0, 10841.0, 10915.0, 11029.0, 11114.0, 11146.0, 11158.0, 11130.0, 11222.0, 11248.0, 11234.0, 11272.0, 11232.0, 11259.0, 11349.0, 11426.0, 11492.0, 11546.0, 11550.0, 11676.0, 11726.0, 11789.0, 11826.0, 11833.0, 11918.0, 12011.0, 11997.0, 12032.0, 12071.0, 12107.0, 12134.0, 12149.0, 12200.0, 12288.0, 12339.0, 12320.0, 12334.0, 12396.0, 12443.0, 12515.0, 12572.0, 12627.0, 12684.0, 12703.0, 12741.0, 12767.0, 12772.0, 12821.0, 12911.0, 12965.0, 13053.0, 13112.0, 13159.0, 13194.0, 13221.0, 13202.0, 13254.0, 13307.0, 13358.0, 13393.0, 13403.0, 13402.0, 13440.0, 13432.0, 13379.0, 13410.0, 13482.0, 13505.0, 13553.0, 13564.0, 13649.0, 13734.0, 13756.0, 13736.0, 13806.0, 13772.0, 13792.0, 13791.0, 13981.0, 14007.0, 14038.0, 14055.0, 14147.0, 14213.0, 14246.0, 14094.0, 14131.0, 14120.0, 14204.0, 14243.0, 14229.0, 14241.0, 14276.0, 14292.0, 14340.0, 14300.0, 14248.0, 14330.0, 14374.0, 14360.0, 14399.0, 14371.0, 14358.0, 14368.0, 14288.0, 14240.0, 14295.0, 14236.0, 14310.0, 14298.0, 14349.0, 14395.0, 14488.0, 14440.0, 14467.0, 14440.0, 14504.0, 14662.0, 14688.0, 14617.0, 14622.0, 14608.0, 14594.0, 14536.0, 14348.0, 14314.0, 14279.0, 14293.0, 14268.0, 14246.0, 14251.0, 14281.0, 14293.0, 14307.0, 14282.0, 14254.0, 14233.0, 14221.0, 14156.0, 14070.0, 14080.0, 14080.0, 14144.0, 14139.0, 14143.0, 14141.0, 14179.0, 14206.0, 14183.0, 14108.0, 14114.0, 14095.0, 14069.0, 14088.0, 13993.0, 13928.0, 13906.0, 13876.0, 13879.0, 13873.0, 13795.0, 13797.0, 13787.0, 13806.0, 13805.0, 13715.0, 13673.0, 13652.0, 13654.0, 13598.0, 13559.0, 13536.0, 13527.0, 13516.0, 13482.0, 13438.0, 13614.0, 13550.0, 13449.0, 13416.0, 13391.0, 13369.0, 13302.0, 13132.0, 13162.0, 13142.0, 13158.0, 13088.0, 13039.0, 13052.0, 13000.0, 12945.0, 12954.0, 12883.0, 12863.0, 12812.0, 12736.0, 12688.0, 12672.0, 12652.0, 12636.0, 12643.0, 12708.0, 12726.0, 12724.0, 12710.0, 12638.0, 12596.0, 12540.0, 12457.0, 12371.0, 12363.0, 12301.0, 12331.0, 12343.0, 12364.0, 12325.0, 12353.0, 12283.0, 12235.0, 12213.0, 12140.0, 12101.0, 12064.0, 12016.0, 12033.0, 12033.0, 12001.0, 12021.0, 11962.0, 11968.0, 11964.0, 11909.0, 11862.0, 11795.0, 11753.0, 11763.0, 11712.0, 11672.0, 11669.0, 11639.0, 11661.0, 11637.0, 11614.0, 11632.0, 11604.0, 11595.0, 11570.0, 11512.0, 11530.0, 11479.0, 11445.0, 11430.0, 11377.0, 11430.0, 11398.0, 11374.0, 11359.0, 11323.0, 11328.0, 11310.0, 11269.0, 11279.0, 11675.0, 12366.0, 12404.0, 12370.0, 12449.0, 12493.0, 12587.0, 12291.0, 11853.0, 12063.0, 12361.0, 12567.0, 12770.0, 12922.0, 13028.0, 13055.0, 13070.0, 13049.0, 13032.0, 13064.0, 13085.0, 13093.0, 13131.0, 13195.0, 13228.0, 13260.0, 13226.0, 13612.0, 13867.0, 13854.0, 13807.0, 13793.0, 13805.0, 13846.0, 13636.0];
+const combinedCtrl  = [8900.0, 8871.0, 8951.0, 8982.0, 8963.0, 8988.0, 8979.0, 9062.0, 9050.0, 9044.0, 9008.0, 9039.0, 9043.0, 9114.0, 9113.0, 9187.0, 9249.0, 9372.0, 9452.0, 9477.0, 9514.0, 9550.0, 9538.0, 9591.0, 9549.0, 9532.0, 9570.0, 9558.0, 9635.0, 9644.0, 9619.0, 9688.0, 9729.0, 9799.0, 9807.0, 9803.0, 9833.0, 9877.0, 10037.0, 10064.0, 10063.0, 10111.0, 10161.0, 10228.0, 10259.0, 10146.0, 10162.0, 10239.0, 10310.0, 10373.0, 10391.0, 10405.0, 10471.0, 10577.0, 10645.0, 10631.0, 10686.0, 10758.0, 10829.0, 10838.0, 10866.0, 10839.0, 10929.0, 10946.0, 10969.0, 11068.0, 11135.0, 11165.0, 11215.0, 11262.0, 11268.0, 11277.0, 11266.0, 11307.0, 11402.0, 11424.0, 11447.0, 11467.0, 11522.0, 11615.0, 11705.0, 11716.0, 11799.0, 11789.0, 11844.0, 11877.0, 11833.0, 11845.0, 11854.0, 11905.0, 12040.0, 12091.0, 12193.0, 12292.0, 12328.0, 12354.0, 12406.0, 12441.0, 12537.0, 12502.0, 12490.0, 12521.0, 12611.0, 12703.0, 12675.0, 12697.0, 12784.0, 12931.0, 13020.0, 13037.0, 12992.0, 13062.0, 13082.0, 13105.0, 13021.0, 13024.0, 13047.0, 13114.0, 13216.0, 13220.0, 13293.0, 13399.0, 13418.0, 13486.0, 13519.0, 13482.0, 13558.0, 13570.0, 13597.0, 13626.0, 13656.0, 13656.0, 13747.0, 13737.0, 13798.0, 13837.0, 13859.0, 13894.0, 13973.0, 14122.0, 14162.0, 14174.0, 14167.0, 14221.0, 14240.0, 14241.0, 14075.0, 14080.0, 14091.0, 14082.0, 14099.0, 14076.0, 14086.0, 14149.0, 14123.0, 14132.0, 14194.0, 14174.0, 14205.0, 14238.0, 14196.0, 14275.0, 14270.0, 14259.0, 14309.0, 14339.0, 14297.0, 14327.0, 14310.0, 14365.0, 14410.0, 14391.0, 14393.0, 14396.0, 14380.0, 14424.0, 14379.0, 14376.0, 14570.0, 14549.0, 14552.0, 14590.0, 14564.0, 14530.0, 14463.0, 14256.0, 14205.0, 14224.0, 14177.0, 14198.0, 14268.0, 14312.0, 14306.0, 14325.0, 14284.0, 14326.0, 14286.0, 14192.0, 14150.0, 14156.0, 14179.0, 14203.0, 14148.0, 14172.0, 14222.0, 14237.0, 14222.0, 14185.0, 14138.0, 14143.0, 14074.0, 14044.0, 14025.0, 13980.0, 13959.0, 13931.0, 13888.0, 13887.0, 13842.0, 13839.0, 13808.0, 13801.0, 13769.0, 13758.0, 13696.0, 13646.0, 13574.0, 13569.0, 13535.0, 13580.0, 13525.0, 13530.0, 13573.0, 13563.0, 13533.0, 13477.0, 13385.0, 13508.0, 13504.0, 13478.0, 13511.0, 13505.0, 13489.0, 13530.0, 13360.0, 13297.0, 13243.0, 13150.0, 13095.0, 13070.0, 12990.0, 13023.0, 12988.0, 12988.0, 12924.0, 12897.0, 12906.0, 12849.0, 12783.0, 12745.0, 12693.0, 12703.0, 12664.0, 12605.0, 12600.0, 12601.0, 12576.0, 12499.0, 12427.0, 12396.0, 12382.0, 12323.0, 12244.0, 12240.0, 12246.0, 12227.0, 12265.0, 12245.0, 12287.0, 12293.0, 12261.0, 12263.0, 12216.0, 12176.0, 12120.0, 12048.0, 11987.0, 11918.0, 11824.0, 11879.0, 11839.0, 11852.0, 11815.0, 11806.0, 11813.0, 11773.0, 11718.0, 11692.0, 11656.0, 11665.0, 11633.0, 11648.0, 11675.0, 11655.0, 11604.0, 11527.0, 11547.0, 11538.0, 11503.0, 11491.0, 11457.0, 11452.0, 11504.0, 11422.0, 11418.0, 11356.0, 11328.0, 11335.0, 11312.0, 11249.0, 11271.0, 11220.0, 11259.0, 11213.0, 11616.0, 12304.0, 12308.0, 12313.0, 12346.0, 12301.0, 12339.0, 11905.0, 11211.0, 11246.0, 11248.0, 11171.0, 11247.0, 11204.0, 11237.0, 11269.0, 11244.0, 11192.0, 11258.0, 11190.0, 11274.0, 11219.0, 11198.0, 11228.0, 11270.0, 11265.0, 11287.0, 11597.0, 11920.0, 11912.0, 11906.0, 11889.0, 11922.0, 11949.0, 11783.0];
+const twinSeries    = {"San Francisco": {"ctrl_city": "Seattle", "dates": ["2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-11", "2025-01-12", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-18", "2025-01-19", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-25", "2025-01-26", "2025-01-27", "2025-01-28", "2025-01-29", "2025-01-30", "2025-01-31", "2025-02-01", "2025-02-02", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-08", "2025-02-09", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-15", "2025-02-16", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-22", "2025-02-23", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28", "2025-03-01", "2025-03-02", "2025-03-03", "2025-03-04", "2025-03-05", "2025-03-06", "2025-03-07", "2025-03-08", "2025-03-09", "2025-03-10", "2025-03-11", "2025-03-12", "2025-03-13", "2025-03-14", "2025-03-15", "2025-03-16", "2025-03-17", "2025-03-18", "2025-03-19", "2025-03-20", "2025-03-21", "2025-03-22", "2025-03-23", "2025-03-24", "2025-03-25", "2025-03-26", "2025-03-27", "2025-03-28", "2025-03-29", "2025-03-30", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-05", "2025-04-06", "2025-04-07", "2025-04-08", "2025-04-09", "2025-04-10", "2025-04-11", "2025-04-12", "2025-04-13", "2025-04-14", "2025-04-15", "2025-04-16", "2025-04-17", "2025-04-18", "2025-04-19", "2025-04-20", "2025-04-21", "2025-04-22", "2025-04-23", "2025-04-24", "2025-04-25", "2025-04-26", "2025-04-27", "2025-04-28", "2025-04-29", "2025-04-30", "2025-05-01", "2025-05-02", "2025-05-03", "2025-05-04", "2025-05-05", "2025-05-06", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-10", "2025-05-11", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-17", "2025-05-18", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-24", "2025-05-25", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30", "2025-05-31", "2025-06-01", "2025-06-02", "2025-06-03", "2025-06-04", "2025-06-05", "2025-06-06", "2025-06-07", "2025-06-08", "2025-06-09", "2025-06-10", "2025-06-11", "2025-06-12", "2025-06-13", "2025-06-14", "2025-06-15", "2025-06-16", "2025-06-17", "2025-06-18", "2025-06-19", "2025-06-20", "2025-06-21", "2025-06-22", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-28", "2025-06-29", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-05", "2025-07-06", "2025-07-07", "2025-07-08", "2025-07-09", "2025-07-10", "2025-07-11", "2025-07-12", "2025-07-13", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-19", "2025-07-20", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-26", "2025-07-27", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-02", "2025-08-03", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-09", "2025-08-10", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-15", "2025-08-16", "2025-08-17", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-23", "2025-08-24", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-08-30", "2025-08-31", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-06", "2025-09-07", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-13", "2025-09-14", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-20", "2025-09-21", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-27", "2025-09-28", "2025-09-29", "2025-09-30", "2025-10-01", "2025-10-02", "2025-10-03", "2025-10-04", "2025-10-05", "2025-10-06", "2025-10-07", "2025-10-08", "2025-10-09", "2025-10-10", "2025-10-11", "2025-10-12", "2025-10-13", "2025-10-14", "2025-10-15", "2025-10-16", "2025-10-17", "2025-10-18", "2025-10-19", "2025-10-20", "2025-10-21", "2025-10-22", "2025-10-23", "2025-10-24", "2025-10-25", "2025-10-26", "2025-10-27", "2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03", "2025-11-04", "2025-11-05", "2025-11-06", "2025-11-07", "2025-11-08", "2025-11-09", "2025-11-10", "2025-11-11", "2025-11-12", "2025-11-13", "2025-11-14", "2025-11-15", "2025-11-16", "2025-11-17", "2025-11-18", "2025-11-19", "2025-11-20", "2025-11-21", "2025-11-22", "2025-11-23", "2025-11-24", "2025-11-25", "2025-11-26", "2025-11-27", "2025-11-28", "2025-11-29", "2025-11-30", "2025-12-01", "2025-12-02", "2025-12-03", "2025-12-04", "2025-12-05", "2025-12-06", "2025-12-07", "2025-12-08", "2025-12-09", "2025-12-10", "2025-12-11", "2025-12-12", "2025-12-13", "2025-12-14", "2025-12-15", "2025-12-16", "2025-12-17", "2025-12-18", "2025-12-19", "2025-12-20", "2025-12-21", "2025-12-22", "2025-12-23", "2025-12-24", "2025-12-25", "2025-12-26", "2025-12-27", "2025-12-28", "2025-12-29", "2025-12-30", "2025-12-31"], "test_vals": [10351.0, 10300.0, 10301.0, 10316.0, 10224.0, 10233.0, 10284.0, 10108.0, 9990.0, 10009.0, 9946.0, 10017.0, 10019.0, 9952.0, 10174.0, 10289.0, 10354.0, 10361.0, 10343.0, 10433.0, 10480.0, 10451.0, 10463.0, 10476.0, 10558.0, 10730.0, 10758.0, 10800.0, 10863.0, 10864.0, 10931.0, 10892.0, 10749.0, 10801.0, 10943.0, 10947.0, 11051.0, 11063.0, 11270.0, 11347.0, 11352.0, 11413.0, 11467.0, 11417.0, 11497.0, 11467.0, 11515.0, 11622.0, 11666.0, 11746.0, 11845.0, 11856.0, 11944.0, 12086.0, 12072.0, 12050.0, 11982.0, 12010.0, 12123.0, 12231.0, 12220.0, 12355.0, 12436.0, 12512.0, 12651.0, 12742.0, 12713.0, 12857.0, 12701.0, 12778.0, 12870.0, 12883.0, 12852.0, 12791.0, 12740.0, 12961.0, 13050.0, 13066.0, 13088.0, 13105.0, 13322.0, 13404.0, 13404.0, 13400.0, 13486.0, 13638.0, 13677.0, 13656.0, 13665.0, 13662.0, 13699.0, 13758.0, 13752.0, 13828.0, 13815.0, 13863.0, 13975.0, 13961.0, 13985.0, 14055.0, 14224.0, 14362.0, 14448.0, 14510.0, 14492.0, 14546.0, 14572.0, 14650.0, 14674.0, 14721.0, 14767.0, 14854.0, 14964.0, 15046.0, 14993.0, 14994.0, 15098.0, 15061.0, 15202.0, 15302.0, 15242.0, 15203.0, 15299.0, 15228.0, 15257.0, 15264.0, 15115.0, 15234.0, 15249.0, 15367.0, 15385.0, 15489.0, 15564.0, 15586.0, 15604.0, 15762.0, 15612.0, 15697.0, 15760.0, 15958.0, 15985.0, 15924.0, 15905.0, 16040.0, 16069.0, 16098.0, 15867.0, 15974.0, 16088.0, 16039.0, 16150.0, 16183.0, 16115.0, 16210.0, 16159.0, 16204.0, 16328.0, 16191.0, 16234.0, 16340.0, 16363.0, 16540.0, 16493.0, 16396.0, 16402.0, 16311.0, 16292.0, 16273.0, 16188.0, 16257.0, 16307.0, 16446.0, 16483.0, 16647.0, 16666.0, 16604.0, 16498.0, 16526.0, 16636.0, 16692.0, 16562.0, 16521.0, 16519.0, 16490.0, 16433.0, 16285.0, 16251.0, 16147.0, 16154.0, 16217.0, 16245.0, 16270.0, 16215.0, 16128.0, 16209.0, 16219.0, 16247.0, 16345.0, 16244.0, 16173.0, 16253.0, 16247.0, 16228.0, 16370.0, 16325.0, 16451.0, 16541.0, 16530.0, 16463.0, 16457.0, 16172.0, 16105.0, 15991.0, 15918.0, 15991.0, 15879.0, 15851.0, 15779.0, 15741.0, 15805.0, 15779.0, 15559.0, 15598.0, 15570.0, 15593.0, 15605.0, 15517.0, 15447.0, 15603.0, 15650.0, 15466.0, 15488.0, 15408.0, 15423.0, 15384.0, 15223.0, 15184.0, 15489.0, 15377.0, 15364.0, 15255.0, 15230.0, 15304.0, 15265.0, 14939.0, 15026.0, 15132.0, 15184.0, 15101.0, 14938.0, 14953.0, 14950.0, 14888.0, 14776.0, 14629.0, 14678.0, 14485.0, 14319.0, 14310.0, 14179.0, 14193.0, 14129.0, 14072.0, 14230.0, 14336.0, 14234.0, 14337.0, 14209.0, 14201.0, 14218.0, 14187.0, 14037.0, 14089.0, 13966.0, 13939.0, 13999.0, 14030.0, 13915.0, 14039.0, 13891.0, 13872.0, 13867.0, 13814.0, 13656.0, 13684.0, 13503.0, 13550.0, 13577.0, 13534.0, 13449.0, 13507.0, 13508.0, 13555.0, 13596.0, 13473.0, 13394.0, 13449.0, 13407.0, 13362.0, 13297.0, 13310.0, 13299.0, 13338.0, 13261.0, 13191.0, 13233.0, 13251.0, 13204.0, 13291.0, 13241.0, 13272.0, 13248.0, 13186.0, 13113.0, 13055.0, 12998.0, 12934.0, 13000.0, 12945.0, 12843.0, 12903.0, 12930.0, 12920.0, 12991.0, 13374.0, 14142.0, 14206.0, 14093.0, 14139.0, 14176.0, 14218.0, 13857.0, 13375.0, 13599.0, 13895.0, 14114.0, 14355.0, 14548.0, 14670.0, 14748.0, 14742.0, 14710.0, 14657.0, 14633.0, 14683.0, 14798.0, 14839.0, 14918.0, 15004.0, 14995.0, 15014.0, 15417.0, 15617.0, 15531.0, 15581.0, 15681.0, 15744.0, 15781.0, 15594.0], "ctrl_vals": [10124.0, 10164.0, 10226.0, 10370.0, 10342.0, 10458.0, 10490.0, 10611.0, 10506.0, 10428.0, 10297.0, 10246.0, 10193.0, 10167.0, 10079.0, 10173.0, 10358.0, 10477.0, 10597.0, 10607.0, 10711.0, 10659.0, 10778.0, 10772.0, 10726.0, 10696.0, 10860.0, 10862.0, 11045.0, 10887.0, 10823.0, 10889.0, 11028.0, 10965.0, 11047.0, 10956.0, 11080.0, 11162.0, 11370.0, 11451.0, 11455.0, 11375.0, 11552.0, 11624.0, 11618.0, 11585.0, 11597.0, 11774.0, 11911.0, 12002.0, 12130.0, 12206.0, 12220.0, 12298.0, 12356.0, 12345.0, 12315.0, 12324.0, 12287.0, 12212.0, 12108.0, 12064.0, 12210.0, 12307.0, 12300.0, 12544.0, 12583.0, 12653.0, 12715.0, 12747.0, 12710.0, 12639.0, 12591.0, 12647.0, 12833.0, 12908.0, 12884.0, 12907.0, 13016.0, 13068.0, 13248.0, 13205.0, 13263.0, 13337.0, 13372.0, 13477.0, 13472.0, 13436.0, 13474.0, 13607.0, 13690.0, 13745.0, 13812.0, 13915.0, 13983.0, 14135.0, 14115.0, 14131.0, 14186.0, 14206.0, 14128.0, 14101.0, 14191.0, 14289.0, 14351.0, 14463.0, 14542.0, 14895.0, 15090.0, 15049.0, 14944.0, 14911.0, 14932.0, 14914.0, 14699.0, 14640.0, 14627.0, 14819.0, 15002.0, 15030.0, 15197.0, 15322.0, 15348.0, 15535.0, 15507.0, 15434.0, 15460.0, 15361.0, 15313.0, 15449.0, 15506.0, 15428.0, 15553.0, 15558.0, 15612.0, 15688.0, 15616.0, 15540.0, 15601.0, 15785.0, 15847.0, 15888.0, 15896.0, 15939.0, 16004.0, 16105.0, 15886.0, 15917.0, 15996.0, 15974.0, 16059.0, 15998.0, 16022.0, 16053.0, 15962.0, 15844.0, 15958.0, 15958.0, 15959.0, 15978.0, 15940.0, 16052.0, 16089.0, 16060.0, 16059.0, 16071.0, 16022.0, 16183.0, 16162.0, 16286.0, 16265.0, 16298.0, 16434.0, 16319.0, 16219.0, 16288.0, 16231.0, 16318.0, 16459.0, 16381.0, 16513.0, 16623.0, 16602.0, 16630.0, 16581.0, 16378.0, 16343.0, 16368.0, 16271.0, 16265.0, 16357.0, 16421.0, 16421.0, 16504.0, 16448.0, 16344.0, 16257.0, 16019.0, 15936.0, 15942.0, 15954.0, 15981.0, 16069.0, 16157.0, 16121.0, 16137.0, 16161.0, 15962.0, 15989.0, 16001.0, 15909.0, 16051.0, 16145.0, 16089.0, 16165.0, 16050.0, 15959.0, 16006.0, 15896.0, 15745.0, 15682.0, 15669.0, 15688.0, 15768.0, 15664.0, 15670.0, 15582.0, 15555.0, 15520.0, 15515.0, 15373.0, 15422.0, 15484.0, 15533.0, 15635.0, 15537.0, 15391.0, 15482.0, 15486.0, 15413.0, 15353.0, 15229.0, 15176.0, 15353.0, 15257.0, 15144.0, 15115.0, 15111.0, 15074.0, 15058.0, 14911.0, 14977.0, 15013.0, 15027.0, 14936.0, 14832.0, 14835.0, 14776.0, 14696.0, 14487.0, 14449.0, 14434.0, 14431.0, 14346.0, 14213.0, 14163.0, 14229.0, 14033.0, 13934.0, 13904.0, 14023.0, 14069.0, 13902.0, 13850.0, 13875.0, 13761.0, 13744.0, 13603.0, 13625.0, 13784.0, 13830.0, 13798.0, 13857.0, 13976.0, 13961.0, 13892.0, 13754.0, 13671.0, 13648.0, 13649.0, 13442.0, 13408.0, 13348.0, 13281.0, 13248.0, 13215.0, 13307.0, 13161.0, 13199.0, 13276.0, 13174.0, 13124.0, 13094.0, 12904.0, 12988.0, 12840.0, 12847.0, 12998.0, 13070.0, 13112.0, 13109.0, 13104.0, 13177.0, 12990.0, 12960.0, 12857.0, 12778.0, 12868.0, 12909.0, 12846.0, 12969.0, 12854.0, 12891.0, 12934.0, 13380.0, 14134.0, 14074.0, 14052.0, 14095.0, 14022.0, 14042.0, 13499.0, 12623.0, 12601.0, 12579.0, 12513.0, 12641.0, 12460.0, 12596.0, 12689.0, 12773.0, 12708.0, 12806.0, 12706.0, 12891.0, 12805.0, 12807.0, 12797.0, 12831.0, 12833.0, 12745.0, 13042.0, 13345.0, 13356.0, 13377.0, 13393.0, 13407.0, 13487.0, 13276.0]}, "Austin": {"ctrl_city": "Denver", "dates": ["2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-11", "2025-01-12", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-18", "2025-01-19", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-25", "2025-01-26", "2025-01-27", "2025-01-28", "2025-01-29", "2025-01-30", "2025-01-31", "2025-02-01", "2025-02-02", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-08", "2025-02-09", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-15", "2025-02-16", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-22", "2025-02-23", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28", "2025-03-01", "2025-03-02", "2025-03-03", "2025-03-04", "2025-03-05", "2025-03-06", "2025-03-07", "2025-03-08", "2025-03-09", "2025-03-10", "2025-03-11", "2025-03-12", "2025-03-13", "2025-03-14", "2025-03-15", "2025-03-16", "2025-03-17", "2025-03-18", "2025-03-19", "2025-03-20", "2025-03-21", "2025-03-22", "2025-03-23", "2025-03-24", "2025-03-25", "2025-03-26", "2025-03-27", "2025-03-28", "2025-03-29", "2025-03-30", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-05", "2025-04-06", "2025-04-07", "2025-04-08", "2025-04-09", "2025-04-10", "2025-04-11", "2025-04-12", "2025-04-13", "2025-04-14", "2025-04-15", "2025-04-16", "2025-04-17", "2025-04-18", "2025-04-19", "2025-04-20", "2025-04-21", "2025-04-22", "2025-04-23", "2025-04-24", "2025-04-25", "2025-04-26", "2025-04-27", "2025-04-28", "2025-04-29", "2025-04-30", "2025-05-01", "2025-05-02", "2025-05-03", "2025-05-04", "2025-05-05", "2025-05-06", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-10", "2025-05-11", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-17", "2025-05-18", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-24", "2025-05-25", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30", "2025-05-31", "2025-06-01", "2025-06-02", "2025-06-03", "2025-06-04", "2025-06-05", "2025-06-06", "2025-06-07", "2025-06-08", "2025-06-09", "2025-06-10", "2025-06-11", "2025-06-12", "2025-06-13", "2025-06-14", "2025-06-15", "2025-06-16", "2025-06-17", "2025-06-18", "2025-06-19", "2025-06-20", "2025-06-21", "2025-06-22", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-28", "2025-06-29", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-05", "2025-07-06", "2025-07-07", "2025-07-08", "2025-07-09", "2025-07-10", "2025-07-11", "2025-07-12", "2025-07-13", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-19", "2025-07-20", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-26", "2025-07-27", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-02", "2025-08-03", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-09", "2025-08-10", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-15", "2025-08-16", "2025-08-17", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-23", "2025-08-24", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-08-30", "2025-08-31", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-06", "2025-09-07", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-13", "2025-09-14", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-20", "2025-09-21", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-27", "2025-09-28", "2025-09-29", "2025-09-30", "2025-10-01", "2025-10-02", "2025-10-03", "2025-10-04", "2025-10-05", "2025-10-06", "2025-10-07", "2025-10-08", "2025-10-09", "2025-10-10", "2025-10-11", "2025-10-12", "2025-10-13", "2025-10-14", "2025-10-15", "2025-10-16", "2025-10-17", "2025-10-18", "2025-10-19", "2025-10-20", "2025-10-21", "2025-10-22", "2025-10-23", "2025-10-24", "2025-10-25", "2025-10-26", "2025-10-27", "2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03", "2025-11-04", "2025-11-05", "2025-11-06", "2025-11-07", "2025-11-08", "2025-11-09", "2025-11-10", "2025-11-11", "2025-11-12", "2025-11-13", "2025-11-14", "2025-11-15", "2025-11-16", "2025-11-17", "2025-11-18", "2025-11-19", "2025-11-20", "2025-11-21", "2025-11-22", "2025-11-23", "2025-11-24", "2025-11-25", "2025-11-26", "2025-11-27", "2025-11-28", "2025-11-29", "2025-11-30", "2025-12-01", "2025-12-02", "2025-12-03", "2025-12-04", "2025-12-05", "2025-12-06", "2025-12-07", "2025-12-08", "2025-12-09", "2025-12-10", "2025-12-11", "2025-12-12", "2025-12-13", "2025-12-14", "2025-12-15", "2025-12-16", "2025-12-17", "2025-12-18", "2025-12-19", "2025-12-20", "2025-12-21", "2025-12-22", "2025-12-23", "2025-12-24", "2025-12-25", "2025-12-26", "2025-12-27", "2025-12-28", "2025-12-29", "2025-12-30", "2025-12-31"], "test_vals": [7994.0, 7981.0, 8130.0, 8177.0, 8187.0, 8090.0, 8053.0, 8061.0, 8057.0, 7958.0, 7937.0, 8013.0, 8068.0, 8051.0, 8027.0, 7957.0, 7968.0, 8036.0, 8051.0, 8238.0, 8359.0, 8441.0, 8493.0, 8604.0, 8550.0, 8632.0, 8657.0, 8657.0, 8734.0, 8772.0, 8766.0, 8914.0, 8908.0, 8902.0, 8975.0, 8922.0, 9021.0, 9105.0, 9190.0, 9176.0, 9084.0, 9071.0, 9130.0, 9165.0, 9161.0, 8990.0, 9124.0, 9228.0, 9305.0, 9400.0, 9448.0, 9499.0, 9601.0, 9537.0, 9566.0, 9587.0, 9585.0, 9519.0, 9481.0, 9576.0, 9697.0, 9749.0, 9780.0, 9808.0, 9959.0, 10027.0, 10020.0, 10039.0, 10024.0, 10048.0, 10098.0, 10068.0, 10197.0, 10189.0, 10243.0, 10284.0, 10413.0, 10452.0, 10569.0, 10472.0, 10571.0, 10666.0, 10733.0, 10754.0, 10759.0, 10819.0, 11049.0, 11057.0, 11031.0, 11140.0, 11205.0, 11245.0, 11193.0, 11103.0, 11094.0, 11109.0, 11025.0, 10947.0, 11010.0, 11081.0, 11211.0, 11266.0, 11399.0, 11475.0, 11549.0, 11621.0, 11590.0, 11567.0, 11662.0, 11673.0, 11733.0, 11893.0, 11863.0, 11926.0, 11910.0, 11908.0, 11884.0, 11962.0, 11943.0, 11979.0, 11995.0, 12081.0, 12112.0, 12206.0, 12187.0, 12070.0, 12205.0, 12365.0, 12339.0, 12375.0, 12385.0, 12418.0, 12553.0, 12602.0, 12529.0, 12545.0, 12520.0, 12493.0, 12498.0, 12713.0, 12609.0, 12651.0, 12711.0, 12860.0, 13043.0, 13038.0, 12807.0, 12904.0, 12945.0, 13055.0, 13042.0, 12914.0, 12986.0, 13081.0, 13084.0, 13089.0, 13064.0, 13106.0, 13205.0, 13220.0, 13167.0, 13144.0, 13189.0, 13104.0, 13072.0, 12992.0, 12968.0, 13048.0, 13056.0, 13004.0, 12982.0, 13005.0, 13061.0, 13171.0, 13095.0, 13099.0, 13110.0, 13258.0, 13379.0, 13361.0, 13283.0, 13306.0, 13271.0, 13266.0, 13237.0, 13025.0, 13013.0, 12943.0, 12988.0, 12928.0, 12884.0, 12843.0, 12965.0, 12947.0, 12946.0, 12971.0, 12965.0, 12873.0, 12866.0, 12751.0, 12692.0, 12743.0, 12648.0, 12679.0, 12712.0, 12719.0, 12762.0, 12793.0, 12835.0, 12753.0, 12689.0, 12701.0, 12638.0, 12600.0, 12575.0, 12482.0, 12454.0, 12583.0, 12594.0, 12632.0, 12616.0, 12630.0, 12620.0, 12684.0, 12622.0, 12670.0, 12601.0, 12597.0, 12547.0, 12567.0, 12487.0, 12521.0, 12428.0, 12322.0, 12268.0, 12214.0, 12158.0, 12270.0, 12132.0, 12013.0, 12036.0, 11882.0, 11811.0, 11780.0, 11690.0, 11706.0, 11725.0, 11718.0, 11812.0, 11806.0, 11816.0, 11793.0, 11733.0, 11755.0, 11740.0, 11610.0, 11628.0, 11491.0, 11369.0, 11338.0, 11398.0, 11392.0, 11438.0, 11451.0, 11527.0, 11596.0, 11585.0, 11435.0, 11411.0, 11432.0, 11420.0, 11355.0, 11334.0, 11278.0, 11349.0, 11297.0, 11355.0, 11250.0, 11278.0, 11210.0, 11179.0, 11063.0, 11012.0, 10904.0, 10940.0, 10800.0, 10765.0, 10880.0, 10967.0, 10982.0, 10939.0, 10896.0, 10933.0, 10861.0, 10719.0, 10528.0, 10505.0, 10515.0, 10464.0, 10492.0, 10462.0, 10382.0, 10458.0, 10472.0, 10506.0, 10489.0, 10447.0, 10490.0, 10538.0, 10555.0, 10520.0, 10342.0, 10424.0, 10425.0, 10382.0, 10397.0, 10365.0, 10334.0, 10373.0, 10255.0, 10174.0, 10254.0, 10251.0, 10199.0, 10623.0, 11111.0, 11195.0, 11102.0, 11062.0, 11058.0, 11134.0, 10913.0, 10630.0, 10842.0, 11223.0, 11518.0, 11789.0, 11959.0, 12078.0, 12162.0, 12110.0, 12092.0, 12145.0, 12186.0, 12235.0, 12171.0, 12184.0, 12370.0, 12416.0, 12368.0, 12384.0, 12759.0, 12975.0, 12989.0, 12890.0, 12879.0, 12904.0, 12865.0, 12697.0], "ctrl_vals": [7878.0, 7934.0, 7940.0, 8112.0, 8032.0, 8063.0, 7979.0, 8112.0, 8122.0, 8140.0, 8116.0, 8233.0, 8249.0, 8331.0, 8404.0, 8452.0, 8482.0, 8506.0, 8540.0, 8595.0, 8673.0, 8713.0, 8563.0, 8675.0, 8635.0, 8626.0, 8562.0, 8528.0, 8542.0, 8645.0, 8615.0, 8784.0, 8823.0, 8880.0, 8964.0, 9039.0, 8995.0, 9037.0, 9133.0, 9130.0, 9245.0, 9224.0, 9206.0, 9294.0, 9301.0, 9138.0, 9117.0, 9165.0, 9167.0, 9148.0, 9086.0, 9091.0, 9118.0, 9310.0, 9319.0, 9366.0, 9567.0, 9762.0, 9817.0, 9798.0, 9870.0, 9790.0, 9782.0, 9760.0, 9873.0, 9999.0, 10192.0, 10148.0, 10301.0, 10461.0, 10465.0, 10389.0, 10358.0, 10332.0, 10330.0, 10243.0, 10241.0, 10219.0, 10199.0, 10252.0, 10400.0, 10501.0, 10548.0, 10544.0, 10681.0, 10728.0, 10748.0, 10746.0, 10692.0, 10816.0, 10839.0, 10801.0, 10906.0, 10877.0, 10911.0, 10998.0, 11059.0, 11176.0, 11313.0, 11341.0, 11438.0, 11460.0, 11525.0, 11538.0, 11566.0, 11499.0, 11496.0, 11484.0, 11601.0, 11548.0, 11546.0, 11543.0, 11657.0, 11710.0, 11877.0, 11789.0, 11899.0, 11924.0, 12100.0, 12028.0, 12090.0, 12091.0, 12176.0, 12183.0, 12248.0, 12173.0, 12254.0, 12315.0, 12423.0, 12402.0, 12370.0, 12399.0, 12552.0, 12545.0, 12604.0, 12602.0, 12627.0, 12748.0, 12857.0, 12868.0, 12920.0, 12831.0, 12717.0, 12733.0, 12664.0, 12604.0, 12467.0, 12508.0, 12477.0, 12562.0, 12653.0, 12631.0, 12663.0, 12778.0, 12721.0, 12896.0, 12914.0, 12850.0, 12959.0, 12980.0, 12933.0, 13031.0, 12912.0, 12908.0, 12882.0, 12887.0, 12821.0, 12788.0, 12829.0, 12935.0, 12963.0, 12983.0, 12977.0, 13086.0, 13133.0, 13189.0, 13156.0, 13136.0, 13339.0, 13361.0, 13292.0, 13319.0, 13249.0, 13188.0, 13108.0, 12866.0, 12880.0, 12828.0, 12680.0, 12646.0, 12803.0, 12862.0, 12989.0, 12959.0, 13001.0, 13146.0, 13102.0, 12981.0, 12987.0, 12900.0, 12934.0, 12918.0, 12822.0, 12850.0, 12778.0, 12749.0, 12768.0, 12757.0, 12774.0, 12795.0, 12793.0, 12890.0, 12899.0, 12883.0, 12745.0, 12649.0, 12616.0, 12526.0, 12427.0, 12382.0, 12388.0, 12429.0, 12485.0, 12482.0, 12392.0, 12332.0, 12300.0, 12190.0, 12200.0, 12229.0, 12263.0, 12327.0, 12425.0, 12415.0, 12434.0, 12348.0, 12231.0, 12261.0, 12254.0, 12162.0, 12129.0, 12141.0, 12205.0, 12241.0, 12023.0, 11860.0, 11872.0, 11776.0, 11716.0, 11570.0, 11405.0, 11479.0, 11617.0, 11514.0, 11425.0, 11381.0, 11431.0, 11419.0, 11374.0, 11307.0, 11337.0, 11445.0, 11395.0, 11408.0, 11446.0, 11408.0, 11334.0, 11255.0, 11178.0, 11190.0, 11189.0, 11101.0, 10995.0, 11088.0, 11073.0, 11057.0, 11091.0, 10949.0, 11083.0, 11172.0, 11048.0, 11141.0, 11119.0, 11079.0, 11099.0, 11049.0, 11068.0, 11071.0, 10901.0, 10931.0, 10837.0, 10900.0, 10819.0, 10701.0, 10686.0, 10635.0, 10542.0, 10616.0, 10462.0, 10382.0, 10408.0, 10439.0, 10523.0, 10603.0, 10487.0, 10431.0, 10541.0, 10481.0, 10393.0, 10408.0, 10370.0, 10416.0, 10581.0, 10459.0, 10508.0, 10510.0, 10445.0, 10481.0, 10472.0, 10380.0, 10455.0, 10380.0, 10326.0, 10251.0, 10475.0, 11155.0, 11066.0, 10994.0, 10992.0, 11044.0, 11131.0, 10861.0, 10114.0, 10157.0, 10180.0, 10178.0, 10242.0, 10224.0, 10217.0, 10279.0, 10347.0, 10343.0, 10292.0, 10234.0, 10180.0, 10120.0, 10120.0, 10128.0, 10125.0, 10211.0, 10282.0, 10673.0, 11041.0, 11048.0, 10907.0, 10953.0, 10966.0, 10956.0, 10785.0]}, "Miami": {"ctrl_city": "Phoenix", "dates": ["2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-11", "2025-01-12", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-18", "2025-01-19", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-25", "2025-01-26", "2025-01-27", "2025-01-28", "2025-01-29", "2025-01-30", "2025-01-31", "2025-02-01", "2025-02-02", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-08", "2025-02-09", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-15", "2025-02-16", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-22", "2025-02-23", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28", "2025-03-01", "2025-03-02", "2025-03-03", "2025-03-04", "2025-03-05", "2025-03-06", "2025-03-07", "2025-03-08", "2025-03-09", "2025-03-10", "2025-03-11", "2025-03-12", "2025-03-13", "2025-03-14", "2025-03-15", "2025-03-16", "2025-03-17", "2025-03-18", "2025-03-19", "2025-03-20", "2025-03-21", "2025-03-22", "2025-03-23", "2025-03-24", "2025-03-25", "2025-03-26", "2025-03-27", "2025-03-28", "2025-03-29", "2025-03-30", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-05", "2025-04-06", "2025-04-07", "2025-04-08", "2025-04-09", "2025-04-10", "2025-04-11", "2025-04-12", "2025-04-13", "2025-04-14", "2025-04-15", "2025-04-16", "2025-04-17", "2025-04-18", "2025-04-19", "2025-04-20", "2025-04-21", "2025-04-22", "2025-04-23", "2025-04-24", "2025-04-25", "2025-04-26", "2025-04-27", "2025-04-28", "2025-04-29", "2025-04-30", "2025-05-01", "2025-05-02", "2025-05-03", "2025-05-04", "2025-05-05", "2025-05-06", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-10", "2025-05-11", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-17", "2025-05-18", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-24", "2025-05-25", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30", "2025-05-31", "2025-06-01", "2025-06-02", "2025-06-03", "2025-06-04", "2025-06-05", "2025-06-06", "2025-06-07", "2025-06-08", "2025-06-09", "2025-06-10", "2025-06-11", "2025-06-12", "2025-06-13", "2025-06-14", "2025-06-15", "2025-06-16", "2025-06-17", "2025-06-18", "2025-06-19", "2025-06-20", "2025-06-21", "2025-06-22", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-28", "2025-06-29", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-05", "2025-07-06", "2025-07-07", "2025-07-08", "2025-07-09", "2025-07-10", "2025-07-11", "2025-07-12", "2025-07-13", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-19", "2025-07-20", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-26", "2025-07-27", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-02", "2025-08-03", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-09", "2025-08-10", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-15", "2025-08-16", "2025-08-17", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-23", "2025-08-24", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-08-30", "2025-08-31", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-06", "2025-09-07", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-13", "2025-09-14", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-20", "2025-09-21", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-27", "2025-09-28", "2025-09-29", "2025-09-30", "2025-10-01", "2025-10-02", "2025-10-03", "2025-10-04", "2025-10-05", "2025-10-06", "2025-10-07", "2025-10-08", "2025-10-09", "2025-10-10", "2025-10-11", "2025-10-12", "2025-10-13", "2025-10-14", "2025-10-15", "2025-10-16", "2025-10-17", "2025-10-18", "2025-10-19", "2025-10-20", "2025-10-21", "2025-10-22", "2025-10-23", "2025-10-24", "2025-10-25", "2025-10-26", "2025-10-27", "2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03", "2025-11-04", "2025-11-05", "2025-11-06", "2025-11-07", "2025-11-08", "2025-11-09", "2025-11-10", "2025-11-11", "2025-11-12", "2025-11-13", "2025-11-14", "2025-11-15", "2025-11-16", "2025-11-17", "2025-11-18", "2025-11-19", "2025-11-20", "2025-11-21", "2025-11-22", "2025-11-23", "2025-11-24", "2025-11-25", "2025-11-26", "2025-11-27", "2025-11-28", "2025-11-29", "2025-11-30", "2025-12-01", "2025-12-02", "2025-12-03", "2025-12-04", "2025-12-05", "2025-12-06", "2025-12-07", "2025-12-08", "2025-12-09", "2025-12-10", "2025-12-11", "2025-12-12", "2025-12-13", "2025-12-14", "2025-12-15", "2025-12-16", "2025-12-17", "2025-12-18", "2025-12-19", "2025-12-20", "2025-12-21", "2025-12-22", "2025-12-23", "2025-12-24", "2025-12-25", "2025-12-26", "2025-12-27", "2025-12-28", "2025-12-29", "2025-12-30", "2025-12-31"], "test_vals": [8822.0, 8793.0, 8813.0, 8866.0, 8997.0, 9015.0, 8996.0, 8927.0, 8884.0, 9006.0, 8998.0, 8979.0, 8988.0, 8996.0, 9059.0, 9107.0, 9192.0, 9203.0, 9220.0, 9347.0, 9322.0, 9216.0, 9183.0, 9187.0, 9209.0, 9367.0, 9317.0, 9436.0, 9648.0, 9872.0, 9949.0, 10078.0, 10029.0, 10127.0, 10194.0, 10116.0, 9999.0, 9923.0, 10005.0, 9962.0, 10006.0, 10053.0, 10126.0, 10290.0, 10267.0, 10185.0, 10211.0, 10112.0, 10096.0, 10125.0, 10168.0, 10305.0, 10302.0, 10483.0, 10693.0, 10771.0, 10808.0, 10716.0, 10705.0, 10863.0, 10908.0, 10969.0, 10954.0, 10950.0, 11053.0, 11022.0, 11024.0, 10958.0, 10894.0, 10878.0, 11012.0, 11020.0, 11097.0, 10968.0, 11019.0, 11186.0, 11407.0, 11400.0, 11441.0, 11574.0, 11721.0, 11784.0, 11774.0, 11795.0, 11859.0, 11925.0, 11896.0, 11949.0, 11965.0, 11987.0, 12014.0, 12019.0, 12155.0, 12231.0, 12318.0, 12333.0, 12224.0, 12265.0, 12391.0, 12337.0, 12397.0, 12467.0, 12464.0, 12608.0, 12644.0, 12576.0, 12648.0, 12610.0, 12647.0, 12769.0, 12749.0, 12807.0, 12873.0, 12851.0, 12973.0, 13047.0, 13030.0, 13157.0, 13153.0, 13265.0, 13354.0, 13357.0, 13284.0, 13377.0, 13348.0, 13199.0, 13217.0, 13288.0, 13210.0, 13231.0, 13289.0, 13489.0, 13677.0, 13642.0, 13611.0, 13841.0, 13888.0, 13837.0, 13724.0, 13847.0, 13917.0, 14039.0, 14005.0, 14049.0, 14099.0, 14062.0, 14032.0, 14042.0, 13963.0, 14138.0, 14186.0, 14179.0, 14258.0, 14289.0, 14315.0, 14262.0, 14153.0, 14115.0, 14270.0, 14365.0, 14290.0, 14365.0, 14458.0, 14464.0, 14536.0, 14397.0, 14312.0, 14400.0, 14319.0, 14299.0, 14207.0, 14208.0, 14370.0, 14351.0, 14299.0, 14396.0, 14416.0, 14493.0, 14593.0, 14504.0, 14551.0, 14601.0, 14587.0, 14729.0, 14732.0, 14624.0, 14606.0, 14592.0, 14551.0, 14464.0, 14325.0, 14358.0, 14277.0, 14319.0, 14400.0, 14366.0, 14256.0, 14202.0, 14189.0, 14230.0, 14101.0, 13989.0, 14027.0, 14157.0, 14162.0, 14056.0, 14020.0, 14007.0, 14105.0, 14025.0, 14043.0, 14120.0, 14175.0, 14153.0, 14205.0, 14095.0, 14043.0, 13973.0, 13805.0, 13793.0, 13768.0, 13734.0, 13727.0, 13739.0, 13729.0, 13742.0, 13700.0, 13627.0, 13598.0, 13662.0, 13595.0, 13500.0, 13527.0, 13462.0, 13527.0, 13519.0, 13420.0, 13656.0, 13687.0, 13617.0, 13615.0, 13670.0, 13607.0, 13491.0, 13311.0, 13252.0, 13118.0, 13097.0, 12935.0, 12907.0, 12947.0, 12867.0, 12881.0, 12945.0, 12896.0, 12880.0, 12895.0, 12879.0, 12787.0, 12777.0, 12741.0, 12726.0, 12729.0, 12758.0, 12682.0, 12683.0, 12592.0, 12574.0, 12544.0, 12406.0, 12218.0, 12143.0, 12183.0, 12247.0, 12229.0, 12147.0, 12209.0, 12300.0, 12279.0, 12212.0, 12143.0, 12148.0, 12140.0, 12162.0, 11925.0, 11985.0, 11910.0, 11731.0, 11705.0, 11744.0, 11656.0, 11830.0, 11855.0, 11938.0, 12102.0, 12091.0, 11997.0, 11894.0, 11807.0, 11651.0, 11676.0, 11556.0, 11501.0, 11507.0, 11576.0, 11662.0, 11654.0, 11529.0, 11480.0, 11384.0, 11303.0, 11282.0, 11151.0, 11131.0, 11029.0, 11050.0, 11026.0, 11087.0, 11081.0, 11013.0, 11022.0, 11046.0, 11057.0, 11201.0, 11499.0, 12167.0, 12229.0, 12274.0, 12352.0, 12351.0, 12352.0, 12083.0, 11617.0, 11815.0, 12104.0, 12279.0, 12440.0, 12502.0, 12543.0, 12462.0, 12508.0, 12434.0, 12353.0, 12442.0, 12501.0, 12610.0, 12788.0, 12827.0, 12790.0, 12834.0, 12676.0, 13045.0, 13259.0, 13127.0, 13080.0, 13109.0, 13156.0, 13249.0, 13084.0], "ctrl_vals": [8951.0, 8921.0, 9013.0, 8922.0, 8966.0, 8922.0, 8910.0, 8916.0, 8875.0, 8874.0, 8828.0, 8802.0, 8893.0, 8920.0, 8891.0, 8996.0, 8983.0, 9164.0, 9244.0, 9232.0, 9348.0, 9368.0, 9378.0, 9509.0, 9451.0, 9534.0, 9587.0, 9538.0, 9650.0, 9625.0, 9648.0, 9762.0, 9625.0, 9745.0, 9674.0, 9751.0, 9856.0, 9789.0, 9880.0, 9953.0, 9908.0, 10019.0, 10044.0, 10093.0, 10267.0, 10178.0, 10266.0, 10227.0, 10240.0, 10291.0, 10348.0, 10247.0, 10287.0, 10338.0, 10487.0, 10529.0, 10542.0, 10472.0, 10581.0, 10686.0, 10731.0, 10735.0, 10817.0, 10833.0, 10883.0, 10914.0, 11015.0, 11089.0, 11141.0, 11230.0, 11261.0, 11390.0, 11468.0, 11421.0, 11459.0, 11435.0, 11381.0, 11379.0, 11368.0, 11487.0, 11658.0, 11713.0, 11870.0, 11878.0, 11958.0, 11952.0, 11869.0, 11783.0, 11767.0, 11676.0, 11858.0, 11873.0, 11972.0, 12162.0, 12164.0, 12096.0, 12230.0, 12292.0, 12499.0, 12461.0, 12417.0, 12483.0, 12656.0, 12856.0, 12756.0, 12704.0, 12836.0, 12907.0, 12977.0, 13039.0, 12913.0, 13048.0, 13053.0, 13099.0, 13057.0, 13109.0, 13127.0, 13246.0, 13264.0, 13222.0, 13291.0, 13296.0, 13274.0, 13277.0, 13323.0, 13242.0, 13541.0, 13561.0, 13653.0, 13716.0, 13794.0, 13777.0, 13957.0, 13845.0, 13820.0, 13825.0, 13846.0, 13846.0, 13905.0, 14077.0, 13912.0, 13966.0, 14011.0, 14041.0, 14052.0, 14073.0, 13963.0, 14101.0, 14107.0, 14063.0, 14007.0, 14012.0, 14015.0, 14032.0, 14118.0, 14150.0, 14245.0, 14300.0, 14370.0, 14380.0, 14381.0, 14429.0, 14439.0, 14440.0, 14542.0, 14526.0, 14443.0, 14401.0, 14303.0, 14234.0, 14212.0, 14116.0, 14105.0, 14054.0, 14077.0, 14120.0, 14114.0, 14158.0, 14433.0, 14362.0, 14422.0, 14367.0, 14314.0, 14401.0, 14351.0, 14102.0, 14075.0, 14146.0, 14114.0, 14162.0, 14125.0, 14202.0, 14137.0, 14073.0, 14039.0, 14194.0, 14247.0, 14232.0, 14119.0, 14222.0, 14320.0, 14322.0, 14238.0, 14214.0, 14337.0, 14369.0, 14282.0, 14317.0, 14178.0, 14095.0, 13997.0, 13800.0, 13768.0, 13731.0, 13773.0, 13849.0, 13865.0, 13848.0, 13863.0, 13878.0, 13853.0, 13733.0, 13693.0, 13597.0, 13546.0, 13487.0, 13465.0, 13501.0, 13521.0, 13558.0, 13598.0, 13637.0, 13630.0, 13570.0, 13497.0, 13326.0, 13245.0, 13451.0, 13452.0, 13481.0, 13505.0, 13513.0, 13626.0, 13571.0, 13297.0, 13250.0, 13233.0, 13128.0, 13069.0, 13028.0, 13064.0, 12972.0, 12783.0, 12658.0, 12568.0, 12534.0, 12495.0, 12407.0, 12534.0, 12645.0, 12661.0, 12730.0, 12665.0, 12699.0, 12688.0, 12615.0, 12509.0, 12378.0, 12358.0, 12410.0, 12274.0, 12201.0, 12196.0, 12160.0, 12304.0, 12181.0, 12166.0, 12168.0, 12219.0, 12100.0, 12127.0, 12012.0, 11979.0, 11957.0, 11919.0, 11847.0, 11796.0, 11639.0, 11600.0, 11759.0, 11736.0, 11738.0, 11711.0, 11742.0, 11886.0, 11809.0, 11715.0, 11688.0, 11705.0, 11721.0, 11699.0, 11685.0, 11760.0, 11660.0, 11570.0, 11517.0, 11558.0, 11471.0, 11337.0, 11296.0, 11301.0, 11324.0, 11316.0, 11204.0, 11337.0, 11315.0, 11247.0, 11225.0, 11114.0, 11079.0, 11169.0, 11078.0, 11167.0, 11133.0, 11546.0, 12281.0, 12265.0, 12237.0, 12259.0, 12179.0, 12255.0, 11860.0, 11263.0, 11362.0, 11234.0, 11156.0, 11146.0, 11119.0, 11116.0, 11107.0, 11018.0, 11057.0, 11111.0, 11136.0, 11265.0, 11156.0, 11116.0, 11235.0, 11259.0, 11246.0, 11279.0, 11538.0, 11933.0, 11812.0, 11795.0, 11727.0, 11734.0, 11741.0, 11570.0]}, "Chicago": {"ctrl_city": "Boston", "dates": ["2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-11", "2025-01-12", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-18", "2025-01-19", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-25", "2025-01-26", "2025-01-27", "2025-01-28", "2025-01-29", "2025-01-30", "2025-01-31", "2025-02-01", "2025-02-02", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-08", "2025-02-09", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-15", "2025-02-16", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-22", "2025-02-23", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28", "2025-03-01", "2025-03-02", "2025-03-03", "2025-03-04", "2025-03-05", "2025-03-06", "2025-03-07", "2025-03-08", "2025-03-09", "2025-03-10", "2025-03-11", "2025-03-12", "2025-03-13", "2025-03-14", "2025-03-15", "2025-03-16", "2025-03-17", "2025-03-18", "2025-03-19", "2025-03-20", "2025-03-21", "2025-03-22", "2025-03-23", "2025-03-24", "2025-03-25", "2025-03-26", "2025-03-27", "2025-03-28", "2025-03-29", "2025-03-30", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-05", "2025-04-06", "2025-04-07", "2025-04-08", "2025-04-09", "2025-04-10", "2025-04-11", "2025-04-12", "2025-04-13", "2025-04-14", "2025-04-15", "2025-04-16", "2025-04-17", "2025-04-18", "2025-04-19", "2025-04-20", "2025-04-21", "2025-04-22", "2025-04-23", "2025-04-24", "2025-04-25", "2025-04-26", "2025-04-27", "2025-04-28", "2025-04-29", "2025-04-30", "2025-05-01", "2025-05-02", "2025-05-03", "2025-05-04", "2025-05-05", "2025-05-06", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-10", "2025-05-11", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-17", "2025-05-18", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-24", "2025-05-25", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30", "2025-05-31", "2025-06-01", "2025-06-02", "2025-06-03", "2025-06-04", "2025-06-05", "2025-06-06", "2025-06-07", "2025-06-08", "2025-06-09", "2025-06-10", "2025-06-11", "2025-06-12", "2025-06-13", "2025-06-14", "2025-06-15", "2025-06-16", "2025-06-17", "2025-06-18", "2025-06-19", "2025-06-20", "2025-06-21", "2025-06-22", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-28", "2025-06-29", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-05", "2025-07-06", "2025-07-07", "2025-07-08", "2025-07-09", "2025-07-10", "2025-07-11", "2025-07-12", "2025-07-13", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-19", "2025-07-20", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-26", "2025-07-27", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-02", "2025-08-03", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-09", "2025-08-10", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-15", "2025-08-16", "2025-08-17", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-23", "2025-08-24", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-08-30", "2025-08-31", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-06", "2025-09-07", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-13", "2025-09-14", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-20", "2025-09-21", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-27", "2025-09-28", "2025-09-29", "2025-09-30", "2025-10-01", "2025-10-02", "2025-10-03", "2025-10-04", "2025-10-05", "2025-10-06", "2025-10-07", "2025-10-08", "2025-10-09", "2025-10-10", "2025-10-11", "2025-10-12", "2025-10-13", "2025-10-14", "2025-10-15", "2025-10-16", "2025-10-17", "2025-10-18", "2025-10-19", "2025-10-20", "2025-10-21", "2025-10-22", "2025-10-23", "2025-10-24", "2025-10-25", "2025-10-26", "2025-10-27", "2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03", "2025-11-04", "2025-11-05", "2025-11-06", "2025-11-07", "2025-11-08", "2025-11-09", "2025-11-10", "2025-11-11", "2025-11-12", "2025-11-13", "2025-11-14", "2025-11-15", "2025-11-16", "2025-11-17", "2025-11-18", "2025-11-19", "2025-11-20", "2025-11-21", "2025-11-22", "2025-11-23", "2025-11-24", "2025-11-25", "2025-11-26", "2025-11-27", "2025-11-28", "2025-11-29", "2025-11-30", "2025-12-01", "2025-12-02", "2025-12-03", "2025-12-04", "2025-12-05", "2025-12-06", "2025-12-07", "2025-12-08", "2025-12-09", "2025-12-10", "2025-12-11", "2025-12-12", "2025-12-13", "2025-12-14", "2025-12-15", "2025-12-16", "2025-12-17", "2025-12-18", "2025-12-19", "2025-12-20", "2025-12-21", "2025-12-22", "2025-12-23", "2025-12-24", "2025-12-25", "2025-12-26", "2025-12-27", "2025-12-28", "2025-12-29", "2025-12-30", "2025-12-31"], "test_vals": [9162.0, 9199.0, 9152.0, 9080.0, 9290.0, 9289.0, 9394.0, 9313.0, 9278.0, 9369.0, 9453.0, 9391.0, 9410.0, 9393.0, 9423.0, 9544.0, 9597.0, 9510.0, 9490.0, 9555.0, 9559.0, 9662.0, 9783.0, 9748.0, 9787.0, 9810.0, 9873.0, 9923.0, 9923.0, 9912.0, 10048.0, 10070.0, 10034.0, 10088.0, 10096.0, 10221.0, 10063.0, 10071.0, 10200.0, 10396.0, 10377.0, 10403.0, 10372.0, 10574.0, 10569.0, 10594.0, 10712.0, 10661.0, 10859.0, 10934.0, 10884.0, 10842.0, 10841.0, 10823.0, 10955.0, 10995.0, 10948.0, 11047.0, 11099.0, 11179.0, 11224.0, 11254.0, 11054.0, 11201.0, 11276.0, 11423.0, 11523.0, 11454.0, 11569.0, 11845.0, 11775.0, 11816.0, 11811.0, 11780.0, 11914.0, 11893.0, 11829.0, 11987.0, 11951.0, 11965.0, 12060.0, 12018.0, 12136.0, 12253.0, 12196.0, 12269.0, 12454.0, 12402.0, 12491.0, 12527.0, 12594.0, 12730.0, 12782.0, 12843.0, 13053.0, 13186.0, 13210.0, 13161.0, 13172.0, 13285.0, 13270.0, 13295.0, 13320.0, 13270.0, 13426.0, 13459.0, 13449.0, 13482.0, 13560.0, 13750.0, 13919.0, 13887.0, 14020.0, 14137.0, 14143.0, 14171.0, 14038.0, 14071.0, 14160.0, 14192.0, 14227.0, 14246.0, 14142.0, 14098.0, 14130.0, 14172.0, 14209.0, 14294.0, 14364.0, 14471.0, 14504.0, 14486.0, 14512.0, 14566.0, 14478.0, 14504.0, 14402.0, 14474.0, 14579.0, 14756.0, 14761.0, 14808.0, 14838.0, 14914.0, 15001.0, 14996.0, 14856.0, 14817.0, 14706.0, 14792.0, 14823.0, 14748.0, 14783.0, 14748.0, 14860.0, 15043.0, 15034.0, 14996.0, 15135.0, 15123.0, 15137.0, 15094.0, 14962.0, 14957.0, 14987.0, 14842.0, 14744.0, 14841.0, 14802.0, 15007.0, 14957.0, 14921.0, 14940.0, 15109.0, 15036.0, 15043.0, 14962.0, 15026.0, 15384.0, 15537.0, 15441.0, 15368.0, 15374.0, 15377.0, 15285.0, 14967.0, 14896.0, 14909.0, 14983.0, 14956.0, 14918.0, 14912.0, 15014.0, 15045.0, 14927.0, 14858.0, 14802.0, 14764.0, 14802.0, 14648.0, 14516.0, 14552.0, 14604.0, 14682.0, 14661.0, 14660.0, 14696.0, 14717.0, 14859.0, 14907.0, 14805.0, 14878.0, 14895.0, 14837.0, 14881.0, 14850.0, 14679.0, 14679.0, 14666.0, 14609.0, 14686.0, 14632.0, 14538.0, 14499.0, 14591.0, 14573.0, 14516.0, 14452.0, 14312.0, 14291.0, 14376.0, 14280.0, 14248.0, 14212.0, 14219.0, 14219.0, 14156.0, 14238.0, 14224.0, 14103.0, 14084.0, 14067.0, 14070.0, 13943.0, 13869.0, 13906.0, 13818.0, 13834.0, 13721.0, 13730.0, 13811.0, 13658.0, 13495.0, 13497.0, 13367.0, 13314.0, 13260.0, 13166.0, 13187.0, 13290.0, 13263.0, 13298.0, 13344.0, 13343.0, 13357.0, 13327.0, 13233.0, 13160.0, 13165.0, 13155.0, 13048.0, 13013.0, 12976.0, 12902.0, 13008.0, 13066.0, 12933.0, 12864.0, 12849.0, 12820.0, 12787.0, 12779.0, 12527.0, 12585.0, 12601.0, 12657.0, 12704.0, 12642.0, 12493.0, 12597.0, 12504.0, 12510.0, 12381.0, 12119.0, 12138.0, 12103.0, 11997.0, 12081.0, 11984.0, 12007.0, 12081.0, 12042.0, 12108.0, 12135.0, 12061.0, 12173.0, 12083.0, 12042.0, 11974.0, 11858.0, 11995.0, 12018.0, 11861.0, 11784.0, 11833.0, 11915.0, 11982.0, 11775.0, 11678.0, 11765.0, 11837.0, 11662.0, 11604.0, 11509.0, 11996.0, 12879.0, 12873.0, 12840.0, 13065.0, 13191.0, 13395.0, 13123.0, 12580.0, 12754.0, 13112.0, 13267.0, 13494.0, 13591.0, 13663.0, 13611.0, 13783.0, 13811.0, 13793.0, 13766.0, 13781.0, 13734.0, 13744.0, 13672.0, 13768.0, 13875.0, 13797.0, 14206.0, 14588.0, 14735.0, 14669.0, 14421.0, 14519.0, 14638.0, 14397.0], "ctrl_vals": [9087.0, 8939.0, 9132.0, 9098.0, 9074.0, 8980.0, 9102.0, 9171.0, 9236.0, 9247.0, 9238.0, 9270.0, 9352.0, 9497.0, 9406.0, 9536.0, 9622.0, 9754.0, 9907.0, 9963.0, 9860.0, 9955.0, 9972.0, 10010.0, 9989.0, 9838.0, 9838.0, 9801.0, 9836.0, 9872.0, 9815.0, 9887.0, 10007.0, 10108.0, 10059.0, 10065.0, 10043.0, 10182.0, 10321.0, 10245.0, 10272.0, 10410.0, 10417.0, 10409.0, 10368.0, 10279.0, 10302.0, 10362.0, 10521.0, 10676.0, 10689.0, 10733.0, 10814.0, 11028.0, 11060.0, 10986.0, 10998.0, 11140.0, 11286.0, 11376.0, 11434.0, 11446.0, 11623.0, 11690.0, 11659.0, 11703.0, 11751.0, 11726.0, 11740.0, 11722.0, 11773.0, 11886.0, 11869.0, 11978.0, 12117.0, 12206.0, 12294.0, 12253.0, 12313.0, 12452.0, 12386.0, 12319.0, 12317.0, 12244.0, 12307.0, 12309.0, 12165.0, 12227.0, 12380.0, 12412.0, 12617.0, 12742.0, 12873.0, 12965.0, 13063.0, 12990.0, 13144.0, 13109.0, 13158.0, 13071.0, 13103.0, 13132.0, 13186.0, 13205.0, 13157.0, 13218.0, 13258.0, 13388.0, 13433.0, 13491.0, 13540.0, 13679.0, 13637.0, 13692.0, 13581.0, 13605.0, 13592.0, 13602.0, 13609.0, 13721.0, 13801.0, 13936.0, 13996.0, 14146.0, 14195.0, 14274.0, 14176.0, 14274.0, 14364.0, 14292.0, 14290.0, 14300.0, 14295.0, 14438.0, 14509.0, 14567.0, 14578.0, 14658.0, 14768.0, 14984.0, 15055.0, 15116.0, 15138.0, 15256.0, 15305.0, 15258.0, 15101.0, 15037.0, 15031.0, 14941.0, 15038.0, 15025.0, 14950.0, 14989.0, 14901.0, 14861.0, 14979.0, 14867.0, 14859.0, 15074.0, 15034.0, 15109.0, 15172.0, 15248.0, 15294.0, 15356.0, 15328.0, 15322.0, 15364.0, 15355.0, 15345.0, 15383.0, 15274.0, 15317.0, 15333.0, 15344.0, 15292.0, 15285.0, 15492.0, 15569.0, 15476.0, 15509.0, 15560.0, 15385.0, 15270.0, 15040.0, 14941.0, 14930.0, 14908.0, 14973.0, 15211.0, 15193.0, 15160.0, 15215.0, 15154.0, 15167.0, 15004.0, 14829.0, 14882.0, 14915.0, 14857.0, 14923.0, 14858.0, 14902.0, 15003.0, 14946.0, 14918.0, 14917.0, 14832.0, 14838.0, 14759.0, 14678.0, 14566.0, 14488.0, 14480.0, 14454.0, 14429.0, 14446.0, 14462.0, 14583.0, 14548.0, 14468.0, 14395.0, 14354.0, 14310.0, 14209.0, 14051.0, 14035.0, 14090.0, 14160.0, 14127.0, 14094.0, 14055.0, 14101.0, 14048.0, 14041.0, 13868.0, 14006.0, 14018.0, 14053.0, 14185.0, 14225.0, 14098.0, 14167.0, 13893.0, 13837.0, 13743.0, 13604.0, 13517.0, 13537.0, 13471.0, 13649.0, 13601.0, 13727.0, 13687.0, 13716.0, 13711.0, 13739.0, 13485.0, 13454.0, 13361.0, 13275.0, 13128.0, 13070.0, 13114.0, 13271.0, 13251.0, 13224.0, 13172.0, 13120.0, 13035.0, 12994.0, 12870.0, 12826.0, 12719.0, 12823.0, 12990.0, 13147.0, 13012.0, 13015.0, 12908.0, 12983.0, 12768.0, 12654.0, 12425.0, 12369.0, 12272.0, 12297.0, 12147.0, 12156.0, 12165.0, 12137.0, 12158.0, 12255.0, 12234.0, 12197.0, 12190.0, 12186.0, 12239.0, 12169.0, 12102.0, 12043.0, 12104.0, 12120.0, 12008.0, 11925.0, 11882.0, 11865.0, 11985.0, 11886.0, 11871.0, 11745.0, 11743.0, 11777.0, 11674.0, 11528.0, 11511.0, 11486.0, 11585.0, 11473.0, 11334.0, 11340.0, 11412.0, 11276.0, 11689.0, 12366.0, 12574.0, 12670.0, 12721.0, 12695.0, 12726.0, 12324.0, 11656.0, 11599.0, 11854.0, 11703.0, 11795.0, 11904.0, 11874.0, 11858.0, 11802.0, 11533.0, 11680.0, 11488.0, 11553.0, 11514.0, 11454.0, 11457.0, 11573.0, 11528.0, 11648.0, 11960.0, 12274.0, 12393.0, 12541.0, 12466.0, 12550.0, 12546.0, 12445.0]}, "Dallas": {"ctrl_city": "Atlanta", "dates": ["2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-11", "2025-01-12", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-18", "2025-01-19", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-25", "2025-01-26", "2025-01-27", "2025-01-28", "2025-01-29", "2025-01-30", "2025-01-31", "2025-02-01", "2025-02-02", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-08", "2025-02-09", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-15", "2025-02-16", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-22", "2025-02-23", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28", "2025-03-01", "2025-03-02", "2025-03-03", "2025-03-04", "2025-03-05", "2025-03-06", "2025-03-07", "2025-03-08", "2025-03-09", "2025-03-10", "2025-03-11", "2025-03-12", "2025-03-13", "2025-03-14", "2025-03-15", "2025-03-16", "2025-03-17", "2025-03-18", "2025-03-19", "2025-03-20", "2025-03-21", "2025-03-22", "2025-03-23", "2025-03-24", "2025-03-25", "2025-03-26", "2025-03-27", "2025-03-28", "2025-03-29", "2025-03-30", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-05", "2025-04-06", "2025-04-07", "2025-04-08", "2025-04-09", "2025-04-10", "2025-04-11", "2025-04-12", "2025-04-13", "2025-04-14", "2025-04-15", "2025-04-16", "2025-04-17", "2025-04-18", "2025-04-19", "2025-04-20", "2025-04-21", "2025-04-22", "2025-04-23", "2025-04-24", "2025-04-25", "2025-04-26", "2025-04-27", "2025-04-28", "2025-04-29", "2025-04-30", "2025-05-01", "2025-05-02", "2025-05-03", "2025-05-04", "2025-05-05", "2025-05-06", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-10", "2025-05-11", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-17", "2025-05-18", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-24", "2025-05-25", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30", "2025-05-31", "2025-06-01", "2025-06-02", "2025-06-03", "2025-06-04", "2025-06-05", "2025-06-06", "2025-06-07", "2025-06-08", "2025-06-09", "2025-06-10", "2025-06-11", "2025-06-12", "2025-06-13", "2025-06-14", "2025-06-15", "2025-06-16", "2025-06-17", "2025-06-18", "2025-06-19", "2025-06-20", "2025-06-21", "2025-06-22", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-28", "2025-06-29", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-05", "2025-07-06", "2025-07-07", "2025-07-08", "2025-07-09", "2025-07-10", "2025-07-11", "2025-07-12", "2025-07-13", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-19", "2025-07-20", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-26", "2025-07-27", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-02", "2025-08-03", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-09", "2025-08-10", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-15", "2025-08-16", "2025-08-17", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-23", "2025-08-24", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-08-30", "2025-08-31", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-06", "2025-09-07", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-13", "2025-09-14", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-20", "2025-09-21", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-27", "2025-09-28", "2025-09-29", "2025-09-30", "2025-10-01", "2025-10-02", "2025-10-03", "2025-10-04", "2025-10-05", "2025-10-06", "2025-10-07", "2025-10-08", "2025-10-09", "2025-10-10", "2025-10-11", "2025-10-12", "2025-10-13", "2025-10-14", "2025-10-15", "2025-10-16", "2025-10-17", "2025-10-18", "2025-10-19", "2025-10-20", "2025-10-21", "2025-10-22", "2025-10-23", "2025-10-24", "2025-10-25", "2025-10-26", "2025-10-27", "2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03", "2025-11-04", "2025-11-05", "2025-11-06", "2025-11-07", "2025-11-08", "2025-11-09", "2025-11-10", "2025-11-11", "2025-11-12", "2025-11-13", "2025-11-14", "2025-11-15", "2025-11-16", "2025-11-17", "2025-11-18", "2025-11-19", "2025-11-20", "2025-11-21", "2025-11-22", "2025-11-23", "2025-11-24", "2025-11-25", "2025-11-26", "2025-11-27", "2025-11-28", "2025-11-29", "2025-11-30", "2025-12-01", "2025-12-02", "2025-12-03", "2025-12-04", "2025-12-05", "2025-12-06", "2025-12-07", "2025-12-08", "2025-12-09", "2025-12-10", "2025-12-11", "2025-12-12", "2025-12-13", "2025-12-14", "2025-12-15", "2025-12-16", "2025-12-17", "2025-12-18", "2025-12-19", "2025-12-20", "2025-12-21", "2025-12-22", "2025-12-23", "2025-12-24", "2025-12-25", "2025-12-26", "2025-12-27", "2025-12-28", "2025-12-29", "2025-12-30", "2025-12-31"], "test_vals": [8514.0, 8507.0, 8564.0, 8640.0, 8704.0, 8692.0, 8651.0, 8723.0, 8775.0, 8788.0, 8725.0, 8688.0, 8646.0, 8692.0, 8715.0, 8667.0, 8646.0, 8689.0, 8740.0, 8789.0, 8837.0, 8655.0, 8694.0, 8602.0, 8699.0, 8748.0, 8857.0, 8957.0, 9089.0, 9216.0, 9375.0, 9329.0, 9376.0, 9323.0, 9232.0, 9279.0, 9191.0, 9119.0, 9337.0, 9296.0, 9402.0, 9446.0, 9415.0, 9488.0, 9477.0, 9331.0, 9307.0, 9424.0, 9533.0, 9666.0, 9751.0, 9840.0, 9905.0, 10020.0, 9966.0, 10020.0, 10087.0, 10072.0, 10066.0, 10024.0, 10044.0, 10071.0, 9983.0, 10106.0, 10205.0, 10357.0, 10447.0, 10479.0, 10462.0, 10561.0, 10487.0, 10382.0, 10405.0, 10430.0, 10380.0, 10421.0, 10433.0, 10554.0, 10683.0, 10634.0, 10704.0, 10760.0, 10896.0, 10930.0, 10865.0, 10941.0, 10980.0, 10920.0, 11006.0, 11040.0, 11022.0, 10917.0, 10862.0, 10992.0, 11161.0, 11203.0, 11163.0, 11336.0, 11420.0, 11458.0, 11474.0, 11470.0, 11501.0, 11558.0, 11404.0, 11500.0, 11576.0, 11549.0, 11561.0, 11643.0, 11655.0, 11824.0, 11839.0, 11836.0, 11949.0, 11984.0, 11961.0, 12020.0, 12078.0, 12051.0, 12150.0, 12129.0, 12171.0, 12290.0, 12236.0, 12189.0, 12306.0, 12232.0, 12364.0, 12323.0, 12258.0, 12363.0, 12362.0, 12380.0, 12459.0, 12376.0, 12437.0, 12460.0, 12393.0, 12632.0, 12763.0, 12767.0, 12815.0, 12874.0, 12855.0, 13038.0, 12909.0, 12920.0, 12897.0, 12995.0, 13014.0, 13123.0, 13062.0, 13052.0, 13043.0, 13101.0, 12919.0, 12833.0, 12806.0, 12821.0, 12841.0, 12851.0, 12753.0, 12870.0, 12842.0, 12898.0, 12884.0, 12915.0, 12814.0, 12985.0, 13036.0, 13164.0, 13122.0, 13160.0, 13105.0, 13195.0, 13216.0, 13218.0, 13319.0, 13345.0, 13248.0, 13313.0, 13290.0, 13107.0, 12990.0, 12842.0, 12804.0, 12804.0, 12790.0, 12775.0, 12856.0, 12871.0, 12932.0, 13026.0, 13056.0, 12996.0, 13000.0, 12983.0, 13005.0, 12979.0, 12786.0, 12868.0, 12892.0, 12834.0, 12835.0, 12828.0, 12688.0, 12850.0, 12770.0, 12775.0, 12831.0, 12768.0, 12779.0, 12838.0, 12789.0, 12661.0, 12616.0, 12519.0, 12576.0, 12558.0, 12517.0, 12418.0, 12503.0, 12443.0, 12498.0, 12437.0, 12243.0, 12239.0, 12202.0, 12103.0, 12064.0, 12005.0, 12071.0, 12214.0, 12180.0, 12235.0, 12273.0, 12418.0, 12330.0, 12148.0, 12089.0, 12104.0, 12052.0, 12031.0, 11854.0, 11921.0, 11919.0, 11954.0, 11870.0, 11812.0, 11733.0, 11732.0, 11726.0, 11795.0, 11781.0, 11834.0, 11791.0, 11825.0, 11785.0, 11779.0, 11666.0, 11636.0, 11631.0, 11757.0, 11728.0, 11780.0, 11804.0, 11809.0, 11659.0, 11492.0, 11410.0, 11310.0, 11230.0, 11111.0, 11129.0, 11206.0, 11290.0, 11296.0, 11320.0, 11282.0, 11196.0, 11207.0, 11209.0, 11198.0, 11171.0, 11137.0, 11236.0, 11333.0, 11307.0, 11331.0, 11202.0, 11094.0, 11097.0, 11028.0, 10876.0, 10858.0, 10818.0, 10921.0, 10944.0, 10913.0, 10815.0, 10916.0, 10900.0, 10811.0, 10738.0, 10603.0, 10584.0, 10710.0, 10566.0, 10521.0, 10561.0, 10505.0, 10606.0, 10696.0, 10587.0, 10788.0, 10682.0, 10673.0, 10719.0, 10739.0, 10704.0, 10657.0, 10513.0, 10495.0, 10884.0, 11531.0, 11518.0, 11543.0, 11628.0, 11687.0, 11835.0, 11479.0, 11061.0, 11303.0, 11472.0, 11657.0, 11772.0, 12012.0, 12185.0, 12292.0, 12207.0, 12201.0, 12212.0, 12294.0, 12225.0, 12149.0, 12099.0, 12185.0, 12162.0, 12225.0, 12258.0, 12633.0, 12899.0, 12889.0, 12816.0, 12873.0, 12702.0, 12696.0, 12409.0], "ctrl_vals": [8462.0, 8395.0, 8444.0, 8408.0, 8401.0, 8518.0, 8413.0, 8499.0, 8510.0, 8528.0, 8561.0, 8647.0, 8527.0, 8653.0, 8788.0, 8778.0, 8800.0, 8961.0, 8973.0, 8988.0, 8978.0, 9054.0, 8999.0, 8987.0, 8943.0, 8965.0, 9002.0, 9063.0, 9101.0, 9191.0, 9191.0, 9117.0, 9162.0, 9298.0, 9293.0, 9203.0, 9193.0, 9213.0, 9478.0, 9543.0, 9437.0, 9526.0, 9587.0, 9722.0, 9741.0, 9548.0, 9527.0, 9665.0, 9709.0, 9749.0, 9699.0, 9749.0, 9917.0, 9909.0, 10002.0, 9930.0, 10010.0, 10093.0, 10174.0, 10120.0, 10187.0, 10161.0, 10216.0, 10140.0, 10133.0, 10180.0, 10134.0, 10211.0, 10176.0, 10149.0, 10130.0, 10083.0, 10046.0, 10156.0, 10270.0, 10330.0, 10435.0, 10580.0, 10716.0, 10818.0, 10830.0, 10841.0, 10998.0, 10939.0, 10903.0, 10918.0, 10909.0, 11033.0, 10957.0, 11012.0, 11196.0, 11295.0, 11399.0, 11541.0, 11521.0, 11552.0, 11480.0, 11498.0, 11529.0, 11430.0, 11366.0, 11426.0, 11498.0, 11629.0, 11547.0, 11599.0, 11790.0, 11981.0, 11996.0, 12058.0, 12018.0, 12131.0, 12131.0, 12108.0, 11892.0, 11978.0, 11989.0, 11978.0, 12103.0, 12102.0, 12088.0, 12349.0, 12299.0, 12292.0, 12323.0, 12287.0, 12359.0, 12339.0, 12235.0, 12272.0, 12321.0, 12375.0, 12377.0, 12298.0, 12442.0, 12505.0, 12630.0, 12678.0, 12734.0, 12897.0, 13078.0, 13070.0, 13071.0, 13136.0, 13177.0, 13168.0, 12955.0, 12837.0, 12841.0, 12870.0, 12736.0, 12713.0, 12779.0, 12894.0, 12915.0, 12907.0, 12871.0, 12894.0, 12877.0, 12781.0, 12691.0, 12753.0, 12738.0, 12638.0, 12771.0, 12856.0, 12868.0, 12940.0, 12892.0, 13014.0, 13267.0, 13173.0, 13174.0, 13205.0, 13138.0, 13180.0, 13101.0, 12981.0, 13130.0, 13073.0, 13059.0, 13130.0, 13095.0, 13049.0, 13004.0, 12894.0, 12787.0, 12846.0, 12911.0, 12944.0, 12842.0, 12883.0, 12823.0, 12872.0, 12779.0, 12778.0, 12820.0, 12897.0, 12824.0, 12801.0, 12831.0, 12873.0, 12755.0, 12736.0, 12871.0, 12982.0, 12984.0, 12972.0, 12914.0, 12988.0, 12915.0, 12803.0, 12748.0, 12709.0, 12632.0, 12650.0, 12570.0, 12610.0, 12563.0, 12605.0, 12568.0, 12708.0, 12582.0, 12589.0, 12568.0, 12535.0, 12474.0, 12564.0, 12341.0, 12436.0, 12264.0, 12169.0, 12272.0, 12198.0, 12050.0, 12131.0, 12189.0, 12340.0, 12313.0, 12283.0, 12385.0, 12417.0, 12340.0, 12317.0, 12330.0, 12395.0, 12252.0, 12129.0, 12102.0, 12158.0, 12100.0, 12039.0, 11924.0, 12012.0, 12005.0, 12024.0, 12057.0, 11901.0, 11829.0, 11832.0, 11655.0, 11632.0, 11701.0, 11506.0, 11537.0, 11547.0, 11556.0, 11606.0, 11497.0, 11355.0, 11386.0, 11251.0, 11255.0, 11274.0, 11259.0, 11313.0, 11333.0, 11360.0, 11496.0, 11396.0, 11391.0, 11382.0, 11358.0, 11215.0, 11196.0, 11085.0, 11046.0, 10915.0, 10822.0, 10901.0, 11014.0, 11077.0, 11037.0, 11054.0, 11010.0, 11010.0, 10834.0, 10811.0, 10674.0, 10773.0, 10783.0, 10951.0, 10894.0, 10989.0, 10968.0, 10923.0, 10904.0, 10876.0, 10731.0, 10750.0, 10635.0, 10668.0, 10705.0, 10681.0, 10611.0, 10571.0, 10658.0, 10615.0, 10477.0, 10469.0, 10425.0, 10448.0, 10500.0, 10472.0, 10992.0, 11585.0, 11562.0, 11612.0, 11662.0, 11566.0, 11543.0, 10980.0, 10399.0, 10509.0, 10396.0, 10305.0, 10413.0, 10315.0, 10384.0, 10412.0, 10282.0, 10320.0, 10403.0, 10387.0, 10483.0, 10501.0, 10493.0, 10524.0, 10564.0, 10506.0, 10481.0, 10772.0, 11005.0, 10952.0, 10909.0, 10907.0, 10953.0, 11012.0, 10841.0]}};
+const cityLifts     = [{"city": "San Francisco", "cumulative": 60333.0, "lift_pct": 15.1, "ci_lower": 58027.0, "ci_upper": 62591.0, "did_lift": 1973.0, "ci_lift": 1946.0}, {"city": "Austin", "cumulative": 53423.0, "lift_pct": 16.5, "ci_lower": 51472.0, "ci_upper": 55490.0, "did_lift": 1748.0, "ci_lift": 1723.0}, {"city": "Miami", "cumulative": 38875.0, "lift_pct": 11.0, "ci_lower": 36940.0, "ci_upper": 40821.0, "did_lift": 1284.0, "ci_lift": 1254.0}, {"city": "Chicago", "cumulative": 58044.0, "lift_pct": 15.7, "ci_lower": 55780.0, "ci_upper": 60364.0, "did_lift": 1929.0, "ci_lift": 1872.0}, {"city": "Dallas", "cumulative": 48649.0, "lift_pct": 14.8, "ci_lower": 46772.0, "ci_upper": 50615.0, "did_lift": 1629.0, "ci_lift": 1569.0}];
+const decComparison = {"San Francisco": {"test_avg": 14852.0, "ctrl_avg": 12862.0, "ctrl_city": "Seattle"}, "Austin": {"test_avg": 12183.0, "ctrl_avg": 10408.0, "ctrl_city": "Denver"}, "Miami": {"test_avg": 12619.0, "ctrl_avg": 11309.0, "ctrl_city": "Phoenix"}, "Chicago": {"test_avg": 13811.0, "ctrl_avg": 11872.0, "ctrl_city": "Boston"}, "Dallas": {"test_avg": 12146.0, "ctrl_avg": 10552.0, "ctrl_city": "Atlanta"}};
+
+const CAMPAIGN_START_IDX = combinedDates.indexOf('2025-12-01');
+const TOTAL_INCREMENTAL  = 259324;
+const AVG_LIFT_PCT       = 14.6;
+const ROI_PCT            = 159;
+
+// ── Chart.js global defaults ────────────────────────────────────────────────
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.borderColor = 'rgba(255,255,255,0.05)';
+Chart.defaults.font.family = "'Inter', sans-serif";
+
+// ── Animated KPI counters ───────────────────────────────────────────────────
+function animateValue(el, end, prefix='', suffix='', duration=1500) {
+    const start = 0;
+    const startTime = performance.now();
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);  // ease-out cubic
+        const current = Math.round(start + (end - start) * eased);
+        el.textContent = prefix + current.toLocaleString() + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+}
+
+setTimeout(() => {
+    animateValue(document.getElementById('kpi-roi-val'), ROI_PCT, '', '%');
+    animateValue(document.getElementById('kpi-rev-val'), TOTAL_INCREMENTAL, '$', '');
+    animateValue(document.getElementById('kpi-lift-val'), AVG_LIFT_PCT * 10, '', '%', 1500);
+    // Fix lift to show decimal
+    setTimeout(() => {
+        document.getElementById('kpi-lift-val').textContent = AVG_LIFT_PCT + '%';
+    }, 1600);
+}, 400);
+
+// ── 1. Combined Time Series Chart ───────────────────────────────────────────
+const combinedCtx = document.getElementById('combinedChart').getContext('2d');
+new Chart(combinedCtx, {
+    type: 'line',
+    data: {
+        labels: combinedDates,
+        datasets: [
+            {
+                label: 'Test Cities (avg)',
+                data: combinedTest,
+                borderColor: '#f43f5e',
+                backgroundColor: 'rgba(244,63,94,0.05)',
+                borderWidth: 2,
+                pointRadius: 0,
+                pointHoverRadius: 4,
+                tension: 0.3,
+                fill: false,
+            },
+            {
+                label: 'Control Cities (avg)',
+                data: combinedCtrl,
+                borderColor: '#3b82f6',
+                backgroundColor: 'rgba(59,130,246,0.05)',
+                borderWidth: 2,
+                pointRadius: 0,
+                pointHoverRadius: 4,
+                tension: 0.3,
+                fill: false,
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+            legend: { position: 'top', labels: { usePointStyle: true, padding: 20 } },
+            annotation: {
+                annotations: {
+                    campaignLine: {
+                        type: 'line',
+                        xMin: '2025-12-01',
+                        xMax: '2025-12-01',
+                        borderColor: 'rgba(45,212,191,0.6)',
+                        borderWidth: 2,
+                        borderDash: [6, 4],
+                        label: {
+                            display: true,
+                            content: 'Campaign Start',
+                            position: 'start',
+                            backgroundColor: 'rgba(45,212,191,0.15)',
+                            color: '#2dd4bf',
+                            font: { size: 11, weight: '600' },
+                            padding: 6,
+                        }
+                    },
+                    campaignBox: {
+                        type: 'box',
+                        xMin: '2025-12-01',
+                        xMax: '2025-12-31',
+                        backgroundColor: 'rgba(45,212,191,0.06)',
+                        borderWidth: 0,
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                type: 'category',
+                ticks: {
+                    maxTicksLimit: 12,
+                    callback: function(val, idx) {
+                        const d = new Date(this.getLabelForValue(val));
+                        return d.toLocaleDateString('en-US', { month: 'short' });
+                    }
+                }
+            },
+            y: {
+                ticks: { callback: v => '$' + v.toLocaleString() }
+            }
+        }
+    }
+});
+
+// ── 2. Twin Pair Explorer ───────────────────────────────────────────────────
+const twinCtx = document.getElementById('twinChart').getContext('2d');
+let twinChart = null;
+const twinCities = Object.keys(twinSeries);
+
+// Build selector buttons
+const selectorEl = document.getElementById('twinSelector');
+twinCities.forEach((city, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'twin-btn' + (i === 0 ? ' active' : '');
+    btn.textContent = city + ' vs ' + twinSeries[city].ctrl_city;
+    btn.onclick = () => {
+        document.querySelectorAll('.twin-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        updateTwinChart(city);
+    };
+    selectorEl.appendChild(btn);
+});
+
+function updateTwinChart(testCity) {
+    const data = twinSeries[testCity];
+    if (twinChart) twinChart.destroy();
+
+    twinChart = new Chart(twinCtx, {
+        type: 'line',
+        data: {
+            labels: data.dates,
+            datasets: [
+                {
+                    label: testCity + ' (Test)',
+                    data: data.test_vals,
+                    borderColor: '#f43f5e',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    pointHoverRadius: 4,
+                    tension: 0.3,
+                },
+                {
+                    label: data.ctrl_city + ' (Control)',
+                    data: data.ctrl_vals,
+                    borderColor: '#3b82f6',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    pointHoverRadius: 4,
+                    tension: 0.3,
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+                legend: { position: 'top', labels: { usePointStyle: true, padding: 20 } },
+                annotation: {
+                    annotations: {
+                        campaignLine: {
+                            type: 'line',
+                            xMin: '2025-12-01', xMax: '2025-12-01',
+                            borderColor: 'rgba(45,212,191,0.6)',
+                            borderWidth: 2, borderDash: [6, 4],
+                            label: {
+                                display: true, content: 'Campaign',
+                                position: 'start',
+                                backgroundColor: 'rgba(45,212,191,0.15)',
+                                color: '#2dd4bf',
+                                font: { size: 10, weight: '600' }, padding: 4,
+                            }
+                        },
+                        campaignBox: {
+                            type: 'box',
+                            xMin: '2025-12-01', xMax: '2025-12-31',
+                            backgroundColor: 'rgba(45,212,191,0.06)',
+                            borderWidth: 0,
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: { ticks: { maxTicksLimit: 12,
+                    callback: function(val) {
+                        const d = new Date(this.getLabelForValue(val));
+                        return d.toLocaleDateString('en-US', { month: 'short' });
+                    }
+                } },
+                y: { ticks: { callback: v => '$' + v.toLocaleString() } },
+            }
+        }
+    });
+}
+updateTwinChart(twinCities[0]);
+
+// ── 3. Lift by City (Horizontal Bar) ────────────────────────────────────────
+const liftCtx = document.getElementById('liftChart').getContext('2d');
+new Chart(liftCtx, {
+    type: 'bar',
+    data: {
+        labels: cityLifts.map(c => c.city),
+        datasets: [{
+            label: 'Incremental Revenue ($)',
+            data: cityLifts.map(c => c.cumulative),
+            backgroundColor: [
+                'rgba(45,212,191,0.8)',
+                'rgba(59,130,246,0.8)',
+                'rgba(245,158,11,0.8)',
+                'rgba(168,85,250,0.8)',
+                'rgba(244,63,94,0.8)',
+            ],
+            borderRadius: 6,
+            borderSkipped: false,
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false },
+        },
+        scales: {
+            x: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' } },
+            y: { grid: { display: false } },
+        }
+    }
+});
+
+// ── 4. ROI Waterfall ────────────────────────────────────────────────────────
+const roiCtx = document.getElementById('roiChart').getContext('2d');
+new Chart(roiCtx, {
+    type: 'bar',
+    data: {
+        labels: ['Campaign Cost', 'Incremental Revenue', 'Net Profit'],
+        datasets: [{
+            data: [-100000, 259324, 159324],
+            backgroundColor: [
+                'rgba(244,63,94,0.8)',
+                'rgba(45,212,191,0.8)',
+                'rgba(245,158,11,0.8)',
+            ],
+            borderRadius: 6,
+            borderSkipped: false,
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false },
+        },
+        scales: {
+            y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' } },
+            x: { grid: { display: false } },
+        }
+    }
+});
+
+// ── 5. December Grouped Bar ─────────────────────────────────────────────────
+const decCtx = document.getElementById('decChart').getContext('2d');
+const decCities = Object.keys(decComparison);
+new Chart(decCtx, {
+    type: 'bar',
+    data: {
+        labels: decCities,
+        datasets: [
+            {
+                label: 'Test City (with campaign)',
+                data: decCities.map(c => decComparison[c].test_avg),
+                backgroundColor: 'rgba(244,63,94,0.75)',
+                borderRadius: 4,
+            },
+            {
+                label: 'Control City (no campaign)',
+                data: decCities.map(c => decComparison[c].ctrl_avg),
+                backgroundColor: 'rgba(59,130,246,0.75)',
+                borderRadius: 4,
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { position: 'top', labels: { usePointStyle: true, padding: 20 } },
+        },
+        scales: {
+            y: { ticks: { callback: v => '$' + v.toLocaleString() } },
+            x: { grid: { display: false } },
+        }
+    }
+});
+</script>
+</body>
+</html>
