@@ -26,3 +26,6 @@ desktop.ini
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Private files
+Interview_Prep.txt
