@@ -1,11 +1,11 @@
 # Retail Marketing Incrementality Project
 
-# Note: 
-This project uses a High-Fidelity Synthetic Dataset modeled after real US retail trends. This approach allowed for a "Ground Truth" validation of the Causal Inference model, simulating a real-world $100k campaign across 10 major US markets.
+## Note
+This project uses synthetic data modeled after real US retail trends. It let me validate the causal inference model with a known "ground truth" before applying it to real data. The simulation covers a $100k campaign across 10 major US markets.
 
 > 🔗 **[Live Dashboard](https://thekalyanimohite.github.io/retail-marketing-incrementality/)**
 
-> **Goal:** Measure the **Incremental Lift** of a \$100k digital ad campaign using a twin-city quasi-experiment and causal inference.
+> **Goal:** Figure out if a $100k ad campaign actually drove new sales, or if the revenue would have come in anyway.
 
 ---
 
@@ -25,12 +25,12 @@ This project uses a High-Fidelity Synthetic Dataset modeled after real US retail
 
 | Layer | Tool | Purpose |
 |-------|------|---------|
-| Language | Python 3.x | Data engineering, modeling, visualization |
-| Data Generation | NumPy, Pandas | Synthetic sales time-series with realistic patterns |
-| EDA & Validation | Matplotlib, SciPy | Time-series plots, correlation, paired t-tests |
-| Causal Inference | Statsmodels, SciPy | DiD regression (OLS), counterfactual modeling, bootstrap CIs |
-| Dashboard | Chart.js, HTML/CSS/JS | Interactive dark-mode dashboard with animated KPIs |
-| Reporting | Python, HTML/CSS | Executive summary (markdown + printable HTML) |
+| Language | Python 3.x | Data wrangling, modeling, charts |
+| Data Generation | NumPy, Pandas | Synthetic daily sales data with realistic seasonality |
+| EDA & Validation | Matplotlib, SciPy | Time-series plots, correlation checks, t-tests |
+| Causal Inference | Statsmodels, SciPy | DiD regression (OLS), counterfactual model, bootstrap CIs |
+| Dashboard | Chart.js, HTML/CSS/JS | Interactive dark-mode dashboard with live KPIs |
+| Reporting | Python, HTML/CSS | Executive summary in markdown and printable HTML |
 | Version Control | Git / GitHub | Portfolio-ready repository |
 
 ---
@@ -38,8 +38,8 @@ This project uses a High-Fidelity Synthetic Dataset modeled after real US retail
 ## Study Design
 
 ### Timeline
-- **Baseline period:** January – November 2025
-- **Intervention (ad campaign):** December 2025
+- **Baseline period:** January - November 2025
+- **Ad campaign runs:** December 2025
 
 ### Twin-City Pairs
 
@@ -73,7 +73,7 @@ This project uses a High-Fidelity Synthetic Dataset modeled after real US retail
 | Campaign Budget | $100,000 |
 | **Net Profit** | **$159,324** |
 | **ROI** | **159%** |
-| **ROAS** | **2.59x** (industry avg: 2–4x) |
+| **ROAS** | **2.59x** (industry avg: 2-4x) |
 | DiD p-value | 1.95 × 10⁻²³ (highly significant) |
 
 ---
@@ -83,19 +83,19 @@ This project uses a High-Fidelity Synthetic Dataset modeled after real US retail
 ```bash
 cd "Retail Marketing Incrementality Project"
 
-# Step 1 — Generate the dataset
+# Step 1 - Generate the dataset
 python data_generator.py
 
-# Step 2 — EDA & pre-intervention validation
+# Step 2 - EDA and pre-intervention validation
 python eda_analysis.py
 
-# Step 3 — Causal inference (DiD + CausalImpact)
+# Step 3 - Causal inference (DiD + CausalImpact)
 python causal_analysis.py
 
-# Step 4 — Build interactive dashboard
+# Step 4 - Build interactive dashboard
 python build_dashboard.py
 
-# Step 5 — Generate executive summary & report
+# Step 5 - Generate executive summary and report
 python generate_report.py
 
 # Then open these in your browser:
@@ -133,7 +133,7 @@ Retail Marketing Incrementality Project/
     └── twin_pair_*.png            # Per-pair time-series plots
 ```
 
-# The Business Case
-The Problem: In a privacy-first world, traditional tracking (like GA4 cookies) often misses the true impact of marketing. We needed to know: If we stopped spending $100k, how much revenue would we actually lose?
+## The Business Case
+**The problem:** Cookie-based tracking (like GA4) is becoming less reliable. We needed a way to answer a simple question: if we stop spending this $100k on ads, how much revenue do we actually lose?
 
-The Solution: I built a Geo-Experimental Framework. By matching cities into "Twin Pairs" (like San Francisco and Seattle), we created a "Science Lab" environment to prove that our December ads caused a 14.6% sales lift, generating $259k in new revenue.
+**What I did:** I paired up similar cities (like San Francisco and Seattle) and only ran the ad campaign in one city from each pair. By comparing sales between the paired cities, I could isolate the actual effect of the ads. The result: a 14.6% sales lift and $259k in new revenue.
